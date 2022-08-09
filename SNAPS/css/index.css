@@ -1,0 +1,685 @@
+/* Carrosel Topo */
+.carousel .carousel-item{
+    height: 500px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.slider{
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.slide_viewer{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group{
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide{
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slide:first-child{
+    display: block;
+}
+
+.slide:nth-of-type(1){
+    background-image: url('../assets/images/slider/1354x500_1.jpg');
+}
+
+.slide:nth-of-type(2){
+    background-image: url('../assets/images/slider/1354x500_2.jpg');
+}
+
+.slide:nth-of-type(3){
+    background-image: url('../assets/images/slider/1354x500_3.jpg');
+}
+
+.slide:nth-of-type(4){
+    background-image: url('../assets/images/slider/1354x500_4.jpg');
+}
+
+.slide:nth-of-type(5){
+    background-image: url('../assets/images/slider/1354x500_5.jpg');
+}
+
+.directional_nav{
+    margin: 0 auto;
+    position: relative;
+    top: -250px;
+}
+
+.previous_btn{
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.next_btn{
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.previous_btn, .next_btn{
+    cursor: pointer;
+    height: 500px;
+    opacity: 0.5;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+}
+
+.previous_btn:hover{
+    opacity: 1;
+    background: linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.next_btn:hover{
+    opacity: 1;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.previous_btn:hover svg,
+.next_btn:hover svg{
+    background: linear-gradient(270deg, rgba(35, 69, 132, 1) 0%, rgba(125, 12, 14, 1) 100%);
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 0.5px #fff inset;
+}*/
+
+/* Início Carrosel SNAPS */
+ul.swiper-wrapper{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    max-width: 65%;
+    margin: 40px 0;
+    border-radius: 10px !important;
+}
+
+.swiper img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination-bullet{
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.swiper-pagination-bullet:hover{
+    transition: background-color 0.5s ease;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.swiper-pagination-bullet-active{
+    color: #fff;
+    background: black;
+}
+
+.tippy-tooltip.light-theme{
+    color: #26323d;
+    box-shadow: 0 0 20px 4px rgba(154, 161, 177, 0.15),
+    background-color: white;
+}
+
+.tippy-backdrop{
+    background-color: white;
+}
+
+.tippy-roundarrow{
+    fill: white;
+}
+
+.tippy-popper[x-placement^='top'] .tippy-tooltip.light-theme .tippy-arrow{
+    border-top-color: #fff;
+}
+
+.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-theme .tippy-arrow{
+    border-bottom-color: #fff;
+}
+
+.tippy-popper[x-placement^='left'] .tippy-tooltip.light-theme .tippy-arrow{
+    border-left-color: #fff;
+}
+
+.tippy-popper[x-placement^='right'] .tippy-tooltip.light-theme .tippy-arrow{
+    border-right-color: #fff;
+}
+
+.tippy-tooltip.light-theme .tippy-roundarrow{
+    fill: #fff;
+}
+
+.swiper-docs{
+    font-family: "Roboto", sans-serif;
+}
+
+.swiper-docs #docs h3{
+    margin-bottom: 0px;
+}
+
+.swiper-docs #docs ol li:not(:first-of-type){
+    border-top: thin solid rgba(203, 202, 204, 1);
+}
+
+.swiper-docs #docs p{
+    line-height: 22px;
+    font-size: 0.9em;
+}
+
+.swiper-docs section #docs code{
+    padding: 0;
+    padding: 3px 5px;
+    margin: 0;
+    background: #f2f2f2;
+    border-radius: 2px;
+}
+
+.swiper-docs #docs ol li{
+    margin-bottom: 12px;
+}
+
+.swiper-docs{
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+code{
+    color: #e83e8c;
+    word-break: break-word;
+}
+
+.pswp__bg{
+    opacity: 0.9 !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 0px !important;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 0px !important;
+    left: auto;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top: 4.5% !important;
+    width: 100px !important;
+    height: 100% !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fff !important;
+}
+
+.swiper-button-next:hover{
+    opacity: 1 !important;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%) !important;
+}
+
+.swiper-button-prev:hover{
+    opacity: 1 !important;
+    background: linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%) !important;
+}
+
+.swiper-pagination-bullet{
+    width: 18px !important;
+    height: 18px !important;
+    text-align: center;
+    line-height: 34px;
+    color: transparent !important;
+    opacity: 1;
+    opacity: 0.5 !important;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.swiper-pagination-bullet-active{
+    background: #fff !important;
+}
+
+.pswp__button--arrow--left::before, .pswp__button--arrow--right::before{
+    background-color: rgb(0, 0, 0, 1) !important;
+    height: 55px !important;
+    width: 55px !important;
+    border-radius: 50px !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.pswp__button--arrow--left:hover::before, .pswp__button--arrow--right:hover::before{
+    transform: scale(1.3, 1.3);
+    background-color: rgb(40, 40, 40, 1) !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.pswp__button--arrow--left::before{
+    left: 50px !important;
+    background-position: -126px -30px !important;
+}
+
+.pswp__button--arrow--right::before{
+    right: 50px !important;
+    background-position: -82px -30px !important;
+}
+
+/* Borda gardient animation */
+.gradient-border {
+    margin: 0;
+    padding: 0;
+  --borderWidth: 3px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: 227px;
+  height: 510px;
+  border-radius: 10px;
+  width: 900px;
+  background: linear-gradient(60deg, #7D0C0E, #234584);
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fim Carrosel SNAPS */
+
+/* Conteúdo Sessão Conteúdo Principal */
+.conteudo-principal{
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-top: 80px;
+    width: 75%;
+    text-align: center;
+}
+
+.conteudo-principal p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.conteudo-principal p .espacamento-comeco{
+    margin-left: 25px;
+}
+
+.conteudo-principal ul{
+    margin-left: 25px;
+}
+
+.conteudo-principal h3{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.conteudo-principal img{
+    margin-bottom: 20px;
+}
+/* Fim Conteúdo Sessão Conteúdo Principal */
+
+/* Botão Download Sessão Visão Geral SNAPS */
+/*#botao-snaps{
+    width: 45%;
+    border-radius: 50px;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+#botao-snaps:hover{
+    transition: all .5s;
+    width: 48%;
+}
+
+#botao-snaps a{
+    text-decoration: none;
+    display: block;
+}
+
+#botao-snaps .botao-download{
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
+    padding: 5px 0px;
+    display: block;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#botao-snaps:hover .botao-download{
+    margin: 10px 0;
+    background: linear-gradient(272.04deg, #7D0C0E 0%, #234584 100%);
+    transition: all .5s;
+}
+
+#botao-snaps .botao-download h4{
+    font-size: 18px;
+    margin: auto auto;
+    padding: 8px 0;
+    width: 100%;
+    color: white;
+}*/
+
+.botao-download{
+    width: 100%;
+    margin-bottom: 180px;
+}
+
+.download {
+  position: absolute;
+  right: calc(50% - 150px);
+  width: 300px;
+  height: 50px;
+  background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
+  border-radius: 100px;
+  color: white !important;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.67, 0.13, 0.1, 0.81), transform 0.15s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+
+.download:hover {
+  right: calc(50% - 200px);
+  width: 400px;
+}
+
+.download:active {
+  transform: translateY(-3px);
+}
+
+.download:before, .download:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+
+.download:before {
+  content: "DOWNLOAD";
+}
+
+.download:after {
+  content: "SNAPS V8.1.1.21 - 7.4 MB";
+  top: -60px;
+  opacity: 0;
+}
+
+.download:hover:after {
+  top: 0px;
+  opacity: 1;
+}
+
+.download:hover:before {
+  top: 60px;
+  opacity: 0;
+}
+
+/* Fim Botão Download Sessão Visão Geral SNAPS */
+
+/* Sessão Integra */
+.container-integra{
+    width: 100%;
+    background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
+    padding: 30px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+}
+
+.container-integra h2{
+    font-size: 26px;
+    color: white;
+    margin: 10px 0 0 30px
+}
+
+.container-integra h2 b{
+    font-weight: bold;
+}
+
+.conteudo-integra{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-integra .img-integra{
+    width: 49%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-integra .descricao-integra{
+    width: 49%;
+    padding: 60px 30px 30px 0px;
+}
+
+.conteudo-integra .descricao-integra h3{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.conteudo-integra .descricao-integra h3 b{
+    font-weight: 100px;
+}
+
+.conteudo-integra .descricao-integra p{
+    font-size: 16px;
+    color: white;
+}
+/* Sessão Integra */
+
+/* Sessão Simuladores */
+.simuladores{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+
+.simuladores .descricao-simuladores{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+    text-align: center;  
+}
+
+.simuladores .descricao-simuladores h2{
+    font-size: 26px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.simuladores .descricao-simuladores p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.simuladores .box-simuladores{
+    width: 100%;
+}
+
+.simuladores .box-simuladores .row-1, .row-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.simuladores .box-simuladores .row-1 .item1:hover h3,
+.simuladores .box-simuladores .row-1 .item2:hover h3,
+.simuladores .box-simuladores .row-2 .item1:hover h3,
+.simuladores .box-simuladores .row-2 .item2:hover h3{
+    transition: 0.3s ease-in;
+    opacity: 100%;
+    color: #fff;
+}
+
+.simuladores .box-simuladores .row-1 .item1:hover .titulo-box-simulador,
+.simuladores .box-simuladores .row-1 .item2:hover .titulo-box-simulador,
+.simuladores .box-simuladores .row-2 .item1:hover .titulo-box-simulador,
+.simuladores .box-simuladores .row-2 .item2:hover .titulo-box-simulador{
+    transition: 0.3s ease-in;
+    background-color: black;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-cardio{
+    background-image: url(../assets/images/simuladores-container/cardio.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-cardio .titulo-box-simulador,
+.simuladores .box-simuladores .row-1 .simulador-gastro .titulo-box-simulador,
+.simuladores .box-simuladores .row-1 .simulador-glandulas .titulo-box-simulador,
+.simuladores .box-simuladores .row-2 .simulador-metabo .titulo-box-simulador,
+.simuladores .box-simuladores .row-2 .simulador-olhos .titulo-box-simulador,
+.simuladores .box-simuladores .row-2 .simulador-urogenital .titulo-box-simulador{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(272.04deg, rgba(35, 69, 132, 0.8) 0%, rgba(125, 12, 14, 0.8) 100%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.3s ease-in;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-cardio h3,
+.simuladores .box-simuladores .row-1 .simulador-gastro h3,
+.simuladores .box-simuladores .row-1 .simulador-glandulas h3,
+.simuladores .box-simuladores .row-2 .simulador-metabo h3,
+.simuladores .box-simuladores .row-2 .simulador-olhos h3,
+.simuladores .box-simuladores .row-2 .simulador-urogenital h3{
+    font-size: 22px;
+    opacity: 80%;
+    text-align: center;
+    font-weight: bold;
+    color: #c3c3c3;
+    padding: 20px 0;
+    margin: 0;
+    transition: 0.3s ease-in;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-gastro{
+    background-image: url(../assets/images/simuladores-container/gastro.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-glandulas{
+    background-image: url(../assets/images/simuladores-container/endocrino.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-2 .simulador-metabo{
+    background-image: url(../assets/images/simuladores-container/metabo.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-2 .simulador-olhos{
+    background-image: url(../assets/images/simuladores-container/olho.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-2 .simulador-urogenital{
+    background-image: url(../assets/images/simuladores-container/uro.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.simuladores .box-simuladores .row-1 .simulador-cardio, .simulador-gastro, .simulador-glandulas,
+.simuladores .box-simuladores .row-2 .simulador-metabo, .simulador-olhos, .simulador-urogenital{
+    width: 320px;
+    height: 330px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.simuladores .box-simuladores .row-1 .titulo{
+    background-color: black;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.simuladores .box-simuladores .row-1 .titulo h3{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+/* Sessão Simuladores */
+
+/* Visualização Layout de outros dispositivos */
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .simuladores .box-simuladores .row-1 .item1:nth-child(1n+1),
+    .simuladores .box-simuladores .row-2 .item1:nth-child(1n+1){
+        margin-right: 40px;
+    }
+
+    .simuladores .box-simuladores .row-1 .item2:nth-child(1n+1),
+    .simuladores .box-simuladores .row-2 .item2:nth-child(1n+1){
+        margin: 0;
+    }
+}

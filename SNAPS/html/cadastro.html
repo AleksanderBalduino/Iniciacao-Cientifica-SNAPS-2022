@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Required meta tag -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Required meta tag -->
+
+    <title>Cadastro - Snaps</title>
+
+    <link rel="icon" href="../assets/images/logo-snaps-navbar.jpg">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- Bootstrap Header -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Font Awesome CSS -->
+
+    <!--Folha de estilo CSS-->
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!--Folha de estilo CSS-->
+  </head>
+
+  <body class="hero-anime">
+
+    <!-- Inicio do Header -->
+    <div class="navigation-wrap start-header start-style">
+      <div  style="margin: 0; padding: 0;">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md">
+            
+              <a class="navbar-brand" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a> 
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 40px;">
+                <div class="navbar-nav ml-auto py-4 py-md-0">
+                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </div>
+
+                  <div class="nav-item nav-item-x pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                      <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
+                      <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
+                      <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
+                      <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
+                      <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
+                    </div>
+                  </div>
+
+                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                  </div>
+
+                  <div class="divisoria-nav-links pl-4 pl-md-0 ml-0 ml-md-4">
+                    <div class="nav-link">|</div>
+                  </div>
+
+                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="login.html">Log in</a>
+                  </div>
+
+                  <div class="pl-4 pl-md-0 ml-0 ml-md-4 text-box">
+                    <a href="#" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                  </div>
+                </div>
+              </div>
+            </nav>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Header -->
+
+    <!-- Page preloader -->
+    <!--<div id="pre-loader">
+      <div id="loader-circle"></div>
+      <div class="loader-section"></div>
+    </div>-->
+    <!-- Fim Page preloader -->
+
+    <div class="container-lg">
+
+      <div class="overlay" id="overlay">
+        <div class="sign-in" id="sign-in" style="width: 387px;">
+          <h1>Welcome Back!</h1>
+          <p>Log in below.</p>
+          <button class="switch-button" id="slide-right-button">Sign In</button>
+        </div>
+
+        <div class="sign-up" id="sign-up" style="width: 387px;">
+          <h1>Hello, Friend!</h1>
+          <p>Join our community today.</p>
+          <button class="switch-button" id="slide-left-button">Sign Up</button>
+        </div>
+      </div>
+
+      <div class="form">
+
+        <div class="sign-in" id="sign-in-info" style="width: 517px;">
+          <h1>Sign In</h1>
+          <div class="social-media-buttons">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+            </svg>
+            </div>
+            <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+            </svg>
+            </div>
+            <div class="icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+            </svg>
+            </div>
+          </div>
+          <p class="small">or use your email account:</p>
+          <form id="sign-in-form">      
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <p class="forgot-password">Forgot your password?</p>
+            <button class="control-button in">Sign In</button>
+          </form>
+        </div>
+
+        <div class="sign-up" id="sign-up-info" style="width: 517px;">
+          <h1>Create Account</h1>
+          <div class="social-media-buttons">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+            </svg>
+            </div>
+            <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+            </svg>
+            </div>
+            <div class="icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+            </svg>
+            </div>
+          </div>
+          <p class="small">or use your email for registrations:</p>
+          <form id="sign-up-form">
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <button class="control-button up">Sign Up</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="back-to-top" type="button"></button>
+
+    <!-- Inicio do Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row row-margin">
+          <div class="about-us">
+            <h6>Snaps</h6>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit est, mollis ut porttitor et, dapibus at diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ullamcorper odio eget cursus rhoncus. Donec eget euismod nisi, accumsan euismod nulla. Curabitur dictum ac quam vel egestas. Nullam at tellus egestas, euismod enim eget.</p>
+          </div>
+
+          <div class="links-cont">
+            <div class="simuladores-links">
+              <h6>Simuladores</h6>
+              <ul class="footer-links">
+                <li><a href="#">Cardiorespiratório</a></li>
+                <li><a href="#">Gastrointestinal</a></li>
+                <li><a href="#">Glândulas</a></li>
+                <li><a href="#">Metabolismo</a></li>
+                <li><a href="#">Olhos</a></li>
+                <li><a href="#">Urogenital</a></li>
+              </ul>
+            </div>
+
+            <div class="quick-links">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados por 
+         <a href="#">Universidade de Ribeirão Preto</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/waves/0.7.5/waves.min.js'></script>
+
+    <!-- Preloader -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cadastro.js"></script>
+  </body>
+</html>
