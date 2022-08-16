@@ -39,58 +39,57 @@
   <body class="hero-anime" onload="ReloadPage_Reset(); show1()">
 
     <!-- Inicio do Header -->
-    <div class="navigation-wrap start-header start-style">
-      <div  style="margin: 0; padding: 0;">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-md">
-            
-              <a class="navbar-brand" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a> 
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 40px;">
-                <div class="navbar-nav ml-auto py-4 py-md-0">
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </div>
+    <header class="navigation-wrap start-header start-style">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-dark">
+          
+            <!-- Imagem Logo -->
+            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
 
-                  <div class="nav-item nav-item-x pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
-                      <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
-                      <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
-                      <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
-                      <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
-                      <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
-                    </div>
-                  </div>
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="exercicios.html">Exercícios</a>
+            <!-- Navegação -->
+            <div id="navbar-target" class="collapse navbar-collapse itens-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item nav-item-x">
+                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
-
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                  </div>
-
-                  <div class="divisoria-nav-links pl-4 pl-md-0 ml-0 ml-md-4">
-                    <div class="nav-link">|</div>
-                  </div>
-
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                    <a class="nav-link scroll-link" href="#">Log in</a>
-                  </div>
-
-                  <div class="pl-4 pl-md-0 ml-0 ml-md-4 text-box">
-                    <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
-                  </div>
-                </div>
-              </div>
-            </nav>    
-          </div>
+                </li>
+                <li class="nav-item">
+                  <a href="exercicios.html" class="nav-link">Exercícios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="divisoria-nav-links">
+                  <div class="nav-link">|</div>
+                </li>
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">Entrar</a>
+                </li>
+                <li class="text-box">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                </li>
+              </ul>
+            </div>
+          </nav>    
         </div>
       </div>
-    </div>
+    </header>
     <!-- Fim do Header -->
 
     <!-- Page preloader -->

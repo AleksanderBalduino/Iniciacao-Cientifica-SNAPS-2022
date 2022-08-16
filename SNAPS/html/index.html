@@ -5,35 +5,34 @@
     <meta http-equiv="Content-Language" content="pt-br, en, fr, it" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Required meta tag -->
+    <!-- Início Required meta tag -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Required meta tag -->
+    <!-- Fim Required meta tag -->
 
     <title>Página Inicial - Snaps</title>
 
     <link rel="icon" href="../assets/images/logo-snaps-navbar.jpg">
 
-    <!-- Bootstrap CSS -->
+    <!-- Início Bootstrap CSS -->
 
-    <!-- Bootstrap Header -->
+    <!-- Início Bootstrap Header -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
-    <!-- Bootstrap CSS -->
+    <!-- Fim Bootstrap CSS -->
 
-    <!-- Font Awesome CSS -->
+    <!-- Início Font Awesome CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!-- Font Awesome CSS -->
+    <!-- Fim Font Awesome CSS -->
 
-    <!--Folha de estilo CSS-->
+    <!-- Início Folha de estilo CSS -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/geral.css">
     <link rel="stylesheet" href="../css/all.css">
-    <!--Folha de estilo CSS-->
-
+    <!-- Fim Folha de estilo CSS -->
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css'>
@@ -45,54 +44,94 @@
 
     <!-- Inicio do Header -->
     <header class="navigation-wrap start-header start-style">
-      <div  style="margin: 0; padding: 0;">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-md">
-            
-              <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a> 
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 40px;">
-                <div class="navbar-nav ml-auto py-4 py-md-0">
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                    <a class="nav-link scroll-link" href="#">Home</a>
-                  </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-dark">
+          
+            <!-- Imagem Logo -->
+            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
 
-                  <div class="nav-item nav-item-x pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
-                      <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
-                      <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
-                      <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
-                      <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
-                      <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
-                    </div>
-                  </div>
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="exercicios.html">Exercícios</a>
+            <!-- Navegação -->
+            <div id="navbar-target" class="collapse navbar-collapse itens-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="#" class="nav-link scroll-link">Home</a>
+                </li>
+                <li class="nav-item nav-item-x">
+                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
+                </li>
+                <li class="nav-item">
+                  <a href="exercicios.html" class="nav-link">Exercícios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="divisoria-nav-links">
+                  <div class="nav-link">|</div>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link">Entrar</a>
+                </li>
+                <li class="text-box">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                </li>
+              </ul>
+            </div>
 
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                  </div>
+            <!-- Menu Nav-Bar -->
+            <!--<div class="collapse navbar-collapse" id="navbar-target" style="padding-right: 40px;">
+              <div class="navbar-nav ml-auto py-4 py-md-0">
+                <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                  <a class="nav-link scroll-link" href="#">Home</a>
+                </div>
 
-                  <div class="divisoria-nav-links pl-4 pl-md-0 ml-0 ml-md-4">
-                    <div class="nav-link">|</div>
-                  </div>
-
-                  <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="login.html">Log in</a>
-                  </div>
-
-                  <div class="pl-4 pl-md-0 ml-0 ml-md-4 text-box">
-                    <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                <div class="nav-item nav-item-x pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
                 </div>
+
+                <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="exercicios.html">Exercícios</a>
+                </div>
+
+                <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="sobre.html">Sobre</a>
+                </div>
+
+                <div class="divisoria-nav-links pl-4 pl-md-0 ml-0 ml-md-4">
+                  <div class="nav-link">|</div>
+                </div>
+
+                <div class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="login.html">Log in</a>
+                </div>
+
+                <div class="pl-4 pl-md-0 ml-0 ml-md-4 text-box">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                </div>
               </div>
-            </nav>    
-          </div>
+            </div>-->
+          </nav>    
         </div>
       </div>
     </header>
@@ -205,48 +244,46 @@
 
     <!--Inicio da seção do Segundo Carousel -->
     <section>
-      <div class="gradient-border">
-        <div class="swiper">
-          <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+      <div class="swiper">
+        <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-            <li id="1" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a id="first" title="click to zoom-in" href="../assets/images/slider-snaps/900x500_1.jpg" itemprop="contentUrl" data-size="1200x600">
-                <img src="../assets/images/slider-snaps/900x500_1.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-            </li>
+          <li id="1" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a id="first" title="click to zoom-in" href="../assets/images/slider/placeholder.jpg" itemprop="contentUrl" data-size="1200x600">
+              <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+          </li>
 
-            <li id="2" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="click to zoom-in" href="../assets/images/slider-snaps/900x500_2.jpg"
-                 itemprop="contentUrl" data-size="1200x601">
-                <img src="../assets/images/slider-snaps/900x500_2.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-            </li>
+          <li id="2" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a title="click to zoom-in" href="../assets/images/slider/placeholder.jpg"
+               itemprop="contentUrl" data-size="1200x601">
+              <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+          </li>
 
-            <li id="3" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="click to zoom-in" href="../assets/images/slider-snaps/900x500_3.jpg" itemprop="contentUrl" data-size="1200x600">
-                <img src="../assets/images/slider-snaps/900x500_3.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-            </li>
+          <li id="3" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a title="click to zoom-in" href="../assets/images/slider/placeholder.jpg" itemprop="contentUrl" data-size="1200x600">
+              <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+          </li>
 
-            <li id="4" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="click to zoom-in" href="../assets/images/slider-snaps/900x500_4.jpg" itemprop="contentUrl" data-size="1200x600">
-                <img src="../assets/images/slider-snaps/900x500_4.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-            </li>
+          <li id="4" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a title="click to zoom-in" href="../assets/images/slider/placeholder.jpg" itemprop="contentUrl" data-size="1200x600">
+              <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+          </li>
 
-            <li id="5" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="click to zoom-in" href="../assets/images/slider-snaps/900x500_5.jpg"
-                 data-size="1200x600">
-                <img src="../assets/images/slider-snaps/900x500_5.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-            </li>
-          </ul>
+          <li id="5" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a title="click to zoom-in" href="../assets/images/slider/placeholder.jpg"
+               data-size="1200x600">
+              <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+          </li>
+        </ul>
 
-          <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
       <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -301,8 +338,12 @@
 
       </div>
 
-      <div class="botao-download">
-        <a class="download" href="https://bit.ly/snaps-software-download"></a>
+      <div class="container">
+        <div class="row">
+          <div class="buttons col-md-12">
+            <a href="https://bit.ly/snaps-software-download" class="button download button-download"><span>DOWNLOAD</span></a>
+          </div>
+        </div>
       </div>
     </section>
     <!--Fim da seção do Segundo Carousel-->
