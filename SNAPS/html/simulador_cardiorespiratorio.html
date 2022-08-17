@@ -122,17 +122,35 @@
             <div class="grid-item um">
                 <form>
                   <label>Selecione a Droga:</label>
-                  <select class="primeiro-select">
-                    <option>Lorem Ipsum</option>
-                    <option>Lorem Ipsum</option>
+                  <select id="drogas" onchange="Desc()" class="primeiro-select">
+                      <option>Noradrenalina</option>
+                      <option>Adrenalina</option>
+                      <option>AgonistaBetaADRi</option>
+                      <option>AgonistaBeta1ADRe</option>
+                      <option>AgonistaBeta2ADRe</option>
+                      <option>AgonistaAlfa1ADRe</option>
+                      <option>AgonistaAlfa2ADRe</option>
+                      <option>Simpatomimetico</option>
+                      <option>AntagonistaBetai</option>
+                      <option>AntagonistaBeta1</option>
+                      <option>AntagonistaAlfaBeta</option>
+                      <option>AntagonistaBeta1</option>
+                      <option>AntagonistaAlfa1</option>
+                      <option>Aceticolina</option>
+                      <option>AgonistaMi</option>
+                      <option>AgonistaMe</option>
+                      <option>AgonistaNicotinico</option>
+                      <option>AntagonistaNicotinico</option>  
                   </select>
 
                   <label class="segundo-label">Detalhes</label>
-                  <select>
-                    <option>Lorem Ipsum</option>
-                    <option>Lorem Ipsum</option>
+                  <select id="detail" onchange="Desc()">
+                    <option>Descrição</option>
+                    <option>Efeitos</option>
+                    <option>Uso Clínico</option>
+                    <option>Efeitos Adversos</option>
                   </select>
-                  <textarea placeholder="Lorem Ipsum" readonly></textarea>
+                  <textarea id="detailarea" placeholder="Lorem Ipsum" readonly style="pointer-events:none">Agonista α₁, e β₁ predominantemente.</textarea>
                 </form>  
             </div>
 

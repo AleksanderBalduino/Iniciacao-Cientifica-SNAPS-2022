@@ -195,3 +195,58 @@ modalMPA.children[0].addEventListener('click', function(e){
 modalMBL.children[0].addEventListener('click', function(e){
   e.stopPropagation();
 }, false);
+
+function Desc(){
+  var droga
+  droga = document.getElementById('drogas').value
+
+  var detail
+  detail = document.getElementById('detail').value
+ 
+  switch(droga){
+    case 'Adrenalina':
+
+        switch(detail){
+          case 'Descrição':
+            document.getElementById('detailarea').value = 'Agonista do sistema nervoso simpático.'
+          break;
+
+          case 'Efeitos':
+            document.getElementById('detailarea').value = 'Aumento da frequência cardíaco, força de contração cardíaca , vasoconstricção visceral e vasodilatação muscular, levando ao aumento da pressão arterial.'
+          break;
+
+          case 'Uso Clínico':
+            document.getElementById('detailarea').value = 'AESP e PCR em assistolia.'
+          break;
+
+          case 'Efeitos Adversos':
+            document.getElementById('detailarea').value = 'Hipertensão arterial e arritmias.'
+          break;
+        }
+
+      break;
+
+    case 'Noradrenalina':
+
+        switch(detail){
+          case 'Descrição':
+            document.getElementById('detailarea').value = 'Agonista α₁, e β₁ predominantemente.'
+          break;
+
+          case 'Efeitos':
+            document.getElementById('detailarea').value = 'Efeitos cronotrópicos positivos, vasoconstricção visceral e muscular, levando ao aumento da pressão arterial.'
+          break;
+
+          case 'Uso Clínico':
+            document.getElementById('detailarea').value = 'Hipotensão significativa, reanimação de atividade elétrica sem pulso (AESP) em assistolia.'
+          break;
+
+          case 'Efeitos Adversos':
+            document.getElementById('detailarea').value = 'Arritmias cardíacas, hipertensão arterial, tremores, taquicardia.'
+          break;
+        }
+        
+    break;
+  }  
+
+}
