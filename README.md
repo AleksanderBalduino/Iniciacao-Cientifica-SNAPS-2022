@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/AleksanderBalduino/Iniciacao-Cientifica-SNAPS-2022">
+  <a href="https://aleksanderbalduino.github.io/Iniciacao-Cientifica-SNAPS-2022/SNAPS/html/index.html">
     <img src="SNAPS/assets/images/logo-snaps-rmbg.png" alt="Logo" width="300">
   </a>
 
