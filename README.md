@@ -46,13 +46,19 @@ Lattes: http://lattes.cnpq.br/4956606071703925
 
 <br />
 
-## Alunos Responsáveis:
+## Alunos Responsáveis
 
 Aleksander Balduino
 Lattes: http://lattes.cnpq.br/2248524591095945
 
 Murilo Pizzamiglio
 Lattes: http://lattes.cnpq.br/9949099640556216
+
+<br />
+
+## Visualizar o Site
+
+https://aleksanderbalduino.github.io/Iniciacao-Cientifica-SNAPS-2022/SNAPS/html/index.html
 
 <!-- LINKS e IMAGES -->
 [Html]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
