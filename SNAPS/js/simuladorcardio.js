@@ -204,8 +204,25 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Adrenalina':
+    case 'Nenhuma':
+      document.location.reload(true)
 
+    case 'Adrenalina':
+        //Mudar imagens
+        //document.querySelector('#coracaoPulmao').setAttribute('src', '')
+        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/PressaoAdre.jpg'
+        document.querySelector('#pressao').classList.add('mt-4')
+        document.querySelector('#titulo').innerHTML = '<strong>ADR 1g</strong>'
+        document.querySelector('#rc1').src = '../assets/images/simulador-cardio/Beta1Amarelo.jpg'
+        document.querySelector('#b2').src = '../assets/images/simulador-cardio/Beta2Amarelo.jpg'
+        document.querySelector('#bronq').src = '../assets/images/simulador-cardio/BronquioAdre.jpg'
+        document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
+        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/VasoFino.jpg'
+        document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
+        document.querySelector('#vm2').src = '../assets/images/simulador-cardio/Beta2Amarelo.jpg'
+        document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/VasoGrande.jpg'
+
+        //Mudar descrição
         switch(detail){
           case 'Descrição':
             document.getElementById('detailarea').value = 'Agonista do sistema nervoso simpático.'
@@ -224,9 +241,20 @@ function Desc(){
           break;
         }
 
-      break;
+    break;
 
     case 'Noradrenalina':
+
+        //Mudar imagens
+        //document.querySelector('#coracaoPulmao').setAttribute('src', '')
+        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/PressaoNora.jpg'
+        document.querySelector('#pressao').classList.add('mt-4')
+        document.querySelector('#titulo').innerHTML = '<strong>NOR 4mg</strong>'
+        document.querySelector('#rc1').src = '../assets/images/simulador-cardio/Beta1Amarelo.jpg'
+        document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
+        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/VasoFino.jpg'
+        document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
+        document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/VasoFino.jpg'
 
         switch(detail){
           case 'Descrição':

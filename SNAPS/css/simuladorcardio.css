@@ -165,9 +165,15 @@
     grid-column-end: 4;
 }
 
-.linha.iten6{
+.linha.iten6.visceral{
     padding-left: 40%;
     padding-right: 40%;
+    
+}
+
+.linha.iten6.muscular{
+    padding-left: 20%;
+    padding-right: 20%;
     
 }
 
@@ -465,4 +471,8 @@
 .modal .close span {
   transform: rotate(45deg);
   display: block;
+}
+
+span#titulo{
+    font-size: 2vw;
 }

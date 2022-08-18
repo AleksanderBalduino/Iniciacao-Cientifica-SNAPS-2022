@@ -123,6 +123,7 @@
                 <form>
                   <label>Selecione a Droga:</label>
                   <select id="drogas" onchange="Desc()" class="primeiro-select">
+                      <option>Nenhuma</option>
                       <option>Noradrenalina</option>
                       <option>Adrenalina</option>
                       <option>AgonistaBetaADRi</option>
@@ -150,7 +151,7 @@
                     <option>Uso Clínico</option>
                     <option>Efeitos Adversos</option>
                   </select>
-                  <textarea id="detailarea" placeholder="Lorem Ipsum" readonly style="pointer-events:none">Agonista α₁, e β₁ predominantemente.</textarea>
+                  <textarea id="detailarea" placeholder="Nenhuma droga selecionada" readonly style="pointer-events:none"></textarea>
                 </form>  
             </div>
 
@@ -161,19 +162,20 @@
             <div  class="grid-item tres">
               <div class="coluna">
                 <div class="coluna title" >Pressão Arterial</div>
-                <img src="../assets/images/simulador-cardiorespiratorio/pressao-arterial.jpg">
+                <img id="pressao" src="../assets/images/simulador-cardio/PressaoNormal.jpg">
+                <span id="titulo" class="mt-4"></span>
               </div>
             </div>
 
             <!--Item 4-->
-            <div  class="grid-item quatro">
+            <div style="overflow: hidden;"  class="grid-item quatro">
               <div class="coluna">
                 <div class="coluna title">Coração/Pulmão</div>
-                <img src="../assets/images/simulador-cardiorespiratorio/coracao-pulmao.jpg">
+                <img id="coracaoPulmao" src="../assets/images/simulador-cardio/Coracaotemplate.jpg">
               </div>
               <div class="linha">
-                <a href=""><img src="../assets/images/simulador-cardiorespiratorio/B1.jpg"></a>
-                <a href=""><img src="../assets/images/simulador-cardiorespiratorio/M2.jpg"></a>  
+                <a href=""><img id="rc1" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/Beta1Azul.jpg"></a>
+                <a href=""><img id="rc2" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/M2Azul.jpg"></a>  
               </div>
             </div>
 
@@ -183,10 +185,10 @@
                  <div class="coluna title">Brônquios</div>   
               </div>
               <div class="linha">
-                <img src="../assets/images/simulador-cardiorespiratorio/bronquios.jpg">
+                <img id='bronq' src="../assets/images/simulador-cardio/BronquioNora.jpg">
                 <div class="coluna">
-                  <a href=""><img src="../assets/images/simulador-cardiorespiratorio/B2.jpg"></a>
-                  <a href=""><img src="../assets/images/simulador-cardiorespiratorio/M3.jpg"></a>
+                  <a href=""><img id="b1" class="m-0 pt-5" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+                  <a href=""><img id="b2" class="m-0 pt-5" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
                 </div>
               </div>
             </div>
@@ -200,18 +202,19 @@
                 <div class="coluna espaçamento">
                   <span>Visceral</span>
                   <div class="linha">
-                    <a class="linha iten6" href=""><img src="../assets/images/simulador-cardiorespiratorio/alfa1.jpg"></a>
-                    <a class="linha iten6" href=""><img src="../assets/images/simulador-cardiorespiratorio/M3.jpg"></a>
+                    <a class="linha iten6 visceral" href=""><img id="vs1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                    <a class="linha iten6 visceral" href=""><img id="vs2" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
                   </div>
-                  <img src="../assets/images/simulador-cardiorespiratorio/sangue.jpg">
+                  <img id="vscorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
                 </div>
                 <div class="coluna espaçamento">
                   <span>Muscular</span>
                    <div class="linha">
-                    <a class="linha iten6"  href=""><img src="../assets/images/simulador-cardiorespiratorio/alfa1.jpg"></a>
-                    <a class="linha iten6" href=""><img src="../assets/images/simulador-cardiorespiratorio/M3.jpg"></a>
+                    <a class="linha iten6 muscular"  href=""><img id="vm1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                    <a class="linha iten6 muscular" href=""><img id="vm2" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
+                    <a class="linha iten6 muscular"  href=""><img id="vm3" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
                   </div>
-                  <img src="../assets/images/simulador-cardiorespiratorio/sangue.jpg">
+                  <img id="vmcorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
                 </div>
               </div>
             </div>
