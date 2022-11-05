@@ -1,0 +1,29 @@
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+/* Início Banner Exercícios */
+#banner-exercicios{
+  background-image: url(../assets/images/simulador-cardio/placeholder-1360x400.png);
+  padding: 0;
+  background-position: center center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 400px;
+}
+/* Fim Banner Exercícios */
+
+/* Visualização Layout de outros dispositivos */
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+
+}

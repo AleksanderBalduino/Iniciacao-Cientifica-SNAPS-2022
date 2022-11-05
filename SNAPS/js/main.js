@@ -65,7 +65,21 @@ function reloadScrollBars() {
 /* Botão voltar ao topo */
 
 var amountScrolled = 200;
-var amountScrolledNav = 25;
+var amountScrolledNav = 0;
+
+$(window).load(function() {
+  if ( $(window).scrollTop() > amountScrolledNav ) {
+    $('header.start-header').addClass('scroll-on');
+  } else {
+    $('header.start-header').removeClass('scroll-on');
+  }
+
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('button.back-to-top').addClass('show');
+  } else {
+    $('button.back-to-top').removeClass('show');
+  }
+});
 
 $(window).scroll(function() {
   if ( $(window).scrollTop() > amountScrolled ) {
@@ -116,6 +130,7 @@ $("div a.simulador-link").click(function(event){
    }else{
      dest=$(this.hash).offset().top;
    }
+
    $('html,body').animate({scrollTop:dest}, 1000,'swing');
  });
 
@@ -216,7 +231,7 @@ var mySwiper = new Swiper(".swiper", {
 
   loop: true,
   slidesPerView: "auto",
-  spaceBetween: 10,
+  spaceBetween: 0,
   centeredSlides: true,
   slideToClickedSlide: false,
   autoplay: {

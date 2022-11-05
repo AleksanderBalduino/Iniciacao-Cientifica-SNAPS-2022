@@ -5,39 +5,41 @@
     <meta http-equiv="Content-Language" content="pt-br, en, fr, it" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Required meta tag -->
+    <!-- Início Required meta tag -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Required meta tag -->
+    <!-- Fim Required meta tag -->
 
     <title>Simulador - Cardiorespiratório</title>
 
     <link rel="icon" href="../assets/images/logo-snaps-navbar.jpg">
 
-    <!-- Bootstrap CSS -->
+    <!-- Início Bootstrap CSS -->
 
-    <!-- Bootstrap Header -->
+    <!-- Início Bootstrap Header -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+    <!-- Fim Bootstrap CSS -->
 
-    <!-- Bootstrap CSS -->
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Início Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <!-- Font Awesome CSS -->
+    <!-- Fim Font Awesome CSS -->
 
-    <!--Folha de estilo CSS-->
-    <link rel="stylesheet" href="../css/login.css">
+    <!-- Início Folha de estilo CSS -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/geral.css">
-    <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/simuladorcardio.css">
-    <!--Folha de estilo CSS-->
+    <!-- Fim Folha de estilo CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
   </head>
 
-  <body class="hero-anime" onload="ReloadPage_Reset()">
+  <body class="hero-anime">
 
     <!-- Inicio do Header -->
     <header class="navigation-wrap start-header start-style">
@@ -45,15 +47,17 @@
         <div class="col-12">
           <nav class="navbar navbar-expand-md navbar-dark">
           
-            <!-- Imagem Logo -->
-            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <!-- Início Imagem Logo -->
+            <a class="navbar-brand scroll-link" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <!-- Fim Imagem Logo -->
 
-            <!-- Menu Hamburguer -->
+            <!-- Início Menu Hamburguer -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Fim Menu Hamburguer -->
 
-            <!-- Navegação -->
+            <!-- Início Navegação -->
             <div id="navbar-target" class="collapse navbar-collapse itens-menu">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -63,11 +67,11 @@
                   <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#"><span>Cardiorespiratório</span></a>
-                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
-                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
-                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
-                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
-                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
+                    <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -87,42 +91,71 @@
                 </li>
               </ul>
             </div>
+            <!-- Fim Navegação -->
+
           </nav>    
         </div>
       </div>
     </header>
     <!-- Fim do Header -->
 
-    <!-- Page preloader -->
+    <!-- Início Page preloader -->
     <!--<div id="pre-loader">
       <div id="loader-circle"></div>
       <div class="loader-section"></div>
     </div>-->
     <!-- Fim Page preloader -->
 
-    <!--Inicio Conteúdo página-->
-    <div class="cardio-page">
-        <!--Introdução Simulador Cardiorespiratório-->
-        <section id="intro-cardio">
-          <div class="container">
-            <div class="primeiro-conteudo">
-              <p>O simulador tem por objetivo simular o comportamento de organismo de um humano de 70kg.</p>
-              
-              <p>Ele funciona através de testes com diferentes drogas, e como elas reagem ao organismo de um corpo humano, introduzindo a droga por via endovenosa, possibilitanto o monitoramento da frequência cardíaca, pressão arterial e o diâmetro dos vasos e brônquios</p>
-            </div>
+    <!-- Início Banner -->
+    <section id="banner-simulador-conteudo"></section>
+    <!-- Fim Banner -->
+
+    <!--Introdução Simulador Cardiorespiratório-->
+    <section id="simulador-conteudo">
+      <div class="container">
+        <div class="simulador-titulo">
+          <h3 class="text-center">Simulador Cardiorespiratório</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/heart.png">
           </div>
-        </section>
-        <!--Fim da Primeira seção-->
 
-        <!--Segunda seção-->
-        <section id="segunda-section">
-          <div class="grid">
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/pills.png">
+          </div>
 
-            <!--Item 1-->
-            <div class="grid-item um">
-                <form>
-                  <label>Selecione a Droga:</label>
-                  <select id="drogas" onchange="Desc()" class="primeiro-select">
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/lung.png">
+          </div>
+        </div>
+
+        <div class="simulador-text">
+          <p>O simulador tem por objetivo simular o comportamento de organismo de um humano de 70kg.</p>
+          
+          <p>Ele funciona através de testes com diferentes drogas, e como elas reagem ao organismo de um corpo humano, introduzindo a droga por via endovenosa, possibilitanto o monitoramento da frequência cardíaca, pressão arterial e o diâmetro dos vasos e brônquios</p>
+        </div>
+      </div>
+    </section>
+    <!--Fim da Primeira seção-->
+
+    <!--Segunda seção-->
+    <section id="simulador-cardiorespiratorio">
+      <div class="container">
+
+        <h2>Simulador Cardiorespiratório</h2>
+
+        <div class="row">
+          <div class="col-md-9 simulador-btn-detail">
+
+            <form>
+              <div class="row form-section">
+                <div class="col-md-6">
+                  <h3>Selecione a Droga:</h3>
+
+                  <div class="chosen-wrapper" data-js="custom-scroll">
+                    <select id="drogas" class="chosen-select" onchange="Desc()">
                       <option>Nenhuma</option>
                       <option>Noradrenalina</option>
                       <option>Adrenalina</option>
@@ -141,314 +174,595 @@
                       <option>AgonistaMi</option>
                       <option>AgonistaMe</option>
                       <option>AgonistaNicotinico</option>
-                      <option>AntagonistaNicotinico</option>  
-                  </select>
-
-                  <label class="segundo-label">Detalhes</label>
-                  <select id="detail" onchange="Desc()">
-                    <option>Descrição</option>
-                    <option>Efeitos</option>
-                    <option>Uso Clínico</option>
-                    <option>Efeitos Adversos</option>
-                  </select>
-                  <textarea id="detailarea" placeholder="Nenhuma droga selecionada" readonly style="pointer-events:none"></textarea>
-                </form>  
-            </div>
-
-            <!--Item 2-->
-            <div  class="grid-item dois"><img src="../assets/images/logo-snaps-navbar.jpg"></div>
-
-            <!--Item 3-->
-            <div  class="grid-item tres">
-              <div class="coluna">
-                <div class="coluna title" >Pressão Arterial</div>
-                <img id="pressao" src="../assets/images/simulador-cardio/PressaoNormal.jpg">
-                <span id="titulo" class="mt-4"></span>
-              </div>
-            </div>
-
-            <!--Item 4-->
-            <div style="overflow: hidden;"  class="grid-item quatro">
-              <div class="coluna">
-                <div class="coluna title">Coração/Pulmão</div>
-                <img id="coracaoPulmao" src="../assets/images/simulador-cardio/Coracaotemplate.jpg">
-              </div>
-              <div class="linha">
-                <a href=""><img id="rc1" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/Beta1Azul.jpg"></a>
-                <a href=""><img id="rc2" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/M2Azul.jpg"></a>  
-              </div>
-            </div>
-
-            <!--Item 5-->
-            <div  class="grid-item cinco">
-              <div class="coluna">
-                 <div class="coluna title">Brônquios</div>   
-              </div>
-              <div class="linha">
-                <img id='bronq' src="../assets/images/simulador-cardio/BronquioNora.jpg">
-                <div class="coluna">
-                  <a href=""><img id="b1" class="m-0 pt-5" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
-                  <a href=""><img id="b2" class="m-0 pt-5" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
-                </div>
-              </div>
-            </div>
-
-            <!--Item 6-->
-            <div  class="grid-item seis">
-              <div class="coluna">
-                <div class="coluna title">Vasos</div>
-              </div>
-              <div class="linha">
-                <div class="coluna espaçamento">
-                  <span>Visceral</span>
-                  <div class="linha">
-                    <a class="linha iten6 visceral" href=""><img id="vs1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
-                    <a class="linha iten6 visceral" href=""><img id="vs2" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+                      <option>AntagonistaNicotinico</option>
+                    </select>
                   </div>
-                  <img id="vscorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
                 </div>
-                <div class="coluna espaçamento">
-                  <span>Muscular</span>
-                   <div class="linha">
-                    <a class="linha iten6 muscular"  href=""><img id="vm1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
-                    <a class="linha iten6 muscular" href=""><img id="vm2" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
-                    <a class="linha iten6 muscular"  href=""><img id="vm3" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+
+                <div class="col-md-6">
+                  <h3 class="segundo-label">Detalhes</h3>
+
+                  <div class="chosen-wrapper" data-js="custom-scroll">
+                    <select id="detail" class="chosen-select" onchange="Desc()">
+                      <option>Descrição</option>
+                      <option>Efeitos</option>
+                      <option>Uso Clínico</option>
+                      <option>Efeitos Adversos</option>
+                    </select>
                   </div>
-                  <img id="vmcorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
                 </div>
               </div>
-            </div>
+
+              <textarea id="detailarea" value="teste" readonly>Nenhuma droga selecionada</textarea>
+            </form>
 
           </div>
-        </section>
-        <!--Fim da segunda seção-->
 
-        <section id="receptores">
-          <div class="receptores-desc">
-            <h3>Receptores</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <div class="col-md-3">
+            <img class="img-fluid logo-img" src="../assets/images/logo-snaps-navbar.jpg">
           </div>
+        </div>
 
-          <div id="carousel">
-            <div id="alfa" class="prevDir option">
-              <h3><strong>Alfa</strong></h3>
-              <a href="#openAlfaBasal" id="AlfaBasal" class="disabled"><button type="button" class="btn btn1 btnalfa"><h3>Basal</h3></button></a>
-              <a href="#openAlfaAtivado" id="AlfaAtivado" class="disabled"><button type="button" class="btn btn2 btnalfa"><h3>Ativado</h3></button></a>
-              <a href="#openAlfaPoucoAtivado" id="AlfaPoucoAtivado" class="disabled"><button type="button" class="btn btn3 btnalfa"><h3>Pouco ativado</h3></button></a>
-              <a href="#openAlfaBloqueado" id="AlfaBloqueado" class="disabled"><button type="button" class="btn btn4 btnalfa"><h3>Bloqueado</h3></button></a>
+        <div class="row pressao-coracao-bronquios-section mt-4 m-0">
+          <div class="box-pcb pressao-arterial">
+            <h3>Pressão Arterial</h3>
+
+            <div class="d-flex justify-content-center mb-5">
+              <img id="pressao" class="img-fluid" src="../assets/images/simulador-cardio/pressao-normal.jpg">
             </div>
 
-            <div id="beta" class="selected">
-              <h3><strong>Beta</strong></h3>
-              <a href="#openBetaBasal" id="BetaBasal"><button type="button" class="btn btn1 btn-hover-anim btnbeta"><h3>Basal</h3></button></a> 
-              <a href="#openBetaAtivado" id="BetaAtivado"><button type="button" class="btn btn2 btn-hover-anim btnbeta"><h3>Ativado</h3></button></a>
-              <a href="#openBetaPoucoAtivado" id="BetaPoucoAtivado"><button type="button" class="btn btn3 btn-hover-anim btnbeta"><h3>Pouco ativado</h3></button></a>
-              <a href="#openBetaBloqueado" id="BetaBloqueado"><button type="button" class="btn btn4 btn-hover-anim btnbeta"><h3>Bloqueado</h3></button></a>
-            </div>
-
-            <div id="muscarinico" class="nextDir option">
-              <h3><strong>Muscarínico</strong></h3>
-              <a href="#openMuscarinicoBasal" id="MuscarinicoBasal" class="disabled"><button type="button" class="btn btn1 btnmuscarinico"><h3>Basal</h3></button></a>
-              <a href="#openMuscarinicoAtivado" id="MuscarinicoAtivado" class="disabled"><button type="button" class="btn btn2 btnmuscarinico"><h3>Ativado</h3></button></a>
-              <a href="#openMuscarinicoPoucoAtivado" id="MuscarinicoPoucoAtivado" class="disabled"><button type="button" class="btn btn3 btnmuscarinico"><h3>Pouco ativado</h3></button></a>
-              <a href="#openMuscarinicoBloqueado" id="MuscarinicoBloqueado" class="disabled"><button type="button" class="btn btn4 btnmuscarinico"><h3>Bloqueado</h3></button></a>
+            <div id="DivpaText" class="d-none justify-content-center">
+              <h3 id="paText"></h3>
             </div>
           </div>
 
-          <div id="openBetaBasal" class="modalDialog">
-            <div class="modal">
-              <div class="flex">
-                <div class="close"><span>&#43;</span></div>
-                <h4>Beta Basal Lorem Ipsum</h4>
+          <div class="box-pcb coracao-pulmao">
+            <h3>Coração/Pulmão</h3>
+
+            <div class="d-flex justify-content-center">
+              <img id="coracaoPulmao" class="img-fluid" src="../assets/images/simulador-cardio/images-gifs/basal.gif">
+            </div>
+
+            <div class="d-flex pl-3 pr-3">
+              <div class="col-md-6">
+                <img id="receptorCP1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/beta1-basal.png">
               </div>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
+              <div class="col-md-6">
+                <img id="receptorCP2" class="img-fluid" src="../assets/images/simulador-cardio/receptores/m2-basal.png">
+              </div>
             </div>
           </div>
 
-          <div id="openBetaAtivado" class="modalDialog">
-            <div>
-              <h4>Beta Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+          <div class="box-pcb bronquios">
+            <h3>Brônquios</h3>
 
-          <div id="openBetaPoucoAtivado" class="modalDialog">
-            <div>
-              <h4>Beta Pouco Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
+            <div class="d-flex justify-content-center">
+              <img id='bronq' class="img-fluid" src="../assets/images/simulador-cardio/images-gifs/bronquio-normal.png">
             </div>
-          </div>
 
-          <div id="openBetaBloqueado" class="modalDialog">
-            <div>
-              <h4>Beta Bloqueado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
+            <div class="d-flex pl-3 pr-3">
+              <div class="col-md-6">
+                <img id="receptorB1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/m2-basal.png">
+              </div>
+              <div class="col-md-6">
+                <img id="receptorB2" class="img-fluid" src="../assets/images/simulador-cardio/receptores/beta1-basal.png">
+              </div>
             </div>
           </div>
+        </div>
 
-          <div id="openAlfaBasal" class="modalDialog">
-            <div>
-              <h4>Alfa Basal Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+        <div class="row vasos mt-5 m-0">
+          <div class="col-md-12 vasos-section">
+            <h3 class="vasos-titulo text-center">Vasos</h3>
+            
+            <div class="d-flex mt-4">
+              <div class="col-md-6">
+                <h3 class="text-center">Visceral</h3>
+                <!--<a class="linha iten6 visceral" href=""><img id="vs1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                <a class="linha iten6 visceral" href=""><img id="vs2" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>-->
 
-          <div id="openAlfaAtivado" class="modalDialog">
-            <div>
-              <h4>Alfa Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+                <img id="vscorpo" class="img-fluid d-flex" src="../assets/images/simulador-cardio/images-gifs/normal.png">
+              </div>
 
-          <div id="openAlfaPoucoAtivado" class="modalDialog">
-            <div>
-              <h4>Alfa Pouco Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+              <div class="col-md-6">
+                <h3 class="text-center">Muscular</h3>
+                <!--<a class="linha iten6 muscular"  href=""><img id="vm1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                <a class="linha iten6 muscular" href=""><img id="vm2" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
+                <a class="linha iten6 muscular"  href=""><img id="vm3" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>-->
 
-          <div id="openAlfaBloqueado" class="modalDialog">
-            <div>
-              <h4>Alfa Bloqueado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
+                <img id="vmcorpo" class="img-fluid d-flex" src="../assets/images/simulador-cardio/images-gifs/normal.png">
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!--Fim da segunda seção-->
 
-          <div id="openMuscarinicoBasal" class="modalDialog">
-            <div>
-              <h4>Muscarinico Basal Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+    <!--Segunda seção-->
+    <!--<section id="simulador-cardiorespiratorio">
+      <div class="grid">
+        <div class="grid-item um">
+            <form>
+              <label>Selecione a Droga:</label>
+              <select id="drogas" onchange="Desc()" class="primeiro-select">
+                  <option>Nenhuma</option>
+                  <option>Noradrenalina</option>
+                  <option>Adrenalina</option>
+                  <option>AgonistaBetaADRi</option>
+                  <option>AgonistaBeta1ADRe</option>
+                  <option>AgonistaBeta2ADRe</option>
+                  <option>AgonistaAlfa1ADRe</option>
+                  <option>AgonistaAlfa2ADRe</option>
+                  <option>Simpatomimetico</option>
+                  <option>AntagonistaBetai</option>
+                  <option>AntagonistaBeta1</option>
+                  <option>AntagonistaAlfaBeta</option>
+                  <option>AntagonistaBeta1</option>
+                  <option>AntagonistaAlfa1</option>
+                  <option>Aceticolina</option>
+                  <option>AgonistaMi</option>
+                  <option>AgonistaMe</option>
+                  <option>AgonistaNicotinico</option>
+                  <option>AntagonistaNicotinico</option>  
+              </select>
 
-          <div id="openMuscarinicoAtivado" class="modalDialog">
-            <div>
-              <h4>Muscarinico Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+              <label class="segundo-label">Detalhes</label>
+              <select id="detail" onchange="Desc()">
+                <option>Descrição</option>
+                <option>Efeitos</option>
+                <option>Uso Clínico</option>
+                <option>Efeitos Adversos</option>
+              </select>
+              <textarea id="detailarea" value="teste" readonly style="pointer-events:none">Nenhuma droga selecionada</textarea>
+            </form>  
+        </div>
 
-          <div id="openMuscarinicoPoucoAtivado" class="modalDialog">
-            <div>
-              <h4>Muscarinico Pouco Ativado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
-            </div>
-          </div>
+        <div  class="grid-item dois"><img src="../assets/images/logo-snaps-navbar.jpg"></div>
 
-          <div id="openMuscarinicoBloqueado" class="modalDialog">
-            <div>
-              <h4>Muscarinico Bloqueado Lorem Ipsum</h4>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque pharetra vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <a href="#close">
-                <div class="flat-button grey">Close</div>
-              </a>
+        <div  class="grid-item tres">
+          <div class="coluna">
+            <div class="coluna title" >Pressão Arterial</div>
+            <img id="pressao" src="../assets/images/simulador-cardio/PressaoNormal.jpg">
+            <span id="titulo" class="mt-4"></span>
+          </div>
+        </div>
+
+        <div style="overflow: hidden;"  class="grid-item quatro">
+          <div class="coluna">
+            <div class="coluna title">Coração/Pulmão</div>
+            <img id="coracaoPulmao" src="../assets/images/simulador-cardio/Coracaotemplate.jpg">
+          </div>
+          <div class="linha">
+            <a href=""><img id="rc1" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/Beta1Azul.jpg"></a>
+            <a href=""><img id="rc2" class="w-100 h-100 mt-0" src="../assets/images/simulador-cardio/M2Azul.jpg"></a>  
+          </div>
+        </div>
+
+        <div  class="grid-item cinco">
+          <div class="coluna">
+             <div class="coluna title">Brônquios</div>   
+          </div>
+          <div class="linha">
+            <img id='bronq' src="../assets/images/simulador-cardio/BronquioNora.jpg">
+            <div class="coluna">
+              <a href=""><img id="b1" class="m-0 pt-5" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+              <a href=""><img id="b2" class="m-0 pt-5" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
             </div>
           </div>
-        </section>
-    </div>
-    <!--Fim Conteúdo página-->
+        </div>
+
+        <div  class="grid-item seis">
+          <div class="coluna">
+            <div class="coluna title">Vasos</div>
+          </div>
+          <div class="linha">
+            <div class="coluna espaçamento">
+              <span>Visceral</span>
+              <div class="linha">
+                <a class="linha iten6 visceral" href=""><img id="vs1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                <a class="linha iten6 visceral" href=""><img id="vs2" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+              </div>
+              <img id="vscorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
+            </div>
+            <div class="coluna espaçamento">
+              <span>Muscular</span>
+               <div class="linha">
+                <a class="linha iten6 muscular"  href=""><img id="vm1" src="../assets/images/simulador-cardio/Alfa1Azul.jpg"></a>
+                <a class="linha iten6 muscular" href=""><img id="vm2" src="../assets/images/simulador-cardio/Beta2Azul.jpg"></a>
+                <a class="linha iten6 muscular"  href=""><img id="vm3" src="../assets/images/simulador-cardio/M3Azul.jpg"></a>
+              </div>
+              <img id="vmcorpo" src="../assets/images/simulador-cardio/VasoNormal.jpg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>-->
+    <!--Fim da segunda seção-->
+
+    <section id="receptores">
+      <div class="receptores-desc">
+        <h3>Receptores</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+
+      <div id="carousel">
+        <div id="alfa" class="prevDir option">
+          <h3><strong>Alfa</strong></h3>
+          <a href="#openAlfaBasal" id="AlfaBasal" class="disabled"><button type="button" class="btn btn1 btnalfa"><h3>Basal</h3></button></a>
+          <a href="#openAlfaAtivado" id="AlfaAtivado" class="disabled"><button type="button" class="btn btn2 btnalfa"><h3>Ativado</h3></button></a>
+          <a href="#openAlfaParcialmenteAtivado" id="AlfaParcialmenteAtivado" class="disabled"><button type="button" class="btn btn3 btnalfa"><h3>Parcialmente ativado</h3></button></a>
+          <a href="#openAlfaBloqueado" id="AlfaBloqueado" class="disabled"><button type="button" class="btn btn4 btnalfa"><h3>Bloqueado</h3></button></a>
+        </div>
+
+        <div id="beta" class="selected">
+          <h3><strong>Beta</strong></h3>
+          <a href="#openBetaBasal" id="BetaBasal"><button type="button" class="btn btn1 btn-hover-anim btnbeta"><h3>Basal</h3></button></a> 
+          <a href="#openBetaAtivado" id="BetaAtivado"><button type="button" class="btn btn2 btn-hover-anim btnbeta"><h3>Ativado</h3></button></a>
+          <a href="#openBetaParcialmenteAtivado" id="BetaParcialmenteAtivado"><button type="button" class="btn btn3 btn-hover-anim btnbeta"><h3>Parcialmente ativado</h3></button></a>
+          <a href="#openBetaBloqueado" id="BetaBloqueado"><button type="button" class="btn btn4 btn-hover-anim btnbeta"><h3>Bloqueado</h3></button></a>
+        </div>
+
+        <div id="muscarinico" class="nextDir option">
+          <h3><strong>Muscarínico</strong></h3>
+          <a href="#openMuscarinicoBasal" id="MuscarinicoBasal" class="disabled"><button type="button" class="btn btn1 btnmuscarinico"><h3>Basal</h3></button></a>
+          <a href="#openMuscarinicoAtivado" id="MuscarinicoAtivado" class="disabled"><button type="button" class="btn btn2 btnmuscarinico"><h3>Ativado</h3></button></a>
+          <a href="#openMuscarinicoParcialmenteAtivado" id="MuscarinicoParcialmenteAtivado" class="disabled"><button type="button" class="btn btn3 btnmuscarinico"><h3>Parcialmente ativado</h3></button></a>
+          <a href="#openMuscarinicoBloqueado" id="MuscarinicoBloqueado" class="disabled"><button type="button" class="btn btn4 btnmuscarinico"><h3>Bloqueado</h3></button></a>
+        </div>
+      </div>
+
+      <div id="openBetaBasal" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h3>Beta Basal</h3>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/beta1-basal.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-basal">
+              <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openBetaAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Beta Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/beta1-ativado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-ativado">
+              <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openBetaParcialmenteAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Beta Parcialmente Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/beta1-parcialmente.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-parcialmente">
+              <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+              <!--<a href="#" class="button button2">Button 2</a>-->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openBetaBloqueado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Beta Bloqueado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/beta1-bloqueado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-bloqueado">
+              <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openAlfaBasal" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Alfa Basal</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/alfa1-basal.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-basal">
+              <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openAlfaAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Alfa Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/alfa1-ativado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-ativado">
+              <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openAlfaParcialmenteAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Alfa Parcialmente Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/alfa1-parcialmente.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-parcialmente">
+              <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openAlfaBloqueado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Alfa Bloqueado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/alfa1-bloqueado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-bloqueado">
+              <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openMuscarinicoBasal" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Muscarínico Basal</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/m2-basal.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-basal">
+              <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openMuscarinicoAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Muscarínico Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/m2-ativado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-ativado">
+              <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openMuscarinicoParcialmenteAtivado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Muscarínico Parcialmente Ativado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/m2-parcialmente.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-parcialmente">
+              <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openMuscarinicoBloqueado" class="modalDialog">
+        <div class="openReceptor">
+          <div class="h25 text-center align-text-receptor">
+            <div class="text-receptor">
+              <h2>Muscarínico Bloqueado</h2>
+              <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
+          </div>
+          <div class="h50">
+            <img src="../assets/images/simulador-cardio/receptores/m2-bloqueado.png">
+          </div>
+          <div class="h25">
+            <a href="#close" class="btn-close close-bloqueado">
+              <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Inicio do Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row row-margin">
-          <div class="about-us">
-            <h6>Snaps</h6>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit est, mollis ut porttitor et, dapibus at diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ullamcorper odio eget cursus rhoncus. Donec eget euismod nisi, accumsan euismod nulla. Curabitur dictum ac quam vel egestas. Nullam at tellus egestas, euismod enim eget.</p>
-          </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-logo">
+                                <img src="../assets/images/footer/snaps-logo-footer.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
 
-          <div class="links-cont">
-            <div class="simuladores-links">
-              <h6>Simuladores</h6>
-              <ul class="footer-links">
-                <li><a href="#">Cardiorespiratório</a></li>
-                <li><a href="#">Gastrointestinal</a></li>
-                <li><a href="#">Glândulas</a></li>
-                <li><a href="#">Metabolismo</a></li>
-                <li><a href="#">Olhos</a></li>
-                <li><a href="#">Urogenital</a></li>
-              </ul>
+                            <div class="footer-contacts d-lg-block d-md-flex">
+                                <div class="footer-contato col">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="contato-text">
+                                        <h4>Celular</h4>
+                                        <a href="tel:+5500000000000">00 00000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contato-text">
+                                        <h4>Telefone</h4>
+                                        <a href="tel:+550000000000">00 0000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="contato-text">
+                                        <h4>E-mail</h4>
+                                        <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="d-flex">
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Links Úteis</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Exercícios</a></li>
+                                        <li><a href="#">Sobre</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Simuladores</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Cardiorespiratório</a></li>
+                                        <li><a href="#">Gastrointestinal</a></li>
+                                        <li><a href="#">Glândulas</a></li>
+                                        <li><a href="#">Metabolismo</a></li>
+                                        <li><a href="#">Olhos</a></li>
+                                        <li><a href="#">Urogenital</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-btn">
+                                <div class="footer-box-links">
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</p>
+                                </div>
+                                <div class="input-group button-footer">
+                                   <input class="form-control" type="text" placeholder="lorem@ipsum.com" >
+                                   <div class="input-group-append">
+                                       <button class="btn" type="button">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-social-icon">
+                                <h3>Redes sociais</h3>
+                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="quick-links">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-              </ul>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank">Universidade de Ribeirão Preto</a>.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <hr>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados por 
-         <a href="#">Universidade de Ribeirão Preto</a>.
-            </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>  
-            </ul>
-          </div>
-        </div>
-      </div>
     </footer>
     <!-- Fim do Footer -->
+    <!-- Fim do Footer -->
+
+    <!-- Inicio botão voltar topo -->
+    <button class="back-to-top" type="button"></button>
+    <!-- Inicio botão voltar topo -->
 
     <!-- Optional JavaScript -->
 
@@ -464,8 +778,13 @@
     <!-- Preloader -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+    <!-- Select cadastro -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.1/jquery.scrollTo.min.js'></script>
+    <!-- Select cadastro -->
+
     <script src="../js/main.js"></script>
-    <script src="../js/login.js"></script>
     <script src="../js/simuladorcardio.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js'></script><script  src="./script.js"></script>
   </body>
 </html>

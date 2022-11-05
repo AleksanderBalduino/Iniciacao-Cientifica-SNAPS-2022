@@ -134,7 +134,7 @@
 .start-header.scroll-on{
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
     -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
 }
 
@@ -146,7 +146,7 @@
 .start-header.scroll-on .navbar-brand img{
     height: 65px;
     -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on .nav-link,
@@ -161,6 +161,10 @@
 
 .start-header.scroll-on .nav-item:after{
     background-color: #fff;
+}
+
+.start-header.scroll-on .nav-item i#iconEmail{
+  color: #fff;
 }
 
 .start-header.scroll-on .dropdown-menu{
@@ -256,7 +260,6 @@
 .text-box .btn h3{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 24px;
     background: #fff;
@@ -348,6 +351,10 @@
 
     .nav-item.active:hover:after{
         opacity: 0;
+    }
+
+    .nav-item i#iconEmail{
+        color: #000;
     }
 }
 

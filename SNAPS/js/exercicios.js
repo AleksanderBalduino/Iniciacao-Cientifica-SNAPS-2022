@@ -1,27 +1,31 @@
 let link = 'https://forms.gle/'
-let botoes = document.getElementsByTagName('button')
+let botoes = document.getElementById('buttonExercicio')
 let input = document.getElementById("btnexercicio")
 
 function verificarCampo(){
-
 	if (input.value.length == 17 ) {
-		botoes[1].className = 'btn btn-md btn-success'
-		botoes[1].style = 'pointer-events: auto;'
+		botoes.className = 'btn btn-md btn-success'
+		botoes.style = 'pointer-events: auto;'
 	}
 	else{
-		botoes[1].className = 'btn btn-md btn-secondary'
-		botoes[1].style = 'pointer-events: none;'
+		botoes.className = 'btn btn-md btn-secondary'
+		botoes.style = 'pointer-events: none;'
 	}
 }
 
 function verificarBotao(){
-	
 	var url = link + input.value 
 	window.location.href = url
-
 }
 
-/*
-https://forms.gle/GAXBh2UgG5X6i68cA
-https://forms.gle/CSYU26ZgarZpRDji8
-*/
+function validator(teste){
+	input.addEventListener("keydown", function(e) {
+	    if(e.keyCode === 32) {
+	    	e.preventDefault();
+	  	}
+	});
+}
+
+/*$('input').on("input", function(e) {
+    $(this).val($(this).val().replace(/,/g, ""));
+});*/

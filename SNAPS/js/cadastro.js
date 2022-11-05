@@ -1,40 +1,16 @@
 var overlay = document.getElementById("overlay");
 
 // Buttons to 'switch' the page
-var openSignUpButton = document.getElementById("slide-left-button");
-var openSignInButton = document.getElementById("slide-right-button");
+var openSignInButton = document.getElementById("slide-left-button");
+var openSignUpButton = document.getElementById("slide-right-button");
 
 // The sidebars
 var leftText = document.getElementById("sign-in");
 var rightText = document.getElementById("sign-up");
 
 // The forms
-var accountForm = document.getElementById("sign-in-info");
 var signinForm = document.getElementById("sign-up-info");
-
-// Open the Sign Up page
-openSignUp = () =>{
-  // Remove classes so that animations can restart on the next 'switch'
-  leftText.classList.remove("overlay-text-left-animation-out");
-  overlay.classList.remove("open-sign-in");
-  rightText.classList.remove("overlay-text-right-animation");
-  // Add classes for animations
-  accountForm.className += " form-left-slide-out"
-  rightText.className += " overlay-text-right-animation-out";
-  overlay.className += " open-sign-up";
-  leftText.className += " overlay-text-left-animation";
-  // hide the sign up form once it is out of view
-  setTimeout(function(){
-    accountForm.classList.remove("form-left-slide-in");
-    accountForm.style.display = "none";
-    accountForm.classList.remove("form-left-slide-out");
-  }, 700);
-  // display the sign in form once the overlay begins moving right
-  setTimeout(function(){
-    signinForm.style.display = "flex";
-    signinForm.classList += " form-right-slide-in";
-  }, 200);
-}
+var accountForm = document.getElementById("sign-in-info")
 
 // Open the Sign In page
 openSignIn = () =>{
@@ -57,9 +33,193 @@ openSignIn = () =>{
   setTimeout(function(){
     accountForm.style.display = "flex";
     accountForm.classList += " form-left-slide-in";
-  },200);
+  },400);
+}
+
+// Open the Sign Up page
+openSignUp = () =>{
+  // Remove classes so that animations can restart on the next 'switch'
+  leftText.classList.remove("overlay-text-left-animation-out");
+  overlay.classList.remove("open-sign-in");
+  rightText.classList.remove("overlay-text-right-animation");
+  // Add classes for animations
+  accountForm.className += " form-left-slide-out"
+  rightText.className += " overlay-text-right-animation-out";
+  overlay.className += " open-sign-up";
+  leftText.className += " overlay-text-left-animation";
+  // hide the sign up form once it is out of view
+  setTimeout(function(){
+    accountForm.classList.remove("form-left-slide-in");
+    accountForm.style.display = "none";
+    accountForm.classList.remove("form-left-slide-out");
+  }, 700);
+  // display the sign in form once the overlay begins moving right
+  setTimeout(function(){
+    signinForm.style.display = "flex";
+    signinForm.classList += " form-right-slide-in";
+  }, 400);
 }
 
 // When a 'switch' button is pressed, switch page
 openSignUpButton.addEventListener("click", openSignUp, false);
 openSignInButton.addEventListener("click", openSignIn, false);
+
+/* Botão Show Hide Password */
+var pwd = document.getElementById('pwd-login');
+var eye = document.getElementById('eye-login');
+
+var pwd_cadastro = document.getElementById('pwd-cadastro');
+var eye_cadastro = document.getElementById('eye-cadastro');
+
+var pwd_confirm_cadastro = document.getElementById('pwd-confirm-cadastro');
+var eye_confirm_cadastro = document.getElementById('eye-confirm-cadastro');
+
+eye.addEventListener('click', ShowPwdLogin);
+eye_cadastro.addEventListener('click', ShowPwdCadastro);
+eye_confirm_cadastro.addEventListener('click', ShowPwdConfirmCadastro);
+
+function ShowPwdLogin(){
+   eye.classList.toggle('active');
+   (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
+}
+
+function ShowPwdCadastro(){
+    eye_cadastro.classList.toggle('active');
+   (pwd_cadastro.type == 'password') ? pwd_cadastro.type = 'text' : pwd_cadastro.type = 'password';
+}
+
+function ShowPwdConfirmCadastro(){
+    eye_confirm_cadastro.classList.toggle('active');
+   (pwd_confirm_cadastro.type == 'password') ? pwd_confirm_cadastro.type = 'text' : pwd_confirm_cadastro.type = 'password';
+}
+
+/* Select função */
+$(function(){
+    var closeSelectTimeout;
+
+    function hideMaterialList(parent){
+        parent.css({
+            'overflow': 'hidden'
+        }).removeClass('isOpen');
+        clearTimeout(closeSelectTimeout);
+        closeSelectTimeout = setTimeout(function(){
+            parent.parent().css({
+                'z-index': 0  
+            });
+        }, 200);
+    }
+    $(document.body).on('mousedown', '.materialBtn, .select li', function(event){
+        if(parseFloat($(this).css('opacity')) > 0 && $(document).width() >= 1008){
+            var maxWidthHeight = Math.max($(this).width(), $(this).height());
+            if($(this).find("b.drop").length == 0 || $(this).find("b.drop").css('opacity') != 1) {
+                // .drop opacity is 1 when it's hidden...css animations
+                drop = $('<b class="drop" style="width:'+ maxWidthHeight +'px;height:'+ maxWidthHeight +'px;"></b>').prependTo(this);
+            }
+            else{
+                $(this).find("b.drop").each(function(){
+                    if($(this).css('opacity') == 1){
+                        drop = $(this).removeClass("animate");
+                        return;
+                    }
+                })
+            }
+            x = event.pageX - drop.width()/2 - $(this).offset().left;
+            y = event.pageY - drop.height()/2 - $(this).offset().top;
+            drop.css({
+                top: y,
+                left: x
+            }).addClass("animate");
+        }
+    });
+    $(document.body).on('dragstart', '.materialBtn, .select li', function(e){
+        e.preventDefault();
+    })
+
+    var selectTimeout;
+    $(document.body).on('click', '.select li', function() {
+        var parent = $(this).parent();
+        parent.children('li').removeAttr('data-selected');
+        $(this).attr('data-selected', 'true');
+        clearTimeout(selectTimeout);
+        if(parent.hasClass('isOpen')){
+            if(parent.parent().hasClass('required')){
+                if(parent.children('[data-selected]').attr('data-value')){
+                    parent.parents('.materialSelect').removeClass('error empty');
+                }
+                else{
+                    parent.parents('.materialSelect').addClass('error empty');
+                }
+            }
+            hideMaterialList($('.select'));
+            /*document.getElementById("txtOutros").focus();*/
+            const nodeList = document.querySelectorAll(".txtOutros");
+            for (let i = 0; i < nodeList.length; i++) {
+              nodeList[i].focus();
+            }
+        }
+        else{
+            var pos = Math.max(($('li[data-selected]', parent).index() - 2) * 48, 0);
+            parent.addClass('isOpen');
+            parent.parent().css('z-index', '999');
+            if($(document).width() >= 1008){
+                var i = 1;
+                selectTimeout = setInterval(function(){
+                    i++;
+                    parent.scrollTo(pos, 50);
+                    if(i == 2){
+                        parent.css('overflow', 'auto');
+                    }
+                    if(i >= 4){
+                        clearTimeout(selectTimeout);
+                    }
+                }, 100);
+            }
+            else{
+                parent.css('overflow', 'auto').scrollTo(pos, 0);
+            }
+        }
+    });
+
+    $('.materialInput input').on('change input verify', function(){
+        if($(this).attr('required') == 'true'){
+            if($(this).val().trim().length){
+                $(this).parent().removeClass('error empty');
+            }
+            else{
+                $(this).parent().addClass('error empty');
+                $(this).val('');
+            }
+        }
+        else{
+            if($(this).val().trim().length){
+                $(this).parent().removeClass('empty');
+            }
+            else{
+                $(this).parent().addClass('empty');
+            }
+        }
+    });
+
+    $(document.body).on('click', function(e) {
+        var clicked;
+        if($(e.target).hasClass('materialSelect')){
+            clicked = $(e.target).find('.select').first();
+        }
+        else if($(e.target).hasClass('select')){
+            clicked = $(e.target);
+        }
+        else if($(e.target).parent().hasClass('select')){
+            clicked = $(e.target).parent();
+        }
+
+        if($(e.target).hasClass('materialSelect') || $(e.target).hasClass('select') || $(e.target).parent().hasClass('select')){
+            hideMaterialList($('.select').not(clicked));
+        }
+        else{
+            if($('.select').hasClass('isOpen')){
+                hideMaterialList($('.select'));
+            }
+        }
+    });
+    hideMaterialList($('.select'));
+})

@@ -13,6 +13,7 @@
     <!-- Required meta tag -->
 
     <title>Login - Snaps</title>
+    
     <link rel="icon" href="../assets/images/logo-snaps-navbar.jpg">
 
     <!-- Bootstrap CSS -->
@@ -20,13 +21,18 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
     <!-- Bootstrap CSS -->
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!-- Font Awesome CSS -->
+    <!-- Início Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Fim Font Awesome CSS -->
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Icons -->
+
+    <!-- Select Cadastro -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <!-- Select Cadastro -->
 
     <!--Folha de estilo CSS-->
     <link rel="stylesheet" href="../css/login.css">
@@ -36,7 +42,7 @@
     <!--Folha de estilo CSS-->
   </head>
 
-  <body class="hero-anime" onload="ReloadPage_Reset(); show1()">
+  <body class="hero-anime">
 
     <!-- Inicio do Header -->
     <header class="navigation-wrap start-header start-style">
@@ -45,7 +51,7 @@
           <nav class="navbar navbar-expand-md navbar-dark">
           
             <!-- Imagem Logo -->
-            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <a class="navbar-brand scroll-link" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
 
             <!-- Menu Hamburguer -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
@@ -61,12 +67,12 @@
                 <li class="nav-item nav-item-x">
                   <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
-                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
-                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
-                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
-                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
-                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
+                    <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -99,15 +105,16 @@
     </div>-->
     <!-- Fim Page preloader -->
 
+    <!-- Início Log In | Cadastro -->
     <div class="container-lg">
       <div class="overlay" id="overlay">
-        <div class="sign-up" id="sign-up" style="width: 450px;">
+        <div class="sign-up" id="sign-up">
           <h1>É novo aqui?</h1>
           <p>Cadastre-se para criar uma nova conta</p>
           <button class="switch-button slide" id="slide-right-button">Cadastre-se</button>
         </div>
 
-        <div class="sign-in" id="sign-in" style="width: 450px;">
+        <div class="sign-in" id="sign-in">
           <h1>Bem vindo!</h1>
           <p>Faça o login em sua conta</p>
           <button class="switch-button slide" id="slide-left-button">Log In</button>
@@ -117,42 +124,44 @@
       <!--  -->
       <div class="form">
         <!-- SIGN IN -->
-        <div class="sign-in" id="sign-in-info" style="width: 650px;">
+        <div class="sign-in" id="sign-in-info">
           <h1 class="gradient1">Seja bem-vindo</h1>
 
           <!-- FORMULÁRIO SIGN IN -->
           <form id="sign-in-form">
-            <div class="form-group">
-                <input type="email" name="email-input" class="form-style" placeholder="E-mail" id="email-input-sign-in" autocomplete="off">
-                <i class="input-icon uil uil-at"></i>
+            <div class="form-group mb-4">
+                <input type="email" placeholder="Email" name="email-input-sign-in" id="emailInputSignIn" required class="form-style">
+                <i id="iconEmailSignIn" class="input-icon uil uil-at"></i>
             </div>
+            <div id="errorMessageEmailSignIn" class="alert alert-danger d-none" role="alert"></div>
 
-            <div class="form-group">
-                <input type="password" name="password-input" class="form-style" placeholder="Senha" id="password-input-sign-in" autocomplete="off">
-                <i class="input-icon uil uil-lock-alt"></i>
-                <i id="show-hide-icon" class="input-icon-after uil uil-eye-slash" onclick="ShowHidePassword(this)"></i>
+            <div class="form-group mb-4">
+                <input type="password" placeholder="Senha" name="psw-input-sign-in" id="pswInputSignIn" required class="form-style">
+                <i id="iconSenhaSignIn" class="input-icon uil uil-lock-alt"></i>
+                <i id="eye-login" class="input-icon-pwd uil uil-eye"></i>
             </div>
+            <div id="errorMessageSenhaSignIn" class="alert alert-danger d-none" role="alert"></div>
 
             <div class="box">
               <div class="box-div">
-                <input class="type-checkbox" id="toogle" type="checkbox" name="name">
-                <label class="estado" for="toogle"></label>
-                <label class="lembrar" for="toogle">Lembrar de mim?</label>
+                <input id="checkboxLembrarUsuario" style="border: 5px solid blue;" class="type-checkbox" type="checkbox" name="name">
+                <label class="estado" for="checkboxLembrarUsuario"></label>
+                <label class="lembrar" for="checkboxLembrarUsuario">Lembrar de mim?</label>
               </div>
 
               <div class="forgot-password">
-                  <p>Esqueceu a senha?</p>
+                  <a href="#openResetarSenha" id="esqueceuSenhaLink">Esqueceu a senha?</a>
               </div>
             </div>
 
-            <div class="buttons-login">
-              <div class="buttons">
-                <a href="index.html" class="button login"><span>Iniciar sessão</span></a>
-                
-                <a href="#" class="button login login-google"><span>Entrar com uma conta Google</span></a>
+            <div id="successMessageSignIn" class="alert alert-success d-none mt-3" role="alert"></div>
 
-                <a href="#" class="button login login-instagram"><span>Entrar com o Instagram</span></a>
-              </div>
+            <div class="mt-5">
+              <button type="button" id="iniciarSessao" name="iniciarSessao" class="button-form slide-left-anim" data-hover="Iniciar sessão">Iniciar sessão</button>
+
+              <button id="entrarGoogle" class="button-form slide-left-anim" data-hover="Entrar com uma conta Google">Entrar com uma conta Google</button>
+
+              <button id="entrarInstagram" class="button-form slide-left-anim" data-hover="Entrar com o Instagram">Entrar com o Instagram</button>
             </div>
           </form>
           <!-- FIM FORMULÁRIO SIGN IN -->
@@ -160,207 +169,735 @@
         <!-- FIM SIGN IN -->
 
         <!-- SIGN UP -->
-        <div class="sign-up" id="sign-up-info" style="width: 650px;">
+        <div class="sign-up" id="sign-up-info">
           <h1 class="gradient1">Crie uma nova conta</h1>
 
           <!-- FORMULÁRIO SIGN UP -->
-          <form id="sign-up-form">
+          <form id="sign-up-form" class="mb-3">
             <div class="form-group">
-                <input type="nome" name="nome-input" class="form-style" placeholder="Nome completo" id="nome-input-sign-up" autocomplete="off">
-                <i class="input-icon uil uil-user"></i>
+                <input type="nome" placeholder="Nome completo" name="nome-input-sign-up" id="nomeInputSignUp" required class="form-style">
+                <i id="nomeIcon" class="input-icon uil uil-user"></i>
             </div>
+            <div id="errorMessageNome" class="alert alert-danger d-none" role="alert"></div>
 
             <div class="form-group">
-                <input type="email" name="email-input" class="form-style" placeholder="E-mail" id="email-input-sign-up" autocomplete="off">
-                <i class="input-icon uil uil-at"></i>
+                <input type="email" placeholder="Email" name="email-input-sign-up" id="emailInputSignUp" required class="form-style">
+                <i id="emailIcon" class="input-icon uil uil-at"></i>
             </div>
+            <div id="errorMessageEmail" class="alert alert-danger d-none" role="alert"></div>
 
             <div class="form-group">
-                <input type="text" name="departamento-input" class="form-style" placeholder="Departamento e Universidade / Empresa" id="departamento-input-sign-up" autocomplete="off">
-                <i class="input-icon uil uil-university"></i>
+                <input type="password" placeholder="Senha" name="psw-input-sign-up" id="pswInputSignUp" required class="form-style">
+                <i id="senhaIcon" class="input-icon uil uil-lock-alt"></i>
+                <i id="eye-cadastro" class="input-icon-pwd uil uil-eye"></i>
             </div>
+            <div id="errorMessageSenha" class="alert alert-danger d-none" role="alert"></div>
+
+            <div class="form-group">
+                <input type="password" name="confirm-password-input-cadastro" class="form-style" placeholder="Confirme sua senha" id="pswInputConfirmSignUp" autocomplete="off">
+                <i id="confirmaSenhaIcon" class="input-icon uil uil-lock-alt"></i>
+                <i id="eye-confirm-cadastro" class="input-icon-pwd uil uil-eye" ></i>
+            </div>
+            <div id="errorMessageConfirmaSenha" class="alert alert-danger d-none" role="alert"></div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Departamento ou Universidade/Empresa" name="departamento-input-sign-up" id="departamentoInputSignUp" required class="form-style">
+                <i id="departamentoIcon" class="input-icon uil uil-university"></i>
+            </div>
+            <div id="errorMessageDepartamento" class="alert alert-danger d-none" role="alert"></div>
           </form>
           <!-- FIM FORMULÁRIO SIGN UP -->
 
           <!-- SELECT BOX 1 -->
-          <div class="sign-up-form-input">
-            <div class="select-func">
-              <div class="materialSelect zIndexBox1 inline empty">
-                <ul id="ul-select" class="select"><i class="input-icon uil uil-brain"></i>
-                  <li data-selected="true" data-value="0">Escolha sua formação</li>
-                  <li data-value="1">Estudante de graduação</li>
-                  <li data-value="2">Estudante de pós-graduação</li>
-                  <li data-value="3">Professor</li>
-                  <li data-value="4">Pesquisadores</li>
-                  <li data-value="5">
-                    Outros
-                    <input id="txtOutros" class="txtOutros" type="text" name="">
-                  </li>
-                </ul>
-                <div class="message">Por favor selecione uma opção</div>
-              </div>
-            </div>
+          <div class="chosen-wrapper icon-formacao" data-js="custom-scroll">
+            <select id="formacao" class="chosen-select">
+              <option value="">Escolha sua formação</option>
+              <option>Estudante de graduação</option>
+              <option>Estudante de pós-graduação</option>
+              <option>Professor</option>
+              <option>Pesquisadores</option>
+              <option>Outros</option>
+            </select>
           </div>
           <!-- FIM SELECT BOX 1 -->
 
           <!-- SELECT BOX 2 -->
-          <div class="sign-up-form-input">
-            <div class="select-func">
-              <div class="materialSelect zIndexBox2 inline empty">
-                <ul class="select"><i class="input-icon uil uil-file-check"></i>
-                  <li data-selected="true" data-value="0">Informe seu principal objetivo</li>
-                  <li data-value="1">Aprender sobre fisiologia</li>
-                  <li data-value="2">Aprender sobre farmacologia</li>
-                  <li data-value="3">Ensinar alunos de graduação</li>
-                  <li data-value="4">Ensinar alunos de pós-graduação</li>
-                  <li data-value="5">Ensinar profissionais</li>
-                  <li data-value="6">Demonstrar para pacientes</li>
-                  <li data-value="7">
-                    Outros
-                    <input id="txtOutros" class="txtOutros" type="text" name="">
-                  </li>
-                </ul>
-                <div class="message">Por favor selecione uma opção</div>
-              </div>
-            </div>
+          <div class="chosen-wrapper icon-objetivo" data-js="custom-scroll">
+            <select id="objetivo" class="chosen-select">
+              <option value="">Informe seu principal objetivo</option>
+              <option>Aprender sobre fisiologia</option>
+              <option>Aprender sobre farmacologia</option>
+              <option>Ensinar alunos de graduação</option>
+              <option>Ensinar alunos de pós-graduação</option>
+              <option>Ensinar profissionais</option>
+              <option>Demonstrar para pacientes</option>
+              <option>Outros</option>
+            </select>
           </div>
-          <!--<div class="sign-up-form-input" style="border: 2px solid orange;">
-            <label>Por favor informe seu principal objetivo de usar o software SNAPS:</label>
-            <div class="select-func">
-              <div class="col-md-8 materialSelect inline empty">
-                <ul class="select">
-                  <li data-selected="true">Escolha uma opção...</li>
-                  <li data-value="0">Aprender sobre fisiologia</li>
-                  <li data-value="1">Aprender sobre farmacologia</li>
-                  <li data-value="2">Ensinar alunos de graduação</li>
-                  <li data-value="3">Ensinar alunos de pós-graduação</li>
-                  <li data-value="4">Ensinar profissionais</li>
-                  <li data-value="5">Demonstrar para pacientes</li>
-                  <li data-value="6">Outro:</li>
-                </ul>
-                <div class="message">Por favor selecione uma opção</div>
-              </div>
-            </div>
-          </div>-->
           <!-- FIM SELECT BOX 2 -->
 
+          <div id="errorMessageForm" class="alert alert-danger d-none" role="alert"></div>
+
+          <div id="successMessage" class="alert alert-success d-none" role="alert"></div>
+
           <!-- BOTÃO CADASTRO -->
-          <div class="button-cadastro">
-            <div class="buttons">
-                <a href="#" class="button cadastro"><span>Cadastrar-se</span></a>
-            </div>
-          </div>
+          <button type="button" id="cadastrarse" name="cadastrarse" class="button-form slide-left-anim" data-hover="Cadastrar-se">Cadastrar-se</button>
           <!-- FIM BOTÃO CADASTRO -->
-
-          <!--<div class="content-animation">-->
-            <!--<form id="sign-up-form-professores" class="hide-form">
-              <input style="width: 450px;" type="email" id="email-input-cadastro" placeholder="Email"/>
-              <div id="input-password">
-                <input style="width: 450px;" type="password" value="" id="password-input-cadastro" placeholder="Senha"/>
-                <img src="../assets/images/hide-password.png" id="show-hide-img-switch" onclick="ShowHidePasswordCadastro()">
-              </div>
-
-              <div id="input-confirm-password">
-                <input style="width: 450px;" type="password" value="" id="password-confirm-input-cadastro" placeholder="Confirme a senha"/>
-                <img src="../assets/images/hide-password.png" id="show-hide-img-switch" onclick="ShowHidePasswordConfirmCadastro()">
-              </div>
-
-              <div class="button-cadastro">
-                <div class="buttons">
-                  <a href="#" class="button cadastro"><span>Cadastrar-se</span></a>
-                </div>
-              </div>
-            </form>
-
-            <form id="sign-up-form-alunos" class="hide-form">
-              <input style="width: 450px;" type="email" id="email-input-cadastro" placeholder="Email"/>
-              <div id="input-password">
-                <input style="width: 450px;" type="password" value="" id="password-input-cadastro" placeholder="Senha"/>
-                <img src="../assets/images/hide-password.png" id="show-hide-img-switch" onclick="ShowHidePasswordCadastro()">
-              </div>
-
-              <div class="button-cadastro">
-                <div class="buttons">
-                  <a href="#" class="button cadastro"><span>Cadastrar-se</span></a>
-                </div>
-              </div>
-            </form>-->
-
-            <!--<form id="sign-up-form-outros" class="hide-form">
-              <input style="width: 450px;" type="email" id="email-input-cadastro" placeholder="Email"/>
-
-              <div class="button-cadastro">
-                <div class="buttons">
-                  <a href="#" class="button cadastro"><span>Cadastrar-se</span></a>
-                </div>
-              </div>
-            </form>-->
-          <!--</div>-->
 
         </div>
         <!-- FIM SIGN UP -->
       </div>
       <!--  -->
     </div>
+    <!-- Fim Log In | Cadastro -->
+
+    <!-- Início Resetar Senha -->
+    <div id="openResetarSenha" class="modalDialog">
+      <div>
+        <h4>Resetar Senha</h4>
+        <input type="text" placeholder="Nova senha" name="novaSenha" id="novaSenha" required>
+
+        <div class="d-flex">
+          <a href="#close">
+            <div class="flat-button grey">Close</div>
+          </a>
+          <button type="button" id="esqueceuSenhaConfirm" name="esqueceuSenhaConfirm">Criar nova senha</button>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Resetar Senha -->
+
+    <!-- Inicio do Footer -->
+    <!-- Inicio do Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-logo">
+                                <img src="../assets/images/footer/snaps-logo-footer.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <div class="footer-contacts d-lg-block d-md-flex">
+                                <div class="footer-contato col">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="contato-text">
+                                        <h4>Celular</h4>
+                                        <a href="tel:+5500000000000">00 00000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contato-text">
+                                        <h4>Telefone</h4>
+                                        <a href="tel:+550000000000">00 0000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="contato-text">
+                                        <h4>E-mail</h4>
+                                        <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="d-flex">
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Links Úteis</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Exercícios</a></li>
+                                        <li><a href="#">Sobre</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Simuladores</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Cardiorespiratório</a></li>
+                                        <li><a href="#">Gastrointestinal</a></li>
+                                        <li><a href="#">Glândulas</a></li>
+                                        <li><a href="#">Metabolismo</a></li>
+                                        <li><a href="#">Olhos</a></li>
+                                        <li><a href="#">Urogenital</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-btn">
+                                <div class="footer-box-links">
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</p>
+                                </div>
+                                <div class="input-group button-footer">
+                                   <input class="form-control" type="text" placeholder="lorem@ipsum.com" >
+                                   <div class="input-group-append">
+                                       <button class="btn" type="button">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-social-icon">
+                                <h3>Redes sociais</h3>
+                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank">Universidade de Ribeirão Preto</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim do Footer -->
 
     <!-- Inicio botão voltar topo -->
     <button class="back-to-top" type="button"></button>
-    <!-- Inicio botão voltar topo -->
+    <!-- Fim botão voltar topo -->
 
-    <!-- Inicio do Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row row-margin">
-          <div class="about-us">
-            <h6>Snaps</h6>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit est, mollis ut porttitor et, dapibus at diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ullamcorper odio eget cursus rhoncus. Donec eget euismod nisi, accumsan euismod nulla. Curabitur dictum ac quam vel egestas. Nullam at tellus egestas, euismod enim eget.</p>
-          </div>
+    <!-- Início Script Module - Configurações do Firebase -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
 
-          <div class="links-cont">
-            <div class="simuladores-links">
-              <h6>Simuladores</h6>
-              <ul class="footer-links">
-                <li><a href="#">Cardiorespiratório</a></li>
-                <li><a href="#">Gastrointestinal</a></li>
-                <li><a href="#">Glândulas</a></li>
-                <li><a href="#">Metabolismo</a></li>
-                <li><a href="#">Olhos</a></li>
-                <li><a href="#">Urogenital</a></li>
-              </ul>
-            </div>
+      import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js";
 
-            <div class="quick-links">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
+      import { getDatabase, set, ref, update, child, get } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados por 
-         <a href="#">Universidade de Ribeirão Preto</a>.
-            </p>
-          </div>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBvK3i0HHSKT_QRdzxQ8NE20_iSvAuSZ7g",
+        authDomain: "fir-authenticator-f495b.firebaseapp.com",
+        databaseURL: "https://fir-authenticator-f495b-default-rtdb.firebaseio.com",
+        projectId: "fir-authenticator-f495b",
+        storageBucket: "fir-authenticator-f495b.appspot.com",
+        messagingSenderId: "982225175678",
+        appId: "1:982225175678:web:d51b2dd118469bbd08442f"
+      };
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Fim do Footer -->
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+      const database = getDatabase(app);
+      const db = getDatabase();
+
+      /* REFERÊNCIAS */
+      const nome = document.getElementById('nomeInputSignUp');
+      const nomeIcon = document.getElementById('nomeIcon');
+      const email = document.getElementById('emailInputSignUp');
+      const password = document.getElementById('pswInputSignUp');
+      const senhaIcon2 = document.getElementById('eye-cadastro');
+      const confirmPassword = document.getElementById('pswInputConfirmSignUp');
+      const confirmaSenhaIcon2 = document.getElementById('eye-confirm-cadastro');
+      const departamento = document.getElementById('departamentoInputSignUp')
+      const formacao = document.getElementById('formacao');
+      const objetivo = document.getElementById('objetivo');
+
+      /* VALIDAÇÃO */
+      function isEmptyOrSpaces(str) {
+        return str === null || str.match(/^ *$/) !== null;
+      }
+
+      const errorMessageNome = document.getElementById('errorMessageNome');
+      const errorMessageEmail = document.getElementById('errorMessageEmail');
+      const errorMessageSenha = document.getElementById('errorMessageSenha');
+      const errorMessageConfirmaSenha = document.getElementById('errorMessageConfirmaSenha');
+      const errorMessageDepartamento = document.getElementById('errorMessageDepartamento');
+      const errorMessageForm = document.getElementById('errorMessageForm');
+
+      var error = '';
+
+      function Validation() {
+        let nameregex = /^[a-zA-Z\s]+$/;
+        let emailregex = /^[\w-\.]+@([a-z])+.(com|com.br|br)$/;
+        let passwordregex = /^(?=.*[A-Z])(?=.*[!@#$&*])[0-9a-zA-Z$*&@#!]{6,}$/
+        let departamentoregex = /^[a-zA-Z0-9\s]+$/;
+
+        if(isEmptyOrSpaces(nome.value) && isEmptyOrSpaces(email.value) && isEmptyOrSpaces(password.value) && isEmptyOrSpaces(confirmPassword.value) && isEmptyOrSpaces(departamento.value)) {
+          ValidCamposIncorretos(error = 'Você não pode deixar nenhum campo vazio.');
+          return false;
+        }
+
+        else if(isEmptyOrSpaces(nome.value)) {
+          ValidNomeIncorreto(error = 'Você não pode deixar o campo de Nome vazio.');
+          return false;
+        }
+
+        else if(isEmptyOrSpaces(email.value)) {
+          ValidEmailIncorreto(error = 'Você não pode deixar o campo de Email vazio.');
+          return false;
+        }
+
+        else if(isEmptyOrSpaces(password.value)) {
+          ValidSenhaIncorreta(error = 'Você não pode deixar o campo de Senha vazio.');
+          return false;
+        }
+
+        else if(isEmptyOrSpaces(confirmPassword.value)) {
+          ValidConfirmaSenhaIncorreta(error = 'Você não pode deixar o campo de Confirmar Senha vazio.');
+          return false;
+        }
+
+        else if(password.value != confirmPassword.value) {
+          ValidSenhasIncorretas(error = 'As senhas não coincidem, favor tentar novamente.');
+          return false;
+        }
+
+        else if(isEmptyOrSpaces(departamento.value)) {
+          ValidDepartamentoIncorreto(error = 'Você não pode deixar o campo de Departamento vazio.');
+          return false;
+        }
+
+        else if(!nameregex.test(nome.value)) {
+          ValidNomeIncorreto(error = 'O nome deve conter apenas caracteres do alfabeto.');
+          return false;
+        }
+
+        else if(!emailregex.test(email.value)) {
+          ValidEmailIncorreto(error = 'Email inválido ou não existe.');
+          return false;
+        }
+
+        else if(!passwordregex.test(password.value) || !passwordregex.test(confirmPassword.value)) {
+          ValidSenhasIncorretas(error = 'o A senha deve conter ao menos uma letra maiúscula;\no A senha deve conter ao menos um caractere especial (!@#$&*);\no A senha deve conter mais de 6 caracteres.');
+          return false;
+        }
+
+        else{
+          ValidCamposCorretos(error = '');
+          return true;
+        }
+      }
+
+      function ValidCamposIncorretos() {
+        nomeInputSignUp.classList.add("is-invalid");
+        nomeIcon.classList.add('invalid');
+        emailInputSignUp.classList.add("is-invalid");
+        emailIcon.classList.add('invalid');
+        pswInputSignUp.classList.add("is-invalid");
+        senhaIcon.classList.add('invalid');
+        senhaIcon2.classList.add('invalid');
+        pswInputConfirmSignUp.classList.add("is-invalid");
+        confirmaSenhaIcon.classList.add('invalid');
+        confirmaSenhaIcon2.classList.add('invalid');
+        departamentoInputSignUp.classList.add("is-invalid");
+        departamentoIcon.classList.add('invalid');
+        errorMessageForm.innerText = error;
+        errorMessageForm.classList.replace('d-none','d-block');
+      }
+
+      function ValidNomeIncorreto() {
+        nomeInputSignUp.classList.add("is-invalid");
+        nomeIcon.classList.add('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.remove("is-invalid");
+        senhaIcon.classList.remove('invalid');
+        senhaIcon2.classList.remove('invalid');
+        pswInputConfirmSignUp.classList.remove("is-invalid");
+        confirmaSenhaIcon.classList.remove('invalid');
+        confirmaSenhaIcon2.classList.remove('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageNome.innerText = error;
+        errorMessageNome.classList.replace('d-none','d-block');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidEmailIncorreto() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.add("is-invalid");
+        emailIcon.classList.add('invalid');
+        pswInputSignUp.classList.remove("is-invalid");
+        senhaIcon.classList.remove('invalid');
+        senhaIcon2.classList.remove('invalid');
+        pswInputConfirmSignUp.classList.remove("is-invalid");
+        confirmaSenhaIcon.classList.remove('invalid');
+        confirmaSenhaIcon2.classList.remove('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageEmail.innerText = error;
+        errorMessageEmail.classList.replace('d-none','d-block');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidSenhaIncorreta() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.add("is-invalid");
+        senhaIcon.classList.add('invalid');
+        senhaIcon2.classList.add('invalid');
+        pswInputConfirmSignUp.classList.remove("is-invalid");
+        confirmaSenhaIcon.classList.remove('invalid');
+        confirmaSenhaIcon2.classList.remove('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageSenha.innerText = error;
+        errorMessageSenha.classList.replace('d-none','d-block');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidConfirmaSenhaIncorreta() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.remove("is-invalid");
+        senhaIcon.classList.remove('invalid');
+        senhaIcon2.classList.remove('invalid');
+        pswInputConfirmSignUp.classList.add("is-invalid");
+        confirmaSenhaIcon.classList.add('invalid');
+        confirmaSenhaIcon2.classList.add('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageConfirmaSenha.innerText = error;
+        errorMessageConfirmaSenha.classList.replace('d-none','d-block');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidSenhasIncorretas() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.add("is-invalid");
+        senhaIcon.classList.add('invalid');
+        senhaIcon2.classList.add('invalid');
+        pswInputConfirmSignUp.classList.add("is-invalid");
+        confirmaSenhaIcon.classList.add('invalid');
+        confirmaSenhaIcon2.classList.add('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageConfirmaSenha.innerText = error;
+        errorMessageConfirmaSenha.classList.replace('d-none','d-block');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidDepartamentoIncorreto() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.remove("is-invalid");
+        senhaIcon.classList.remove('invalid');
+        senhaIcon2.classList.remove('invalid');
+        pswInputConfirmSignUp.classList.remove("is-invalid");
+        confirmaSenhaIcon.classList.remove('invalid');
+        confirmaSenhaIcon2.classList.remove('invalid');
+        departamentoInputSignUp.classList.add("is-invalid");
+        departamentoIcon.classList.add('invalid');
+        errorMessageDepartamento.innerText = error;
+        errorMessageDepartamento.classList.replace('d-none','d-block');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      function ValidCamposCorretos() {
+        nomeInputSignUp.classList.remove("is-invalid");
+        nomeIcon.classList.remove('invalid');
+        emailInputSignUp.classList.remove("is-invalid");
+        emailIcon.classList.remove('invalid');
+        pswInputSignUp.classList.remove("is-invalid");
+        senhaIcon.classList.remove('invalid');
+        senhaIcon2.classList.remove('invalid');
+        pswInputConfirmSignUp.classList.remove("is-invalid");
+        confirmaSenhaIcon.classList.remove('invalid');
+        confirmaSenhaIcon2.classList.remove('invalid');
+        departamentoInputSignUp.classList.remove("is-invalid");
+        departamentoIcon.classList.remove('invalid');
+        errorMessageNome.classList.replace('d-block','d-none');
+        errorMessageEmail.classList.replace('d-block','d-none');
+        errorMessageSenha.classList.replace('d-block','d-none');
+        errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+        errorMessageDepartamento.classList.replace('d-block','d-none');
+        errorMessageForm.classList.replace('d-block','d-none');
+      }
+
+      /* CADASTRO */
+      cadastrarse.addEventListener('click', (e) => {
+        if(!Validation()) {
+          return;
+        }
+
+        else{
+          var nome = document.getElementById('nomeInputSignUp').value;
+          var email = document.getElementById('emailInputSignUp').value;
+          var password = document.getElementById('pswInputSignUp').value;
+          var departamento = document.getElementById('departamentoInputSignUp').value
+          var formacao = document.getElementById('formacao').value;
+          var objetivo = document.getElementById('objetivo').value;
+          var successMessage = document.getElementById('successMessage');
+
+          var message = '';
+
+          const dbRef = ref(db);
+
+          get(child(dbRef, "Usuários/"+ nome)).then((snapshot)=>{
+            if(snapshot.exists()) {
+              ValidNomeIncorreto(error = 'O nome de usuário já está sendo utilizado.');
+            }
+
+            else{
+              createUserWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+                const user = userCredential.user;
+
+                set(ref(database, 'Usuários/' + nome), {
+                  nome: nome,
+                  email: email,
+                  senha: password,
+                  departamento: departamento,
+                  formacao: formacao,
+                  objetivo: objetivo
+                })
+                .then(() => {
+                  ValidCamposCorretos();
+                  successMessage.classList.replace('d-none','d-block');
+                  message = 'Usuário criado com sucesso!';
+                  successMessage.innerText = message;
+
+                  setTimeout(function(){
+                    successMessage.classList.replace('d-block','d-none');
+                    message = null;
+                    window.location="login.html";
+                  },2000);
+                })
+                .catch((error) => {
+                  alert(error);
+                });
+              })
+              .catch((error) => {
+                if(error.code == "auth/email-already-in-use"){
+                  ValidEmailIncorreto(error = 'Este email já está vinculado a uma conta.');
+                  errorMessageEmail.innerText = error;
+                }
+
+                else if(error.code == "auth/invalid-email"){
+                  ValidEmailIncorreto(error = 'Email inválido ou não existe.');
+                  errorMessageEmail.innerText = error;
+                }
+
+                else if(error.code == "auth/invalid-password"){
+                  ValidSenhasIncorretas(error = 'o A senha deve conter ao menos uma letra maiúscula;\no A senha deve conter ao menos um caractere especial (!@#$&*);\no A senha deve conter mais de 6 caracteres.');
+                  errorMessageConfirmaSenha.innerText = error;
+                }
+
+                else{
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+                  alert(errorMessage);
+                }
+              });
+            }
+          });
+        }
+      });
+      
+      /* LOG IN */
+      iniciarSessao.addEventListener('click', (e) => {
+        /* REFERÊNCIAS */
+        var email = document.getElementById('emailInputSignIn').value;
+        var iconEmail = document.getElementById('iconEmailSignIn');
+        var password = document.getElementById('pswInputSignIn').value;
+        var iconSenha = document.getElementById('iconSenhaSignIn');
+        var iconSenha2 = document.getElementById('eye-login');
+
+        /* VALIDAÇÃO */
+        var errorMessageEmailSignIn = document.getElementById('errorMessageEmailSignIn');
+        var errorMessageEmailSignIn = document.getElementById('errorMessageEmailSignIn');
+        var errorMessageSenhaSignIn = document.getElementById('errorMessageSenhaSignIn');
+
+        var error = '';
+
+        function ValidationSignIn() {
+          if(isEmptyOrSpaces(email) && isEmptyOrSpaces(password)) {
+            ValidCamposInorretosSignIn(error = 'Você não pode deixar nenhum campo vazio.');
+            return false;
+          }
+
+          else if(isEmptyOrSpaces(email)) {
+            ValidEmailIncorretoSignIn(error = 'Você não pode deixar o campo de Email vazio.');
+            return false;
+          }
+
+          else if(isEmptyOrSpaces(password)) {
+            ValidSenhaIncorretaSignIn(error = 'Você não pode deixar o campo de Senha vazio.');
+            return false;
+          }
+
+          else{
+            ValidCamposCorretosSignIn(error = '');
+            return true;
+          }
+        }
+
+        function ValidEmailIncorretoSignIn() {
+          emailInputSignIn.classList.add("is-invalid");
+          iconEmail.classList.add('invalid');
+          pswInputSignIn.classList.remove("is-invalid");
+          iconSenha.classList.remove('invalid');
+          iconSenha2.classList.remove('invalid');
+          errorMessageEmailSignIn.innerText = error;
+          errorMessageEmailSignIn.classList.replace('d-none','d-block');
+          errorMessageSenhaSignIn.classList.replace('d-block','d-none');
+        }
+
+        function ValidSenhaIncorretaSignIn() {
+          emailInputSignIn.classList.remove("is-invalid");
+          iconEmail.classList.remove('invalid');
+          pswInputSignIn.classList.add("is-invalid");
+          iconSenha.classList.add('invalid');
+          iconSenha2.classList.add('invalid');
+          errorMessageEmailSignIn.classList.replace('d-block','d-none');
+          errorMessageSenhaSignIn.innerText = error;
+          errorMessageSenhaSignIn.classList.replace('d-none','d-block');
+        }
+
+        function ValidCamposInorretosSignIn() {
+          emailInputSignIn.classList.add("is-invalid");
+          iconEmail.classList.add('invalid');
+          pswInputSignIn.classList.add("is-invalid");
+          iconSenha.classList.add('invalid');
+          iconSenha2.classList.add('invalid');
+          errorMessageSenhaSignIn.innerText = error;
+          errorMessageSenhaSignIn.classList.replace('d-none','d-block');
+        }
+
+        function ValidCamposCorretosSignIn() {
+          emailInputSignIn.classList.remove("is-invalid");
+          iconEmail.classList.remove('invalid');
+          pswInputSignIn.classList.remove("is-invalid");
+          iconSenha.classList.remove('invalid');
+          iconSenha2.classList.remove('invalid');
+          errorMessageEmailSignIn.classList.replace('d-block','d-none');
+          errorMessageSenhaSignIn.classList.replace('d-block','d-none');
+        }
+
+        if(!ValidationSignIn()) {
+          return;
+        }
+
+        else{
+          var successMessageSignIn = document.getElementById('successMessageSignIn');
+          var message = '';
+
+          signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+
+            ValidCamposCorretosSignIn();
+            successMessageSignIn.classList.replace('d-none','d-block');
+            message = 'Login efetuado com sucesso!';
+            successMessageSignIn.innerText = message;
+
+            LembrarUsuario(user);
+
+            setTimeout(function(){
+              successMessageSignIn.classList.replace('d-block','d-none');
+              message = null;
+              window.location = "index.html";
+            },2000);
+          })
+          .catch((error) => {
+            if(error.code == "auth/user-not-found"){
+              ValidEmailIncorretoSignIn(error = 'Email inválido ou não existe.');
+              errorMessageEmailSignIn.innerText = error;
+            }
+
+            else if(error.code == "auth/wrong-password"){
+              ValidSenhaIncorretaSignIn(error = 'Senha incorreta. Tente novamente ou clique em "Esqueceu a senha?" para redefini-la.');
+              errorMessageSenhaSignIn.innerText = error;
+            }
+
+            else if(error.code == "auth/user-disabled"){
+              ValidCamposInorretosSignIn(error = 'Esta conta foi desativada. Tente novamente acessando em outra conta.');
+              errorMessageSenhaSignIn.innerText = error;
+            }
+
+            else{
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              alert(errorMessage);
+            }
+          });
+        }
+
+        signOut(auth).then(() => {
+          // Sign-out successful.
+        }).catch((error) => {
+          // An error happened.
+        });
+
+        function LembrarUsuario(user) {
+          let lembrarUsuario = document.getElementById('checkboxLembrarUsuario').checked;
+          var usernameInput =  document.getElementById('emailInputSignIn');
+
+          if(lembrarUsuario) {
+            sessionStorage.setItem("email", usernameInput.value);
+            sessionStorage.setItem("user", JSON.stringify(user));
+          }else{
+            localStorage.setItem("email", usernameInput.value);
+            localStorage.setItem("user", JSON.stringify(user));
+            localStorage.setItem("lembrarUsuario", "check");
+          }
+        }
+      });
+    </script>
+    <!-- Fim Script Module - Configurações do Firebase -->
 
     <!-- Optional JavaScript -->
 

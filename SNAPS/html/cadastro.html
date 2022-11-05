@@ -23,9 +23,13 @@
 
     <!-- Bootstrap CSS -->
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!-- Font Awesome CSS -->
+    <!-- Início Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Fim Font Awesome CSS -->
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Icons -->
 
     <!--Folha de estilo CSS-->
     <link rel="stylesheet" href="../css/cadastro.css">
@@ -44,7 +48,7 @@
           <nav class="navbar navbar-expand-md navbar-dark">
           
             <!-- Imagem Logo -->
-            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <a class="navbar-brand scroll-link" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
 
             <!-- Menu Hamburguer -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
@@ -60,12 +64,12 @@
                 <li class="nav-item nav-item-x">
                   <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="simulador_cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
-                    <a class="dropdown-item" href="simulador_gastrointestinal.html"><span>Gastrointestinal</span></a>
-                    <a class="dropdown-item" href="simulador_glandulas.html"><span>Glândulas</span></a>
-                    <a class="dropdown-item" href="simulador_metabolismo.html"><span>Metabolismo</span></a>
-                    <a class="dropdown-item" href="simulador_olhos.html"><span>Olhos</span></a>
-                    <a class="dropdown-item" href="simulador_urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
+                    <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
+                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -99,139 +103,262 @@
     <!-- Fim Page preloader -->
 
     <div class="container-lg">
-
-      <div class="overlay" id="overlay">
-        <div class="sign-in" id="sign-in" style="width: 387px;">
-          <h1>Welcome Back!</h1>
-          <p>Log in below.</p>
-          <button class="switch-button" id="slide-right-button">Sign In</button>
+      <div class="overlay open-sign-up-ini" id="overlay">
+        <div class="sign-up" id="sign-up">
+          <h1>É novo aqui?</h1>
+          <p>Cadastre-se para criar uma nova conta</p>
+          <button class="switch-button slide" id="slide-right-button">Cadastre-se</button>
         </div>
 
-        <div class="sign-up" id="sign-up" style="width: 387px;">
-          <h1>Hello, Friend!</h1>
-          <p>Join our community today.</p>
-          <button class="switch-button" id="slide-left-button">Sign Up</button>
+        <div class="sign-in" id="sign-in">
+          <h1>Bem vindo!</h1>
+          <p>Faça o login em sua conta</p>
+          <button class="switch-button slide" id="slide-left-button">Log In</button>
         </div>
       </div>
 
+      <!--  -->
       <div class="form">
+        <!-- SIGN IN -->
+        <div class="sign-in" id="sign-in-info">
+          <h1 class="gradient1">Seja bem-vindo</h1>
 
-        <div class="sign-in" id="sign-in-info" style="width: 517px;">
-          <h1>Sign In</h1>
-          <div class="social-media-buttons">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
-            </svg>
+          <!-- FORMULÁRIO SIGN IN -->
+          <form id="sign-in-form">
+            <div class="form-group mb-4">
+                <input type="email" name="email-input" class="form-style" placeholder="E-mail" id="email-input-sign-in" autocomplete="off">
+                <i class="input-icon uil uil-at"></i>
             </div>
-            <div class="icon">
-            <svg viewBox="0 0 24 24">
-                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-            </svg>
+
+            <div class="form-group mb-4">
+                <input type="password" name="password-input" class="form-style" placeholder="Senha" id="pwd-login" autocomplete="off">
+                <i class="input-icon uil uil-lock-alt"></i>
+                <i class="input-icon-pwd uil uil-eye" id="eye-login"></i>
             </div>
-            <div class="icon">
-            <svg viewBox="0 0 24 24">
-              <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
-            </svg>
+
+            <div class="box">
+              <div class="box-div">
+                <input class="type-checkbox" id="toogle" type="checkbox" name="name">
+                <label class="estado" for="toogle"></label>
+                <label class="lembrar" for="toogle">Lembrar de mim?</label>
+              </div>
+
+              <div class="forgot-password">
+                  <p>Esqueceu a senha?</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <button id="iniciarSessao" class="button-form slide-left-anim" data-hover="Iniciar sessão">Iniciar sessão</button>
+
+              <button id="entrarGoogle" class="button-form slide-left-anim" data-hover="Entrar com uma conta Google">Entrar com uma conta Google</button>
+
+              <button id="entrarInstagram" class="button-form slide-left-anim" data-hover="Entrar com o Instagram">Entrar com o Instagram</button>
+            </div>
+          </form>
+          <!-- FIM FORMULÁRIO SIGN IN -->
+        </div>
+        <!-- FIM SIGN IN -->
+
+        <!-- SIGN UP -->
+        <div class="sign-up" id="sign-up-info">
+          <h1 class="gradient1">Crie uma nova conta</h1>
+
+          <!-- FORMULÁRIO SIGN UP -->
+          <form id="sign-up-form" class="mb-5">
+            <div class="form-group">
+                <input type="nome" name="nome-input" class="form-style" placeholder="Nome completo" id="nome-input-sign-up" autocomplete="off">
+                <i class="input-icon uil uil-user"></i>
+            </div>
+
+            <div class="form-group">
+                <input type="password" name="password-input-cadastro" class="form-style" placeholder="Senha" id="pwd-cadastro" autocomplete="off">
+                <i class="input-icon uil uil-lock-alt"></i>
+                <i class="input-icon-pwd uil uil-eye" id="eye-cadastro"></i>
+            </div>
+
+            <div class="form-group">
+                <input type="password" name="confirm-password-input-cadastro" class="form-style" placeholder="Confirme sua senha" id="pwd-confirm-cadastro" autocomplete="off">
+                <i class="input-icon uil uil-lock-alt"></i>
+                <i class="input-icon-pwd uil uil-eye" id="eye-confirm-cadastro"></i>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email-input" class="form-style" placeholder="E-mail" id="email-input-sign-up" autocomplete="off">
+                <i class="input-icon uil uil-at"></i>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="departamento-input" class="form-style" placeholder="Departamento e Universidade/Empresa" id="departamento-input-sign-up" autocomplete="off">
+                <i class="input-icon uil uil-university"></i>
+            </div>
+          </form>
+          <!-- FIM FORMULÁRIO SIGN UP -->
+
+          <!-- SELECT BOX 1 -->
+          <div class="sign-up-form-input">
+            <div class="select-func">
+              <div class="materialSelect zIndexBox1 inline empty">
+                <ul id="ul-select" class="select"><i class="input-icon-li uil uil-brain"></i>
+                  <li data-selected="true" data-value="0">Escolha sua formação</li>
+                  <li data-value="1">Estudante de graduação</li>
+                  <li data-value="2">Estudante de pós-graduação</li>
+                  <li data-value="3">Professor</li>
+                  <li data-value="4">Pesquisadores</li>
+                  <li data-value="5">Outros</li>
+                </ul>
+                <div class="message">Por favor selecione uma opção</div>
+              </div>
             </div>
           </div>
-          <p class="small">or use your email account:</p>
-          <form id="sign-in-form">      
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <p class="forgot-password">Forgot your password?</p>
-            <button class="control-button in">Sign In</button>
-          </form>
-        </div>
+          <!-- FIM SELECT BOX 1 -->
 
-        <div class="sign-up" id="sign-up-info" style="width: 517px;">
-          <h1>Create Account</h1>
-          <div class="social-media-buttons">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
-            </svg>
-            </div>
-            <div class="icon">
-            <svg viewBox="0 0 24 24">
-                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-            </svg>
-            </div>
-            <div class="icon">
-            <svg viewBox="0 0 24 24">
-              <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
-            </svg>
+          <!-- SELECT BOX 2 -->
+          <div class="sign-up-form-input">
+            <div class="select-func">
+              <div class="materialSelect zIndexBox2 inline empty">
+                <ul class="select"><i class="input-icon-li uil uil-file-check"></i>
+                  <li data-selected="true" data-value="0">Informe seu principal objetivo</li>
+                  <li data-value="1">Aprender sobre fisiologia</li>
+                  <li data-value="2">Aprender sobre farmacologia</li>
+                  <li data-value="3">Ensinar alunos de graduação</li>
+                  <li data-value="4">Ensinar alunos de pós-graduação</li>
+                  <li data-value="5">Ensinar profissionais</li>
+                  <li data-value="6">Demonstrar para pacientes</li>
+                  <li data-value="7">Outros</li>
+                </ul>
+                <div class="message">Por favor selecione uma opção</div>
+              </div>
             </div>
           </div>
-          <p class="small">or use your email for registrations:</p>
-          <form id="sign-up-form">
-            <input type="text" placeholder="Name"/>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <button class="control-button up">Sign Up</button>
-          </form>
-        </div>
 
+          <!-- BOTÃO CADASTRO -->
+          <button id="cadastrarse" class="button-form slide-left-anim" data-hover="Cadastrar-se">Cadastrar-se</button>
+          <!-- FIM BOTÃO CADASTRO -->
+
+        </div>
+        <!-- FIM SIGN UP -->
       </div>
-
+      <!--  -->
     </div>
 
-    <button class="back-to-top" type="button"></button>
-
     <!-- Inicio do Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row row-margin">
-          <div class="about-us">
-            <h6>Snaps</h6>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit est, mollis ut porttitor et, dapibus at diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ullamcorper odio eget cursus rhoncus. Donec eget euismod nisi, accumsan euismod nulla. Curabitur dictum ac quam vel egestas. Nullam at tellus egestas, euismod enim eget.</p>
-          </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-logo">
+                                <img src="../assets/images/footer/snaps-logo-footer.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
 
-          <div class="links-cont">
-            <div class="simuladores-links">
-              <h6>Simuladores</h6>
-              <ul class="footer-links">
-                <li><a href="#">Cardiorespiratório</a></li>
-                <li><a href="#">Gastrointestinal</a></li>
-                <li><a href="#">Glândulas</a></li>
-                <li><a href="#">Metabolismo</a></li>
-                <li><a href="#">Olhos</a></li>
-                <li><a href="#">Urogenital</a></li>
-              </ul>
+                            <div class="footer-contacts d-lg-block d-md-flex">
+                                <div class="footer-contato col">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="contato-text">
+                                        <h4>Celular</h4>
+                                        <a href="tel:+5500000000000">00 00000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contato-text">
+                                        <h4>Telefone</h4>
+                                        <a href="tel:+550000000000">00 0000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="contato-text">
+                                        <h4>E-mail</h4>
+                                        <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="d-flex">
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Links Úteis</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Exercícios</a></li>
+                                        <li><a href="#">Sobre</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Simuladores</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Cardiorespiratório</a></li>
+                                        <li><a href="#">Gastrointestinal</a></li>
+                                        <li><a href="#">Glândulas</a></li>
+                                        <li><a href="#">Metabolismo</a></li>
+                                        <li><a href="#">Olhos</a></li>
+                                        <li><a href="#">Urogenital</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-50">
+                        <div class="footer-box">
+                            <div class="footer-btn">
+                                <div class="footer-box-links">
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</p>
+                                </div>
+                                <div class="input-group button-footer">
+                                   <input class="form-control" type="text" placeholder="lorem@ipsum.com" >
+                                   <div class="input-group-append">
+                                       <button class="btn" type="button">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-social-icon">
+                                <h3>Redes sociais</h3>
+                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="quick-links">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-              </ul>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank">Universidade de Ribeirão Preto</a>.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <hr>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados por 
-         <a href="#">Universidade de Ribeirão Preto</a>.
-            </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
-            </ul>
-          </div>
-        </div>
-      </div>
     </footer>
     <!-- Fim do Footer -->
+
+    <!-- Inicio botão voltar topo -->
+    <button class="back-to-top" type="button"></button>
+    <!-- Inicio botão voltar topo -->
 
     <!-- Optional JavaScript -->
 
