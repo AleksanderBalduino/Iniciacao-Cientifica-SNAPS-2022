@@ -33,6 +33,7 @@
 .simulador-text p{
   line-height: 30px;
   text-align: justify;
+  font-size: 18px;
 }
 /* Fim Section Simulador Conteúdo */
 
@@ -81,7 +82,7 @@
 #simulador-cardiorespiratorio .pressao-coracao-bronquios-section .box-pcb{
   width: 32%;
   margin-right: 2%;
-  background-color: #bdbdbd;
+  background-color: #fff;
   border-radius: 20px;
   padding-top: 30px;
 }
@@ -94,15 +95,29 @@
 #simulador-cardiorespiratorio .coracao-pulmao img#coracaoPulmao,
 #simulador-cardiorespiratorio .bronquios img#bronq{
   border-radius: 100%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
 }
 
-#simulador-cardiorespiratorio .pressao-arterial h3,
-#simulador-cardiorespiratorio .coracao-pulmao h3,
-#simulador-cardiorespiratorio .bronquios h3{
-  color: var(--balck-color);
+#simulador-cardiorespiratorio .coracao-pulmao img#coracaoPulmao{
+  width: 250px;
+}
+
+#simulador-cardiorespiratorio .pressao-arterial h3.h3-titulo,
+#simulador-cardiorespiratorio .coracao-pulmao h3.h3-titulo,
+#simulador-cardiorespiratorio .bronquios h3.h3-titulo{
+  color: var(--black-color);
   font-size: 24px;
   text-align: center;
-  padding: 10px 0 30px 0;
+  border-radius: 50px;
+  margin: 0 10% 10% 10%;
+  padding: 1.5% 0;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+
+#simulador-cardiorespiratorio .pressao-arterial h3#paText{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
 }
 
 #simulador-cardiorespiratorio .pressao-arterial span{
@@ -119,17 +134,50 @@
 
 #simulador-cardiorespiratorio .coracao-pulmao .col-md-6,
 #simulador-cardiorespiratorio .bronquios .col-md-6{
-  padding: 30px;
+  padding: 25px;
 }
 
 #simulador-cardiorespiratorio .vasos-section{
   background-color: var(--white-color);
   border-radius: 20px;
-  padding: 35px 25px;
+  padding: 35px 65px;
 }
 
-#simulador-cardiorespiratorio .vasos-section .col-md-6 img{
+#simulador-cardiorespiratorio .vasos-section h3.vasos-titulo{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 40%;
+  padding: 0.5% 0;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral h3,
+#simulador-cardiorespiratorio .vasos-section .vaso-muscular h3{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 30%;
+  padding: 0.5% 0;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+
+#simulador-cardiorespiratorio .vasos-section img{
   margin: 0 auto;
+}
+
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral,
+#simulador-cardiorespiratorio .vasos-section .vaso-muscular{
+  width: 47.5%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+  border-radius: 25px;
+  padding: 2.5% 0;
+}
+
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral{
+  margin-right: 5%;
 }
 
 /* Início Select Option Simulador */
@@ -169,6 +217,7 @@
   line-height: 46px;
   transition: all 0.4s ease-out;
   border: none;
+  background-color: #fff !important;
 }
 
 .chosen-wrapper .chosen-container .chosen-single b{
@@ -177,6 +226,10 @@
 
 .chosen-wrapper .chosen-container .chosen-single span{
   text-align: center;
+}
+
+.chosen-container-single .chosen-single{
+  background: none !important;
 }
 
 .chosen-wrapper .chosen-container.chosen-with-drop .chosen-single{
@@ -267,6 +320,7 @@
 .receptores-desc p{
   line-height: 30px;
   text-align: justify;
+  font-size: 18px;
 }
 
 .receptores-desc p:nth-child(3n){
@@ -376,7 +430,7 @@
   z-index: 3;
   left: 50%;
   transform: translateY(0px) translateX(-50%);
-  box-shadow: 0px 0px 105px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3);
 }
 
 #carousel div.nextDir{
@@ -585,6 +639,11 @@
 .btn-hover-anim-recep{
   overflow: hidden;
   transform: perspective(1px) translateZ(0);
+}
+
+#receptores #carousel button:focus,
+#receptores .openReceptor .h25 .btn-close button:focus{
+  box-shadow: none;
 }
 
 .btn-hover-anim-recep:hover{

@@ -57,12 +57,12 @@
 
             <!-- Navegação -->
             <div id="navbar-target" class="collapse navbar-collapse itens-menu">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto navbar-right">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item nav-item-x">
-                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" onclick="location.href='index.html#simuladores';" href="index.html#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
                     <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
@@ -81,14 +81,25 @@
                 <li class="divisoria-nav-links">
                   <div class="nav-link">|</div>
                 </li>
-                <li class="nav-item">
-                  <a href="login.html" class="nav-link">Entrar</a>
+                <li class="nav-item-dropdown" id="navItemId">
+                  <i id="iconEmail" class="fa-solid fa-circle-user d-none"></i>
+                  <a id="userEmail" href="login.html" class="nav-link" data-toggle="" aria-expanded="false">
+                    Entrar
+                    <span class="fa fa-angle-down"></span>
+                  </a>
+                  <i id="iconDownArrow" class="fa-solid fa-caret-down d-none"></i>
+                  <ul id="dropdownMenuUserEmail" class="dropdown-menu dropdown-menu-user-email d-none">
+                    <li><a class="dropdown-item" href=""><i class="fa fa-user"></i> Informações</a></li>
+                    <li><a id="signoutlink" class="dropdown-item" href="" onclick="window.location.reload();"><i class="fa fa-sign-out"></i> Encerrar sessão</a></li>
+                  </ul>
                 </li>
-                <li class="text-box">
-                  <a href="#" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                <li id="btnCadastroNavBar" class="text-box btn-mg-left">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
                 </li>
               </ul>
             </div>
+            <!-- Fim Navegação -->
+
           </nav>    
         </div>
       </div>
@@ -376,5 +387,7 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/cadastro.js"></script>
+    <script src="../js/loginuserlogout.js"></script>
+
   </body>
 </html>

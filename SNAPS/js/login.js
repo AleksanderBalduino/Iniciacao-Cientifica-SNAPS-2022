@@ -276,3 +276,80 @@ modal.addEventListener('click', function(e) {
 modal.children[0].addEventListener('click', function(e) {
   e.stopPropagation();
 }, false);
+
+
+
+function ValidCamposCorretosSignIn() {
+  var email = document.getElementById('emailInputSignIn').value;
+  var iconEmail = document.getElementById('iconEmailSignIn');
+  var password = document.getElementById('pswInputSignIn').value;
+  var iconSenha = document.getElementById('iconSenhaSignIn');
+  var iconSenha2 = document.getElementById('eye-login');
+
+  /* VALIDAÇÃO */
+  var errorMessageEmailSignIn = document.getElementById('errorMessageEmailSignIn');
+  var errorMessageSenhaSignIn = document.getElementById('errorMessageSenhaSignIn');
+  var errorMessageSignIn = document.getElementById('errorMessageSignIn');
+
+  setTimeout(function(){
+    emailInputSignIn.classList.remove("is-invalid");
+	iconEmail.classList.remove('invalid');
+	pswInputSignIn.classList.remove("is-invalid");
+	iconSenha.classList.remove('invalid');
+	iconSenha2.classList.remove('invalid');
+	errorMessageEmailSignIn.classList.replace('d-block','d-none');
+	errorMessageSenhaSignIn.classList.replace('d-block','d-none');
+	errorMessageSignIn.classList.replace('d-block','d-none');
+  },1500);
+}
+
+function ValidCamposCorretosSignUp() {
+	const nome = document.getElementById('nomeInputSignUp');
+    const nomeIcon = document.getElementById('nomeIcon');
+    const email = document.getElementById('emailInputSignUp');
+    const password = document.getElementById('pswInputSignUp');
+    const senhaIcon2 = document.getElementById('eye-cadastro');
+    const confirmPassword = document.getElementById('pswInputConfirmSignUp');
+    const confirmaSenhaIcon2 = document.getElementById('eye-confirm-cadastro');
+    const departamento = document.getElementById('departamentoInputSignUp');
+    const divSelectFormacao = document.getElementById('divSelectFormacao');
+    const divSelectObjetivo = document.getElementById('divSelectObjetivo');
+
+    const errorMessageNome = document.getElementById('errorMessageNome');
+    const errorMessageEmail = document.getElementById('errorMessageEmail');
+    const errorMessageSenha = document.getElementById('errorMessageSenha');
+    const errorMessageConfirmaSenha = document.getElementById('errorMessageConfirmaSenha');
+    const errorMessageDepartamento = document.getElementById('errorMessageDepartamento');
+    const errorMessageFormacao = document.getElementById('errorMessageFormacao');
+    const errorMessageObjetivo = document.getElementById('errorMessageObjetivo');
+    const errorMessageForm = document.getElementById('errorMessageForm');
+
+	setTimeout(function(){
+	    nomeInputSignUp.classList.remove("is-invalid");
+	    nomeIcon.classList.remove('invalid');
+	    emailInputSignUp.classList.remove("is-invalid");
+	    emailIcon.classList.remove('invalid');
+	    pswInputSignUp.classList.remove("is-invalid");
+	    senhaIcon.classList.remove('invalid');
+	    senhaIcon2.classList.remove('invalid');
+	    pswInputConfirmSignUp.classList.remove("is-invalid");
+	    confirmaSenhaIcon.classList.remove('invalid');
+	    confirmaSenhaIcon2.classList.remove('invalid');
+	    departamentoInputSignUp.classList.remove("is-invalid");
+	    departamentoIcon.classList.remove('invalid');
+	    divSelectFormacao.classList.remove('chosen-wrapper-invalid');
+        divSelectObjetivo.classList.remove('chosen-wrapper-invalid');
+	    errorMessageNome.classList.replace('d-block','d-none');
+	    errorMessageEmail.classList.replace('d-block','d-none');
+	    errorMessageSenha.classList.replace('d-block','d-none');
+	    errorMessageConfirmaSenha.classList.replace('d-block','d-none');
+	    errorMessageDepartamento.classList.replace('d-block','d-none');
+	    errorMessageFormacao.classList.replace('d-block','d-none');
+        errorMessageObjetivo.classList.replace('d-block','d-none');
+	    errorMessageForm.classList.replace('d-block','d-none');
+    },1500);
+}
+
+function OpenResetarSenha() {
+	let openResetarSenha = document.getElementById('openResetarSenha');
+}

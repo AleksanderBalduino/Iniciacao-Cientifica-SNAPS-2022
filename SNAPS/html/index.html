@@ -61,8 +61,8 @@
 
             <!-- Início Navegação -->
             <div id="navbar-target" class="collapse navbar-collapse itens-menu">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+              <ul class="navbar-nav ml-auto navbar-right">
+                <li id="linkHome" class="nav-item active">
                   <a href="#" class="nav-link scroll-link">Home</a>
                 </li>
                 <li class="nav-item nav-item-x">
@@ -85,18 +85,24 @@
                 <li class="divisoria-nav-links">
                   <div class="nav-link">|</div>
                 </li>
-                <li class="nav-item" id="navItemId">
+                <li class="nav-item-dropdown" id="navItemId">
                   <i id="iconEmail" class="fa-solid fa-circle-user d-none"></i>
-                  <a id="userEmail" href="login.html" class="nav-link">Entrar</a>
+                  <a id="userEmail" href="login.html" class="nav-link" data-toggle="" aria-expanded="false">
+                    Entrar
+                    <span class="fa fa-angle-down"></span>
+                  </a>
+                  <i id="iconDownArrow" class="fa-solid fa-caret-down d-none"></i>
+                  <ul id="dropdownMenuUserEmail" class="dropdown-menu dropdown-menu-user-email d-none">
+                    <li><a class="dropdown-item" href="login.html"><i class="fa fa-user"></i> Informações</a></li>
+                    <li><a id="signoutlink" class="dropdown-item" href="" onclick="window.location.reload();"><i class="fa fa-sign-out"></i> Encerrar sessão</a></li>
+                  </ul>
                 </li>
-                <li class="text-box">
-                  <a id="signoutlink" href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3 id="textBtnCadastroSair">Cadastre-se</h3></a>
+                <li id="btnCadastroNavBar" class="text-box btn-mg-left">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
                 </li>
               </ul>
             </div>
             <!-- Fim Navegação -->
-
-          </nav>    
         </div>
       </div>
     </header>
@@ -791,6 +797,7 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/loginuserlogout.js"></script>
 
   </body>
 </html>
