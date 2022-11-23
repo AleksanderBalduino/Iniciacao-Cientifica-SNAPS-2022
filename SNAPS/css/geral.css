@@ -13,10 +13,16 @@
 
 /* Configurações Gerais */
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* Fim Configurações Gerais */
+
+/* Fonte geral */
+*{
+  font-family: 'Quicksand', serif;
+}
+/* Fim Fonte geral */
 
 /* Configurações de Tags */
 body{
@@ -318,7 +324,6 @@ button.back-to-top.show{
 
 .button-footer input:focus{
   border: unset;
-  box-shadow: none;
 }
 
 .button-footer button{
@@ -335,10 +340,6 @@ button.back-to-top.show{
 
 .button-footer button.btn{
   padding: 6px 22px;
-}
-
-.button-footer button.btn:focus{
-  box-shadow: none;
 }
 
 .button-footer button i{
