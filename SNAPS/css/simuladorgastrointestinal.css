@@ -1,0 +1,75 @@
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+/* Início Section Simulador Cardiorespiratório */
+#simulador-gastrointestinal{
+  background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
+  padding: 2.5% 0;
+}
+
+#simulador-gastrointestinal .container{
+  padding: 1.5%;
+}
+
+#simulador-gastrointestinal .simulador-btn-detail h3{
+  color: var(--white-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+#simulador-gastrointestinal .simulador-btn-detail #detailarea{
+  outline: 0;
+  padding: 16px;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  resize: none;
+  font-family: 'Quicksand', serif;
+}
+
+#simulador-gastrointestinal .estomago-intestino-vesicula-section .box-eiv{
+  width: 32%;
+  margin-right: 2%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#simulador-gastrointestinal .estomago-intestino-vesicula-section .box-eiv:nth-child(3){
+  margin-right: 0;
+}
+
+#simulador-gastrointestinal .estomago img#estomago,
+#simulador-gastrointestinal .intestino img#intestino,
+#simulador-gastrointestinal .vesicula-biliar img#vesiculaBiliar{
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 2.5%;
+}
+
+#simulador-gastrointestinal .estomago h3,
+#simulador-gastrointestinal .intestino h3,
+#simulador-gastrointestinal .vesicula-biliar h3{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  margin: 7.5% 15%;
+  border-radius: 50px;
+  padding: 1.5%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#simulador-gastrointestinal .estomago .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-gastrointestinal .intestino .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-gastrointestinal .vesicula-biliar .box-recptores .col-md-6:nth-child(2n+1){
+  padding: 0 5% 0 10%;
+}
+
+#simulador-gastrointestinal .estomago .box-recptores .col-md-6:nth-child(2n),
+#simulador-gastrointestinal .intestino .box-recptores .col-md-6:nth-child(2n),
+#simulador-gastrointestinal .vesicula-biliar .box-recptores .col-md-6:nth-child(2n){
+  padding: 0 10% 0 5%;
+}

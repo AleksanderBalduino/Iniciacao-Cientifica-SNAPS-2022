@@ -1,30 +1,56 @@
 jQuery(document).ready(function ($) {
-  //Carte USA
-  function showLabel(state) {
-    var postion = document.querySelector(`#${state}`).getBoundingClientRect();
-    console.log(postion, state)
-    const width = postion.width
-    const height = postion.height
 
-    document.querySelector(`.${state}`).style.top = (postion.top + height / 2) + 'px'
-    document.querySelector(`.${state}`).style.left = (postion.left + width / 2) + 'px'
-    document.querySelector(`.${state}`).style.transform = 'translate(-50%, -50%) scale(1)'
+  let h2Label = document.getElementById('h2Label');
+  let pDesc = document.getElementById('pDesc');
+
+  function showLabel(state) {
+    h2Label.innerText = 'Simulador selecionado:'
+    var valorID = document.querySelector(`#${state}`).id;
+    pDesc.classList.replace('d-none','d-block');
+    pDesc.innerText = valorID;
   }
 
   function hideLabel(state) {
-    document.querySelector(`.${state}`).style.transform = 'translate(-50%, -50%) scale(0)'
+    h2Label.innerText = 'Nenhum simulador selecionado';
+    pDesc.classList.replace('d-block','d-none');
   }
 
-  const states = document.querySelectorAll('.jqvmap-region')
+  const orgaoDesc = document.querySelectorAll('.orgao-desc')
 
-  for (let i = 0; i < states.length; i++) {
-    states[i].addEventListener('mouseover', () => {
-      showLabel(states[i].id)
+  for (let i = 0; i < orgaoDesc.length; i++) {
+    orgaoDesc[i].addEventListener('mouseover', () => {
+      showLabel(orgaoDesc[i].id)
     })
-    states[i].addEventListener('mouseleave', () => {
-      hideLabel(states[i].id)
+    orgaoDesc[i].addEventListener('mouseleave', () => {
+      hideLabel(orgaoDesc[i].id)
     })
   }
+});
+
+let Cardiorrespiratorio = document.getElementById('Cardiorrespiratorio');
+let Gastrointestinal = document.getElementById('Gastrointestinal');
+let Metabolismo = document.getElementById('Metabolismo');
+let Olhos = document.getElementById('Olhos');
+let Urogenital = document.getElementById('Urogenital');
+
+Cardiorrespiratorio.addEventListener('click', (e) => {
+  window.location.href = 'simulador-cardiorespiratorio.html';
+});
+
+Gastrointestinal.addEventListener('click', (e) => {
+  window.location.href = 'simulador-gastrointestinal.html';
+});
+
+Metabolismo.addEventListener('click', (e) => {
+  window.location.href = 'simulador-metabolismo.html';
+});
+
+Olhos.addEventListener('click', (e) => {
+  window.location.href = 'simulador-olhos.html';
+});
+
+Urogenital.addEventListener('click', (e) => {
+  window.location.href = 'simulador-urogenital.html';
 });
 
 // let userEmail = document.getElementById('userEmail');

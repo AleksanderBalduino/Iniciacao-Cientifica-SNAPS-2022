@@ -627,15 +627,14 @@ code{
     font-size: 20px;
 }
 
-/* Temporário */
+/* Início Descrição Simulador Body */
 #simuladores-partes{
-    padding: 2.5% 0;
+  width: 100%;
+  display: flex;
 }
 
 .human-body {
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .human-body svg{
@@ -643,46 +642,90 @@ code{
   max-width: 100%;
   max-height: 100%;
   display: block;
-  margin: 0 auto;
-  transform: scale(1);
+}
+
+.human-body svg .st0{fill: #F5C7B5;}
+.human-body svg .st1{fill: #E6B2A1;}
+.human-body svg .st2{fill: none; stroke: #E29D5F; stroke-width: 3.1179; stroke-linecap: round; stroke-miterlimit: 10;}
+.human-body svg .st3{fill: none; stroke: #4F301A; stroke-width: 3.1954; stroke-linecap: round; stroke-linejoin: round;}
+.human-body svg .st4{fill: #FF917B;}
+.human-body svg .st5{fill: #F67E68;}
+.human-body svg .st6{fill: #FFDE9E;}
+.human-body svg .st7{fill: #EB573B;}
+.human-body svg .st8{fill: #AC3A1B;}
+.human-body svg .st9{fill: #F7952D;}
+.human-body svg .st10{fill: url(#SVGID_4_); enable-background: new;}
+.human-body svg .st11{fill: #D83A1B;}
+.human-body svg .st12{fill: #3DA574;}
+.human-body svg .st13{fill: #EC3F1E;}
+.human-body svg .st14{fill: #FFE178;}
+.human-body svg .st15{fill: #4F301A;}
+
+.human-body svg g.body-no-select{
+  cursor: default;
+}
+
+.human-body svg g.body-select{
+  cursor: pointer;
 }
 
 .human-body svg path{
   transition: all 0.6s;
-  cursor: pointer;
 }
 
-.human-body svg path:hover {
-  fill: #a80000;
+.human-body svg g.body-select:hover path,
+.human-body svg g path.body-select:hover{
+  fill: red;
   transition: all 0.3s;
 }
 
-.human-body .head, .human-body .face, .human-body .label{
-    transform: translate(-50%, -50%) scale(0);
-    transition: .3s transform;
+/*.human-body svg g.body-no-select,
+.human-body svg g.body-select{
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
-.human-body .label{
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    pointer-events: none;
+.human-body svg:hover g.body-no-select,
+.human-body svg:hover g.body-select{
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
 
-.human-body .desc{
+.human-body svg g.body-select:hover{
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}*/
+
+.human-body svg g.body-select:hover g path.st15{
+  fill: #4F301A;
+}
+
+.human-body svg g.body-select:hover g path.st3{
+  fill: none;
+}
+
+#simuladores-partes .label-body{
+    padding: 5% 2.5%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#simuladores-partes .label-body h2{
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 0px #000;
+    width: 100%;
+}
+
+#simuladores-partes .desc{
     background: #fff;
     border-radius: 25px;
-    padding: 2px 5px;
     text-align: center;
-    font-size: 0.7rem;
-    margin: 0;
-    width: fit-content;
-    pointer-events: none;
+    font-size: 20px;
+    color: #000;
 }
-/* Temporário */
+/* Fim Descrição Simulador Body */
+
 /* Fim Sessão Simuladores */
 
 /*.simuladores .box-simuladores{

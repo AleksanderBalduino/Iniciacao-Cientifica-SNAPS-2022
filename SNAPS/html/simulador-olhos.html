@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Início Required meta tag -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fim Required meta tag -->
+
+    <title>Simulador - Olhos</title>
+
+    <link rel="icon" href="../assets/images/logo-snaps-navbar.jpg">
+
+    <!-- Início Bootstrap CSS -->
+
+    <!-- Início Bootstrap Header -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+    <!-- Fim Bootstrap CSS -->
+
+    <!-- Início Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Fim Font Awesome CSS -->
+
+    <!-- Início Font Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!-- Fim Font Google -->
+
+    <!-- Fonte utilizada no site -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!-- Fonte utilizada no site -->
+
+    <!-- Início Folha de estilo CSS -->
+    <link rel="stylesheet" href="../css/simuladorolhos.css">
+    <link rel="stylesheet" href="../css/simulador.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!-- Fim Folha de estilo CSS -->
+
+    <!-- Select Droga -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <!-- Select Droga -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+  </head>
+
+  <body class="hero-anime">
+
+    <!-- Inicio do Header -->
+    <header class="navigation-wrap start-header start-style">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-dark">
+          
+            <!-- Início Imagem Logo -->
+            <a class="navbar-brand scroll-link" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <!-- Fim Imagem Logo -->
+
+            <!-- Início Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Fim Menu Hamburguer -->
+
+            <!-- Navegação -->
+            <div id="navbar-target" class="collapse navbar-collapse itens-menu">
+              <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item nav-item-x active">
+                  <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" onclick="location.href='index.html#simuladores';" href="index.html#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
+                    <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
+                  </div>
+                </li>
+                <!--<li class="nav-item">
+                  <a href="exercicios.html" class="nav-link">Exercícios</a>
+                </li>-->
+                <li class="nav-item">
+                  <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="divisoria-nav-links">
+                  <div class="nav-link">|</div>
+                </li>
+                <li class="nav-item-dropdown" id="navItemId" style="margin-right: 20px;">
+                  <i id="iconEmail" class="fa-solid fa-circle-user d-none"></i>
+                  <a id="userEmail" href="login.html" class="nav-link" data-toggle="" aria-expanded="false">
+                    Entrar
+                    <span class="fa fa-angle-down"></span>
+                  </a>
+                  <i id="iconDownArrow" class="fa-solid fa-caret-down d-none"></i>
+                  <ul id="dropdownMenuUserEmail" class="dropdown-menu dropdown-menu-user-email d-none">
+                    <li><a class="dropdown-item" href="login.html"><i class="fa fa-user"></i> Informações</a></li>
+                    <li><a id="signoutlink" class="dropdown-item" href="" onclick="window.location.reload();"><i class="fa fa-sign-out"></i> Encerrar sessão</a></li>
+                  </ul>
+                </li>
+                <li id="btnCadastroNavBar" class="text-box btn-mg-left">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Fim Navegação -->
+
+          </nav>    
+        </div>
+      </div>
+    </header>
+    <!-- Fim do Header -->
+
+    <!-- Início Page preloader -->
+    <!--<div id="pre-loader">
+      <div id="loader-circle"></div>
+      <div class="loader-section"></div>
+    </div>-->
+    <!-- Fim Page preloader -->
+
+    <!-- Início Banner -->
+    <section id="banner-simulador-conteudo"></section>
+    <!-- Fim Banner -->
+
+    <!--Introdução Simulador Olhos-->
+    <section id="simulador-conteudo">
+      <div class="container">
+        <div class="simulador-titulo mb-5">
+          <h3 class="text-center w700 gradient1 d-block">Simulador Olhos</h3>
+        </div>
+
+        <div class="row m-0">
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/heart.png">
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/pills.png">
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <img class="img-fluid" src="../assets/images/simulador-cardio/lung.png">
+          </div>
+        </div>
+
+        <div class="simulador-text mt-5">
+          <p>O simulador tem por objetivo simular o comportamento de organismo de um humano de 70kg.</p>
+          
+          <p>Ele funciona através de testes com diferentes drogas, e como elas reagem ao organismo de um corpo humano, introduzindo a droga por via endovenosa, possibilitanto o monitoramento da Lorem Ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <!--Fim da Primeira seção-->
+
+    <!--Segunda seção-->
+    <section id="simulador-olhos">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-9 simulador-btn-detail">
+
+            <form>
+              <div class="row form-section">
+                <div class="col-md-6">
+                  <h3 class="w700">Selecione a Droga</h3>
+
+                  <div class="chosen-wrapper" data-js="custom-scroll">
+                    <select id="drogas" class="chosen-select" onchange="Desc()">
+                      <option>Nenhuma</option>
+                      <option>Noradrenalina</option>
+                      <option>Aceticolina</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <h3 class="segundo-label w700">Detalhes</h3>
+
+                  <div class="chosen-wrapper" data-js="custom-scroll">
+                    <select id="detail" class="chosen-select" onchange="Desc()">
+                      <option>Efeitos</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <textarea id="detailarea" value="teste" readonly>Nenhuma droga selecionada</textarea>
+            </form>
+
+          </div>
+
+          <div class="col-md-3 d-flex align-items-center">
+            <img class="img-fluid logo-img" src="../assets/images/logo-snaps-navbar.jpg">
+          </div>
+        </div>
+
+        <div class="row olhos-section mt-4 m-0">
+          <div class="box-olhos olhos">
+            <h3 class="h3-titulo w700">Pupíla</h3>
+
+            <div class="d-flex justify-content-center mb-5">
+              <img id="pupila" class="img-fluid" src="../assets/images/simulador-olhos/images-gif/pupila-basal.png">
+            </div>
+
+            <div class="d-flex mt-5 mb-5 box-recptores">
+              <div class="col-md-6">
+                <img id="receptorO1" class="img-fluid" src="../assets/images/simulador-olhos/receptores/alfa1-basal.png">
+              </div>
+              <div class="col-md-6">
+                <img id="receptorO2" class="img-fluid" src="../assets/images/simulador-olhos/receptores/m2-basal.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fim da segunda seção-->
+
+    <section id="receptores">
+      <div class="container">
+        <div class="receptores-desc">
+          <h3 class="text-center w700 gradient1 d-block mb-5">Receptores</h3>
+          <p>Os receptores são macromoléculas que participam da sinalização química dentro da célula e entre diferentes células; podem estar localizados na membrana de superfície ou no citoplasma da célula. Os receptores ativados regulam direta ou indiretamente os processos bioquímicos celulares.</p>
+
+          <p>As moléculas (fármacos, hormônios e neurotransmissores) que se ligam ao receptor são denominadas ligantes. A ligação pode ser específica e reversível. Um ligante pode ativar ou inativar um receptor, podendo a ativação aumentar ou diminuir uma função celular particular. Cada ligante pode interagir com múltiplos subtipos de receptores.</p>
+        </div>
+
+        <div id="carousel" class="mb-5 mt-5">
+          <div id="alfa" class="prevDir option">
+            <h3><strong>Alfa</strong></h3>
+            <a href="#openAlfaBasal" id="AlfaBasal" class="disabled"><button type="button" class="btn btn1 btnalfa"><h3>Basal</h3></button></a>
+            <a href="#openAlfaAtivado" id="AlfaAtivado" class="disabled"><button type="button" class="btn btn2 btnalfa"><h3>Ativado</h3></button></a>
+            <a href="#openAlfaParcialmenteAtivado" id="AlfaParcialmenteAtivado" class="disabled"><button type="button" class="btn btn3 btnalfa"><h3>Parcialmente ativado</h3></button></a>
+            <a href="#openAlfaBloqueado" id="AlfaBloqueado" class="disabled"><button type="button" class="btn btn4 btnalfa"><h3>Bloqueado</h3></button></a>
+          </div>
+
+          <div id="beta" class="selected">
+            <h3><strong>Beta</strong></h3>
+            <a href="#openBetaBasal" id="BetaBasal"><button type="button" class="btn btn1 btn-hover-anim btnbeta"><h3>Basal</h3></button></a> 
+            <a href="#openBetaAtivado" id="BetaAtivado"><button type="button" class="btn btn2 btn-hover-anim btnbeta"><h3>Ativado</h3></button></a>
+            <a href="#openBetaParcialmenteAtivado" id="BetaParcialmenteAtivado"><button type="button" class="btn btn3 btn-hover-anim btnbeta"><h3>Parcialmente ativado</h3></button></a>
+            <a href="#openBetaBloqueado" id="BetaBloqueado"><button type="button" class="btn btn4 btn-hover-anim btnbeta"><h3>Bloqueado</h3></button></a>
+          </div>
+
+          <div id="muscarinico" class="nextDir option">
+            <h3><strong>Muscarínico</strong></h3>
+            <a href="#openMuscarinicoBasal" id="MuscarinicoBasal" class="disabled"><button type="button" class="btn btn1 btnmuscarinico"><h3>Basal</h3></button></a>
+            <a href="#openMuscarinicoAtivado" id="MuscarinicoAtivado" class="disabled"><button type="button" class="btn btn2 btnmuscarinico"><h3>Ativado</h3></button></a>
+            <a href="#openMuscarinicoParcialmenteAtivado" id="MuscarinicoParcialmenteAtivado" class="disabled"><button type="button" class="btn btn3 btnmuscarinico"><h3>Parcialmente ativado</h3></button></a>
+            <a href="#openMuscarinicoBloqueado" id="MuscarinicoBloqueado" class="disabled"><button type="button" class="btn btn4 btnmuscarinico"><h3>Bloqueado</h3></button></a>
+          </div>
+        </div>
+
+        <div id="openBetaBasal" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h3>Beta Basal</h3>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/beta1-basal.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-basal">
+                <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openBetaAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Beta Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/beta1-ativado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-ativado">
+                <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openBetaParcialmenteAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Beta Parcialmente Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/beta1-parcialmente.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-parcialmente">
+                <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+                <!--<a href="#" class="button button2">Button 2</a>-->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openBetaBloqueado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Beta Bloqueado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/beta1-bloqueado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-bloqueado">
+                <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openAlfaBasal" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Alfa Basal</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/alfa1-basal.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-basal">
+                <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openAlfaAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Alfa Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/alfa1-ativado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-ativado">
+                <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openAlfaParcialmenteAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Alfa Parcialmente Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/alfa1-parcialmente.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-parcialmente">
+                <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openAlfaBloqueado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Alfa Bloqueado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/alfa1-bloqueado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-bloqueado">
+                <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openMuscarinicoBasal" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Muscarínico Basal</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/m2-basal.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-basal">
+                <button type="button" class="btn btn-hover-anim-recep btn1"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openMuscarinicoAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Muscarínico Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/m2-ativado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-ativado">
+                <button type="button" class="btn btn-hover-anim-recep btn2"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openMuscarinicoParcialmenteAtivado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Muscarínico Parcialmente Ativado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/m2-parcialmente.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-parcialmente">
+                <button type="button" class="btn btn-hover-anim-recep btn3"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openMuscarinicoBloqueado" class="modalDialog">
+          <div class="openReceptor">
+            <div class="h25 text-center align-text-receptor">
+              <div class="text-receptor">
+                <h2>Muscarínico Bloqueado</h2>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div class="h50">
+              <img src="../assets/images/simulador-cardio/receptores/m2-bloqueado.png">
+            </div>
+            <div class="h25">
+              <a href="#close" class="btn-close close-bloqueado">
+                <button type="button" class="btn btn-hover-anim-recep btn4"><h3>Fechar</h3></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="receptores-desc">
+          <p>Muitos receptores de fármacos podem ser categorizados dentro de dois estados de conformação, que estão em equilíbrio reversível entre si. Esses dois estados são denominados estado ativo e estado inativo. Muitos fármacos atuam como ligantes desses receptores e afetam a probabilidade de o receptor encontrar-se preferencialmente em uma dessas duas conformações. Um fármaco que, através de sua ligação a seu receptor, favorece a conformação ativa deste receptor é denominado agonista, por outro lado, um fármaco que impede a ativação do receptor pelo agonista é designado como antagonista.</p>
+
+          <p>Agonistas ativam receptores que produzem a resposta desejada. Os agonistas convencionais aumentam a proporção de receptores ativados. Os agonistas inversos estabilizam o receptor na sua conformação inativa e agem de forma semelhante aos antagonistas competitivos. Muitos hormônios, neurotransmissores (acetilcolina, histamina e noradrenalina) e fármacos (morfina, fenilefrina e isoproterenol, benzodiazepinas e barbitúricos) agem como agonistas.</p>
+
+          <p>Os antagonistas impedem a ativação do receptor. Essa prevenção da ativação tem muitos efeitos. Antagonistas aumentam a função celular se bloquearem a ação de uma substância que normalmente diminui a função celular. Antagonistas diminuem a função celular se bloquearem a ação de uma substância que normalmente aumenta a função celular.</p>
+
+          <p>Para que ocorra a estimulação pelos neurotransmissores do SNA, eles precisam ligar-se a receptores específicos localizados nas membranas externas dos órgãos-alvo, que agem alterando a permeabilidade das membranas celulares por meio de canais iônicos (ionotrópicos) ou por ativação de enzimas intracelulares que sintetizam segundos mensageiros (metabotróbicos). Para a divisão dos metabotróbicos são classificados dois tipos de receptores.</p>
+
+          <div class="tabs mt-5">
+  
+            <input type="radio" id="tabColinergico" name="tab-control" checked>
+            <input type="radio" id="tabAdrenergico" name="tab-control">
+            <ul class="ul-tabs">
+              <li title="Colinergicos">
+                <label for="tabColinergico" role="button">
+                  <span class="w700 gradient1">Colinérgicos</span>
+                </label>
+              </li>
+
+              <li title="Adrenergicos">
+                <label for="tabAdrenergico" role="button">
+                  <span class="w700 gradient1">Adrenérgicos</span>
+                </label>
+              </li>
+            </ul>
+            
+            <div class="slider">
+              <div class="indicator"></div>
+            </div>
+
+            <div class="content mt-5">
+              <section>
+                <h2 class="w700">Colinérgicos</h2>
+                <p>
+                  O neurotransmissor acetilcolina tem a ver com o sistema colinérgico (por causa da colina). Logo, a via colinérgica é a via da acetilcolina. E como o SNP é quem a usa, podemos entender que quando falamos em transmissão colinérgica, nos referimos ao sistema nervoso parassimpático e como ele regula da sua maneira os tecidos.
+                </p>
+
+                <ul class="content-ul">
+                  <li>
+                    <strong>Receptor colinérgico:</strong> é um receptor que gera uma resposta a partir da molécula de ACh. Dividem-se em:
+                    <ul>
+                      <li>
+                        Receptor muscarínico (receptor de proteína G);
+                      </li>
+
+                      <li>
+                        Receptor nicotínico (receptor de canal iônico).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Neurônio colinérgico:</strong> é quando ele produz ACh.
+                  </li>
+
+                  <li>
+                    <strong>Fármacos colinérgicos:</strong> são aqueles que vão atuar sob os receptores colinérgicos (muscarínicos e nicotínicos)
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 class="w700">Adrenérgicos</h2>
+                <p>
+                  O neurotransmissor norepinefrina (ou noradrenalina, um sinônimo) tem a ver com o sistema adrenérgico (por causa do termo adrenalina, sinônimo de epinefrina). Assim, a via adrenérgica é a via da norepinefrina e como é o SNS quem a usa, toda transmissão adrenérgica tem a ver com o sistema nervoso simpático.
+                </p>
+
+                <ul class="content-ul">
+                  <li>
+                    <strong>Receptor adrenérgico:</strong> é um receptor alvo das catecolaminas (epinefrina e norepinefrina). É um receptor ligado à proteína G. Dividem-se nos subtipos α e β.
+                    
+                    <ul>
+                      <li>
+                        Os receptores α são divididos em α1 e α2, bem como os β são divididos em β1 e β2 e β3, onde certas substâncias agem sobre uns receptores, mas não sobre outros. A noradrenalina excita, principalmente, os receptores α, com menor intensidade os β, enquanto a adrenalina excita ambos com a mesma intensidade.
+                      </li>
+
+                      <li>
+                        Observe-se que determinadas funções β são excitatórias, enquanto outras são inibitórias. O mesmo é válido para os receptores α. Portanto, os receptores α e β não estão necessariamente ligados à excitação ou à inibição, e sim à afinidade dos neurotransmissores pelos receptores em um determinado órgão efetor.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Neurônio adrenérgico:</strong> é quando ele produz NE.
+                  </li>
+
+                  <li>
+                    <strong>Fármacos adrenérgicos:</strong> são aqueles que vão atuar sob os receptores adrenérgicos.
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inicio do Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="footer-box">
+                            <div class="footer-logo">
+                                <img src="../assets/images/footer/snaps-logo-footer.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <div class="footer-contacts d-lg-block d-md-flex">
+                                <div class="footer-contato col">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="contato-text">
+                                        <h4>Celular</h4>
+                                        <a href="tel:+5500000000000">00 00000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contato-text">
+                                        <h4>Telefone</h4>
+                                        <a href="tel:+550000000000">00 0000-0000</a>
+                                    </div>
+                                </div>
+
+                                <div class="footer-contato col">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="contato-text">
+                                        <h4>E-mail</h4>
+                                        <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="footer-box">
+                            <div class="d-flex">
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Links Úteis</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <!-- <li><a href="#">Exercícios</a></li> -->
+                                        <li><a href="#">Sobre</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="links-footer">
+                                    <div class="footer-box-links">
+                                        <h3>Simuladores</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="simulador-cardiorespiratorio.html">Cardiorespiratório</a></li>
+                                        <li><a href="simulador-gastrointestinal.html">Gastrointestinal</a></li>
+                                        <li><a href="simulador-metabolismo.html">Metabolismo</a></li>
+                                        <li><a href="simulador-olhos.html">Olhos</a></li>
+                                        <li><a href="simulador-urogenital.html">Urogenital</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="footer-box">
+                            <div class="footer-btn">
+                                <div class="footer-box-links">
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</p>
+                                </div>
+                                <div class="input-group button-footer">
+                                   <input class="form-control" type="text" placeholder="lorem@ipsum.com" >
+                                   <div class="input-group-append">
+                                       <button class="btn" type="button">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-social-icon">
+                                <h3>Redes sociais</h3>
+                                <!-- <a href="#"><i class="fab fa-instagram instagram-bg"></i></a> -->
+
+                                <div class="container-footer-icon">
+                                  <a class="footer-icon instagram" href="" target="_blank">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px"
+                                      viewBox="0 0 551.034 551.034" xml:space="preserve">
+                                      <g>
+                                         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path class="insta-square" style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                                         c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                                         C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                                         c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                                         c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+                                      
+                                         <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517
+                                         S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083
+                                         s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+                                      
+                                      <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                         <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"/>
+                                      </g>
+                                   </svg>
+                                  </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank" class="w700">Universidade de Ribeirão Preto</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Inicio botão voltar topo -->
+    <button class="back-to-top" type="button"></button>
+    <!-- Inicio botão voltar topo -->
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/waves/0.7.5/waves.min.js'></script>
+
+    <!-- Preloader -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!-- Select cadastro -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.1/jquery.scrollTo.min.js'></script>
+    <!-- Select cadastro -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js'></script>
+
+    <!-- Animação Fade -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/simuladorolhos.js"></script>
+    <script src="../js/loginuserlogout.js"></script>
+
+  </body>
+</html>
