@@ -21,60 +21,54 @@
   padding: 8% 0;
 }
 
+#simulador-conteudo .container{
+  max-width: 1250px;
+}
+
 .simulador-titulo h3{
-  margin-bottom: 8%;
+  font-size: 36px;
+  text-shadow: 1px 0px #000;
+  letter-spacing: 2px;
 }
 
 .simulador-text{  
-  margin-top: 5%;
   padding: 2.5% 5%;
 }
 
 .simulador-text p{
-  line-height: 30px;
+  font-size: 20px;
   text-align: justify;
+}
+
+#simulador-conteudo .row{
+  padding: 2% 1%;
 }
 /* Fim Section Simulador Conteúdo */
 
 /* Início Section Simulador Cardiorespiratório */
 #simulador-cardiorespiratorio{
   background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
-  padding: 40px 0;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  padding: 2.5% 0;
 }
 
 #simulador-cardiorespiratorio .container{
-  padding: 25px;
-}
-
-#simulador-cardiorespiratorio .container h2{
-  color: var(--white-color);
-  margin-bottom: 25px;
-}
-
-#simulador-cardiorespiratorio .simulador-btn-detail{
-  padding: 25px;
+  padding: 1.5%;
 }
 
 #simulador-cardiorespiratorio .simulador-btn-detail h3{
   color: var(--white-color);
   font-size: 24px;
+  text-align: center;
 }
 
 #simulador-cardiorespiratorio .simulador-btn-detail #detailarea{
-  border: 0;
   outline: 0;
   padding: 16px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  border-radius: 20px;
   display: block;
   width: 100%;
   height: 150px;
-  font-size: 18px;
-  margin-top: 16px;
+  font-size: 20px;
   resize: none;
   font-family: 'Quicksand', serif;
 }
@@ -84,7 +78,6 @@
   margin-right: 2%;
   background-color: #fff;
   border-radius: 20px;
-  padding-top: 30px;
 }
 
 #simulador-cardiorespiratorio .pressao-coracao-bronquios-section .box-pcb:nth-child(3){
@@ -95,46 +88,48 @@
 #simulador-cardiorespiratorio .coracao-pulmao img#coracaoPulmao,
 #simulador-cardiorespiratorio .bronquios img#bronq{
   border-radius: 100%;
-  box-shadow: 0px 0px 25px rgba(22,20,19,0.2);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 2.5%;
 }
 
 #simulador-cardiorespiratorio .pressao-arterial h3,
 #simulador-cardiorespiratorio .coracao-pulmao h3,
 #simulador-cardiorespiratorio .bronquios h3{
-  color: var(--balck-color);
-  font-size: 24px;
-  text-align: center;
-  padding: 10px 0 30px 0;
-}
-
-#simulador-cardiorespiratorio .pressao-arterial span{
-  padding: 25px 0;
-  font-size: 24px;
-  text-align: center;
   color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  margin: 7.5% 15%;
+  border-radius: 50px;
+  padding: 1.5%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 #simulador-cardiorespiratorio .pressao-arterial h3#paText{
-  padding: 0 !important;
-  margin: 0;
+  font-size: 24px;
+  box-shadow: none;
+  text-shadow: 1px 0px #000;
 }
 
-#simulador-cardiorespiratorio .coracao-pulmao .col-md-6,
-#simulador-cardiorespiratorio .bronquios .col-md-6{
-  padding: 30px;
+#simulador-cardiorespiratorio .coracao-pulmao .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-cardiorespiratorio .bronquios .box-recptores .col-md-6:nth-child(2n+1){
+  padding: 0 5% 0 10%;
+}
+
+#simulador-cardiorespiratorio .coracao-pulmao .box-recptores .col-md-6:nth-child(2n),
+#simulador-cardiorespiratorio .bronquios .box-recptores .col-md-6:nth-child(2n){
+  padding: 0 10% 0 5%;
 }
 
 #simulador-cardiorespiratorio .vasos-section{
   background-color: var(--white-color);
   border-radius: 20px;
-  padding: 35px 25px;
+  padding: 2.5% 2.5%;
 }
 
 #simulador-cardiorespiratorio .vasos-section .vaso-visceral,
 #simulador-cardiorespiratorio .vasos-section .vaso-muscular{
   width: 48%;
   border-radius: 15px;
-  padding: 5% 0;
   box-shadow: 0px 0px 25px rgba(22,20,19,0.2);
 }
 
@@ -142,19 +137,32 @@
   margin-right: 4%;
 }
 
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral h3,
+#simulador-cardiorespiratorio .vasos-section .vaso-muscular h3{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  margin: 7.5% 25%;
+  border-radius: 50px;
+  padding: 1%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
 #simulador-cardiorespiratorio .vasos-section .col-md-6 img{
   margin: 0 auto;
+}
+
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral img#receptorV1{
+  padding-left: 38%;
+}
+
+#simulador-cardiorespiratorio .vasos-section .vaso-visceral img#receptorV2{
+  padding-right: 38%;
 }
 
 #simulador-cardiorespiratorio .vasos-section .vaso-muscular img#receptorM1,
 #simulador-cardiorespiratorio .vasos-section .vaso-muscular img#receptorM2,
 #simulador-cardiorespiratorio .vasos-section .vaso-muscular img#receptorM3{
-  padding: 0 10px;
-}
-
-#simulador-cardiorespiratorio .vasos-section .vaso-visceral img#receptorV1,
-#simulador-cardiorespiratorio .vasos-section .vaso-visceral img#receptorV2{
-  padding: 0 30px;
 }
 
 /* Início Select Option Simulador */
@@ -206,6 +214,7 @@
 
 .chosen-wrapper .chosen-container .chosen-single span{
   text-align: center;
+  font-size: 20px;
 }
 
 .chosen-wrapper .chosen-container.chosen-with-drop .chosen-single{
@@ -284,23 +293,253 @@
   padding: 5% 0;
 }
 
+#receptores .container{
+  max-width: 1250px;
+}
+
 .receptores-desc{
-  padding: 2.5% 7.5%;
+  padding: 2.5% 5%;
 }
 
 .receptores-desc h3{
-  text-align: center;
-  margin-bottom: 5%;
+  font-size: 36px;
+  text-shadow: 1px 0px #000;
+  letter-spacing: 2px;
 }
 
 .receptores-desc p{
-  line-height: 30px;
   text-align: justify;
+  font-size: 20px;
 }
 
-.receptores-desc p:nth-child(3n){
-  margin-top: 2%;
+/* Tabs - Receptores */
+
+.tabs{
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 240px;
 }
+
+.tabs input[name=tab-control]{
+  display: none;
+}
+
+.tabs .content section h2,
+.tabs ul.ul-tabs li label{
+  font-size: 22px;
+  color: #428BFF;
+}
+
+.tabs ul.ul-tabs{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.tabs ul.ul-tabs li{
+  box-sizing: border-box;
+  flex: 1;
+  width: 25%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.tabs ul.ul-tabs li label{
+  color: #929daf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.tabs ul.ul-tabs li label:hover, .tabs ul.ul-tabs li label:focus, .tabs ul.ul-tabs li label:active{
+  outline: 0;
+  color: #bec5cf;
+}
+
+.tabs ul.ul-tabs li label span{
+  padding: 1% 2.5%;
+  text-shadow: 1px 0 #000;
+}
+
+.tabs .slider{
+  position: relative;
+  width: 50%;
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
+.tabs .slider .indicator{
+  position: relative;
+  width: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background: linear-gradient(270deg, #234584 0%, #7D0C0E 100%);
+  border-radius: 50px;
+}
+
+.tabs .content section{
+  display: none;
+  animation-name: content;
+  animation-direction: normal;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.tabs .content section h2{
+  color: #428BFF;
+  display: none;
+}
+
+.tabs .content section h2::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #428BFF;
+  margin-top: 5px;
+}
+
+.tabs .content section p,
+.tabs .content section ul.content-ul{
+  font-size: 20px;
+}
+
+.tabs .content section ul.content-ul{
+  list-style-position: inside;
+}
+
+.tabs .content section ul.content-ul li{
+  padding: 1% 0;
+}
+
+.tabs .content section ul.content-ul li ul{
+  margin-left: 2.5%;
+}
+
+.tabs .content section ul.content-ul strong{
+  font-weight: 700;
+  text-shadow: 1px 0 #000;
+}
+
+.tabs input[name=tab-control]:nth-of-type(1) ~ ul.ul-tabs > li:nth-child(1) > label span{
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs input[name=tab-control]:nth-of-type(1) ~ ul.ul-tabs > li:nth-child(1) > label:hover span{
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ ul.ul-tabs > li:nth-child(1) > label{
+  cursor: default;
+  color: #428BFF;
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ ul.ul-tabs > li:nth-child(1) > label:hover span{
+  font-size: 22px;
+}
+
+@media (max-width: 600px){
+  .tabs input[name=tab-control]:nth-of-type(1):checked ~ ul.ul-tabs > li:nth-child(1) > label{
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider{
+  transform: translateX(0%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > section:nth-child(1){
+  display: block;
+}
+
+.tabs input[name=tab-control]:nth-of-type(2) ~ ul.ul-tabs > li:nth-child(2) > label span{
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs input[name=tab-control]:nth-of-type(2) ~ ul.ul-tabs > li:nth-child(2) > label:hover span{
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul.ul-tabs > li:nth-child(2) > label{
+  cursor: default;
+  color: #428BFF;
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul.ul-tabs > li:nth-child(2) > label:hover span{
+  font-size: 22px;
+}
+
+@media (max-width: 600px){
+  .tabs input[name=tab-control]:nth-of-type(2):checked ~ ul.ul-tabs > li:nth-child(2) > label{
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider{
+  transform: translateX(100%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > section:nth-child(2){
+  display: block;
+}
+
+@keyframes content{
+  from{
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 1000px){
+  .tabs ul.ul-tabs li label{
+    white-space: initial;
+  }
+}
+
+@media (max-width: 600px){
+  .tabs ul.ul-tabs li label{
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .tabs ul.ul-tabs li label span{
+    display: none;
+  }
+
+  .tabs .slider{
+    display: none;
+  }
+
+  .tabs .content{
+    margin-top: 20px;
+  }
+
+  .tabs .content section h2{
+    display: block;
+  }
+}
+
+/* Tabs - Receptores */
 
 /* Carrosel Receptores */
 #carousel{
@@ -340,16 +579,21 @@
   border: 0;
 }
 
+#carousel div button.btn:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 #carousel div button.btn:hover{
   cursor: pointer;
 }
 
 #carousel div button.btn1{
-  background-color: #66A5CF;
+  background-color: #595959;
 }
 
 #carousel div button.btn1:hover h3{
-  color: #66A5CF;
+  color: #595959;
 }
 
 #carousel div button.btn2{
@@ -361,11 +605,11 @@
 }
 
 #carousel div button.btn3{
-  background: linear-gradient(270deg, #66A5CF 0%, #FFF200 100%);
+  background: linear-gradient(270deg, #595959 0%, #FFF200 100%);
 }
 
 #carousel div button.btn3:hover h3{
-  background: -webkit-linear-gradient(180deg, #66A5CF 0%, #FFF200 100%);
+  background: -webkit-linear-gradient(180deg, #595959 0%, #FFF200 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -387,7 +631,7 @@
   width: 390px;
   height: 486px;
   z-index: 1;
-  left: 70%;
+  left: 68%;
   transform: translateY(5%) translateX(-10%);
   opacity: 0.6;
 }
@@ -396,7 +640,7 @@
   width: 390px;
   height: 486px;
   z-index: 2;
-  left: 30%;
+  left: 32%;
   transform: translateY(5%) translateX(-90%);
   opacity: 0.6;
 }
@@ -412,7 +656,7 @@
   width: 390px;
   height: 486px;
   z-index: 1;
-  left: 70%;
+  left: 68%;
   transform: translateY(5%) translateX(-10%);
   opacity: 0.6;
 }
@@ -421,7 +665,7 @@
   width: 390px;
   height: 486px;
   z-index: 2;
-  left: 30%;
+  left: 32%;
   transform: translateY(5%) translateX(-90%);
   opacity: 0.6;
 }
@@ -459,7 +703,6 @@
   content: "";
   transition: transform 0.7s ease-out;
   transform: scale(0);
-  /*transform-origin: 50%;*/
   background-color: #fff;
 }
 /* Fim Botões Carrosel Receptores */
@@ -470,10 +713,8 @@
   display: block;
   position: fixed;
   pointer-events: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
   color: #4e5557;
   background: rgba(0, 0, 0, 0.9);
   z-index: 99999;
@@ -497,10 +738,11 @@
 }
 
 .modalDialog > div {
-  position: relative;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
   width: 400px;
   height: 500px;
-  margin: 5% auto;
+  margin: auto;
   padding: 18px 20px 20px 20px;
   border-radius: 20px;
   background: #fff;
@@ -551,7 +793,7 @@
 }
 
 .h25 a.btn-close.close-basal::before{
-  background: #66A5CF;
+  background: #595959;
 }
 
 .h25 a.btn-close.close-ativado::before{
@@ -559,7 +801,7 @@
 }
 
 .h25 a.btn-close.close-parcialmente::before{
-  background: -webkit-linear-gradient(180deg, #66A5CF 00%, #FFF200 100%);
+  background: -webkit-linear-gradient(180deg, #595959 0%, #FFF200 100%);
 }
 
 .h25 a.btn-close.close-bloqueado::before{
@@ -572,8 +814,13 @@
   background: none;
 }
 
+.h25 a button.btn:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 .h25 a.btn-close.close-basal button.btn h3{
-  color: #66A5CF;
+  color: #595959;
 }
 
 .h25 a.btn-close.close-ativado button.btn h3{
@@ -581,7 +828,7 @@
 }
 
 .h25 a.btn-close.close-parcialmente button.btn h3{
-  background: -webkit-linear-gradient(180deg, #66A5CF 0%, #FFF200 100%);
+  background: -webkit-linear-gradient(180deg, #595959 0%, #FFF200 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -640,7 +887,7 @@
 }
 
 .btn-hover-anim-recep.btn1:before{
-  background-color: #66A5CF;
+  background-color: #595959;
 }
 
 .btn-hover-anim-recep.btn2:before{
@@ -648,7 +895,7 @@
 }
 
 .btn-hover-anim-recep.btn3:before{
-  background: -webkit-linear-gradient(180deg, #66A5CF 00%, #FFF200 100%);
+  background: -webkit-linear-gradient(180deg, #595959 00%, #FFF200 100%);
 }
 
 .btn-hover-anim-recep.btn4:before{

@@ -323,30 +323,6 @@
   margin-bottom: 20px;
 }
 
-@supports (mix-blend-mode: lighten) {
-.gradient1 {
-    display: inline-block;
-    position: relative;
-    color: #000;
-    background: #fff;
-    mix-blend-mode: multiply;
-  }
-.gradient1::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right,#7D0C0E, #234584);
-    pointer-events: none;
-  }
-.gradient1::before {
-    mix-blend-mode: screen;
-  }
-}
-
 .form form{
   width: 450px;
 }

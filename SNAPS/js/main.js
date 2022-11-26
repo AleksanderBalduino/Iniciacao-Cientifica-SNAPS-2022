@@ -456,3 +456,64 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 initPhotoSwipeFromDOM(".my-gallery");
 /*================================================================================================================*/
+
+/* Animação Fade */
+class ScrollFadeIn {
+  constructor() {
+    this.ANIMATION_CLASS = 'is-animation';
+
+    let $section = document.querySelectorAll('.js-scroll-fade-in:not(.is-animation)');
+    if ($section.length === null) {
+      return;
+    }
+    let controller = new ScrollMagic.Controller();
+    for (let i = 0; i < $section.length; i++) {
+      let scene = new ScrollMagic.Scene({
+        triggerElement: $section[i],
+        triggerHook: 'onEnter',
+        reverse: false,
+        offset: 100 }).
+
+      addTo(controller);
+      scene.on('enter', () => {
+        $section[i].classList.add(this.ANIMATION_CLASS);
+      });
+      scene.on('end', () => {
+        scene.destroy(true);
+      });
+    }
+  }
+}
+
+new ScrollFadeIn();
+
+class ScrollFade {
+  constructor() {
+    this.ANIMATION_CLASS = 'is-animation';
+
+    let $section = document.querySelectorAll('.js-scroll-fade:not(.is-animation)');
+    if ($section.length === null) {
+      return;
+    }
+    let controller = new ScrollMagic.Controller();
+    for (let i = 0; i < $section.length; i++) {
+      let scene = new ScrollMagic.Scene({
+        triggerElement: $section[i],
+        triggerHook: 'onEnter',
+        reverse: false,
+        offset: 100 }).
+
+      addTo(controller);
+      scene.on('enter', () => {
+        $section[i].classList.add(this.ANIMATION_CLASS);
+      });
+      scene.on('end', () => {
+        scene.destroy(true);
+      });
+    }
+  }
+}
+
+new ScrollFade();
+
+/*================================================================================================================*/

@@ -237,24 +237,22 @@ function Desc(){
  
   switch(droga){
     case 'Nenhuma':
-      document.querySelector('#pressao').src = '..assets/images/simulador-cardio/pressao/pnormal.png'
+      document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pnormal.jpg'
       document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/basal.gif'
       document.querySelector('#DivpaText').classList.remove('d-block')
       document.querySelector('#paText').innerHTML = ''
       document.querySelector('#receptorCP1').src = '../assets/images/simulador-cardio/receptores/beta1-basal.png'
       document.querySelector('#receptorCP2').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
       document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-normal.png'
-      document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-      document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta1-basal.png'
-      //document.querySelector('#b1').src = '../assets/images/simulador-cardio/M3Azul.jpg'
-      //document.querySelector('#b2').src = '../assets/images/simulador-cardio/Beta2Azul.jpg'
-      //document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Azul.jpg'
-      //document.querySelector('#vs2').src = '../assets/images/simulador-cardio/M3Azul.jpg'
-      document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.png'
-      //document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Azul.jpg'
-      //document.querySelector('#vm2').src = '../assets/images/simulador-cardio/Beta2Azul.jpg'
-      //document.querySelector('#vm3').src = '../assets/images/simulador-cardio/M3Azul.jpg'
-      document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.png'
+      document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
+      document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+      document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.gif'
+      document.querySelector('#receptorV1').src = '../assets/images/simulador-cardio/receptores/alfa1-basal.png'
+      document.querySelector('#receptorV2').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
+      document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.gif'
+      document.querySelector('#receptorM1').src = '../assets/images/simulador-cardio/receptores/alfa1-basal.png'
+      document.querySelector('#receptorM2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+      document.querySelector('#receptorM3').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
 
       switch(detail){
         case 'Descrição':
@@ -276,20 +274,22 @@ function Desc(){
     break;
 
     case 'Noradrenalina':
-        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pnormal.png'
-        document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/basal.gif'
+        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pmalta.jpg'
+        document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/acelerado.gif'
         document.querySelector('#DivpaText').classList.add('d-block')
         document.querySelector('#paText').innerHTML = '<strong>NOR 4mg</strong>'
         document.querySelector('#receptorCP1').src = '../assets/images/simulador-cardio/receptores/beta1-ativado.png'
         document.querySelector('#receptorCP2').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-        document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-asma.png'
-        document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-        document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta1-basal.png'
-        //document.querySelector('#rc1').src = '../assets/images/simulador-cardio/Beta1Amarelo.jpg'
-        //document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.gif'
-        //document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-        document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/normal.gif'
+        document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-normal.png'
+        document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
+        document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/contracao.gif'
+        document.querySelector('#receptorV1').src = '../assets/images/simulador-cardio/receptores/alfa1-ativado.png'
+      	document.querySelector('#receptorV2').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
+        document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/contracao.gif'
+        document.querySelector('#receptorM1').src = '../assets/images/simulador-cardio/receptores/alfa1-ativado.png'
+      	document.querySelector('#receptorM2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+      	document.querySelector('#receptorM3').src = '../assets/images/simulador-cardio/receptores/m3-basal.png'
 
         switch(detail){
           case 'Descrição':
@@ -310,73 +310,39 @@ function Desc(){
         }
     break;
 
-    // case 'Noradrenalina':
-    //     document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao-noradrenalina.jpg'
-    //     document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/bradicardia.gif'
-    //     document.querySelector('#DivpaText').classList.add('d-block')
-    //     document.querySelector('#paText').innerHTML = '<strong>NOR 4mg</strong>'
-    //     document.querySelector('#receptorCP1').src = '../assets/images/simulador-cardio/receptores/beta1-ativado.png'
-    //     document.querySelector('#receptorCP2').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-    //     document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-asma.png'
-    //     document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-    //     document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta1-basal.png'
-    //     //document.querySelector('#rc1').src = '../assets/images/simulador-cardio/Beta1Amarelo.jpg'
-    //     //document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-    //     document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/contracao.gif'
-    //     //document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-    //     document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/contracao.gif'
-
-    //     switch(detail){
-    //       case 'Descrição':
-    //         document.getElementById('detailarea').value = 'Agonista α₁, e β₁ predominantemente.'
-    //       break;
-
-    //       case 'Efeitos':
-    //         document.getElementById('detailarea').value = 'Efeitos cronotrópicos positivos, vasoconstricção visceral e muscular, levando ao aumento da pressão arterial.'
-    //       break;
-
-    //       case 'Uso Clínico':
-    //         document.getElementById('detailarea').value = 'Hipotensão significativa, reanimação de atividade elétrica sem pulso (AESP) em assistolia.'
-    //       break;
-
-    //       case 'Efeitos Adversos':
-    //         document.getElementById('detailarea').value = 'Arritmias cardíacas, hipertensão arterial, tremores, taquicardia.'
-    //       break;
-    //     }
-    // break;
-
-    case 'Adrenalina':
-        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao-adrenalina.jpg'
-        document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/bradicardia.gif'
+    case 'Aceticolina':
+        document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pmbaixa.jpg'
+        document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/desacelerado.gif'
         document.querySelector('#DivpaText').classList.add('d-block')
-        document.querySelector('#paText').innerHTML = '<strong>ADR 1g</strong>'
-        document.querySelector('#receptorCP1').src = '../assets/images/simulador-cardio/receptores/beta1-ativado.png'
-        document.querySelector('#receptorCP2').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-        document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-normal.png'
-        document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m2-basal.png'
-        document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta1-ativado.png'
-        //document.querySelector('#b2').src = '../assets/images/simulador-cardio/Beta2Amarelo.jpg'
-        //document.querySelector('#vs1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/contracao.gif'
-        //document.querySelector('#vm1').src = '../assets/images/simulador-cardio/Alfa1Amarelo.jpg'
-        //document.querySelector('#vm2').src = '../assets/images/simulador-cardio/Beta2Amarelo.jpg'
+        document.querySelector('#paText').innerHTML = '<strong>ACH 0mcg</strong>'
+        document.querySelector('#receptorCP1').src = '../assets/images/simulador-cardio/receptores/beta1-basal.png'
+        document.querySelector('#receptorCP2').src = '../assets/images/simulador-cardio/receptores/m2-ativado.png'
+        document.querySelector('#bronq').src = '../assets/images/simulador-cardio/images-gifs/bronquio-asma-grave.png'
+        document.querySelector('#receptorB1').src = '../assets/images/simulador-cardio/receptores/m3-ativado.png'
+        document.querySelector('#receptorB2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+        document.querySelector('#vscorpo').src = '../assets/images/simulador-cardio/images-gifs/dilatacao.gif'
+        document.querySelector('#receptorV1').src = '../assets/images/simulador-cardio/receptores/alfa1-basal.png'
+      	document.querySelector('#receptorV2').src = '../assets/images/simulador-cardio/receptores/m3-ativado.png'
         document.querySelector('#vmcorpo').src = '../assets/images/simulador-cardio/images-gifs/dilatacao.gif'
+        document.querySelector('#receptorM1').src = '../assets/images/simulador-cardio/receptores/alfa1-basal.png'
+      	document.querySelector('#receptorM2').src = '../assets/images/simulador-cardio/receptores/beta2-basal.png'
+      	document.querySelector('#receptorM3').src = '../assets/images/simulador-cardio/receptores/m3-ativado.png'
 
         switch(detail){
           case 'Descrição':
-            document.getElementById('detailarea').value = 'Agonista do sistema nervoso simpático.'
+            document.getElementById('detailarea').value = 'Neurotransmissor parassimpático.'
           break;
 
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Aumento da frequência cardíaca, força de contração cardíaca , vasoconstricção visceral e vasodilatação muscular, levando ao aumento da pressão arterial.'
+            document.getElementById('detailarea').value = 'Hipotensão arterial, bradicardia, dilatação visceral e muscular e broncoconstricção.'
           break;
 
           case 'Uso Clínico':
-            document.getElementById('detailarea').value = 'AESP e PCR em assistolia.'
+            document.getElementById('detailarea').value = 'Nada informado.'
           break;
 
           case 'Efeitos Adversos':
-            document.getElementById('detailarea').value = 'Hipertensão arterial e arritmias.'
+            document.getElementById('detailarea').value = 'Nada informado.'
           break;
         }
     break;

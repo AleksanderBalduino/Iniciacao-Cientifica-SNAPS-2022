@@ -80,7 +80,7 @@
                     <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
                     <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
                     <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
-                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <!--<a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>-->
                     <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
                     <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
@@ -133,11 +133,11 @@
     <!--Introdução Simulador Cardiorespiratório-->
     <section id="simulador-conteudo">
       <div class="container">
-        <div class="simulador-titulo">
+        <div class="simulador-titulo mb-5">
           <h3 class="text-center w700 gradient1 d-block">Simulador Cardiorespiratório</h3>
         </div>
 
-        <div class="row">
+        <div class="row m-0">
           <div class="col-md-4 d-flex justify-content-center">
             <img class="img-fluid" src="../assets/images/simulador-cardio/heart.png">
           </div>
@@ -151,7 +151,7 @@
           </div>
         </div>
 
-        <div class="simulador-text">
+        <div class="simulador-text mt-5">
           <p>O simulador tem por objetivo simular o comportamento de organismo de um humano de 70kg.</p>
           
           <p>Ele funciona através de testes com diferentes drogas, e como elas reagem ao organismo de um corpo humano, introduzindo a droga por via endovenosa, possibilitanto o monitoramento da frequência cardíaca, pressão arterial e o diâmetro dos vasos e brônquios.</p>
@@ -172,13 +172,14 @@
             <form>
               <div class="row form-section">
                 <div class="col-md-6">
-                  <h3>Selecione a Droga:</h3>
+                  <h3 class="w700">Selecione a Droga</h3>
 
                   <div class="chosen-wrapper" data-js="custom-scroll">
                     <select id="drogas" class="chosen-select" onchange="Desc()">
                       <option>Nenhuma</option>
                       <option>Noradrenalina</option>
-                      <option>Adrenalina</option>
+                      <option>Aceticolina</option>
+                      <!-- <option>Adrenalina</option>
                       <option>AgonistaBetaADRi</option>
                       <option>AgonistaBeta1ADRe</option>
                       <option>AgonistaBeta2ADRe</option>
@@ -190,19 +191,18 @@
                       <option>AntagonistaAlfaBeta</option>
                       <option>AntagonistaBeta1</option>
                       <option>AntagonistaAlfa1</option>
-                      <option>Aceticolina</option>
                       <option>AgonistaMi</option>
                       <option>ANTcolinesterase</option>
                       <option>AntagonistaMi</option>
                       <option>AntagonistaMe</option>
                       <option>AgonistaNicotinico</option>
-                      <option>AntagonistaNicotinico</option>
+                      <option>AntagonistaNicotinico</option> -->
                     </select>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                  <h3 class="segundo-label">Detalhes</h3>
+                  <h3 class="segundo-label w700">Detalhes</h3>
 
                   <div class="chosen-wrapper" data-js="custom-scroll">
                     <select id="detail" class="chosen-select" onchange="Desc()">
@@ -227,25 +227,25 @@
 
         <div class="row pressao-coracao-bronquios-section mt-4 m-0">
           <div class="box-pcb pressao-arterial">
-            <h3 class="h3-titulo">Pressão Arterial</h3>
+            <h3 class="h3-titulo w700">Pressão Arterial</h3>
 
             <div class="d-flex justify-content-center mb-5">
-              <img id="pressao" class="img-fluid" src="../assets/images/simulador-cardio/pressao/pnormal.png">
+              <img id="pressao" class="img-fluid" src="../assets/images/simulador-cardio/pressao/pnormal.jpg">
             </div>
 
             <div id="DivpaText" class="d-none justify-content-center">
-              <h3 id="paText"></h3>
+              <h3 id="paText" class="w700"></h3>
             </div>
           </div>
 
           <div class="box-pcb coracao-pulmao">
-            <h3 class="h3-titulo">Coração/Pulmão</h3>
+            <h3 class="h3-titulo w700">Coração/Pulmão</h3>
 
             <div class="d-flex justify-content-center">
               <img style="max-width: 72%;" id="coracaoPulmao" class="img-fluid" src="../assets/images/simulador-cardio/images-gifs/basal.gif">
             </div>
 
-            <div class="d-flex pl-3 pr-3">
+            <div class="d-flex mt-5 mb-5 box-recptores">
               <div class="col-md-6">
                 <img id="receptorCP1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/beta1-basal.png">
               </div>
@@ -256,13 +256,13 @@
           </div>
 
           <div class="box-pcb bronquios">
-            <h3 class="h3-titulo">Brônquios</h3>
+            <h3 class="h3-titulo w700">Brônquios</h3>
 
             <div class="d-flex justify-content-center">
               <img id='bronq' class="img-fluid" src="../assets/images/simulador-cardio/images-gifs/bronquio-normal.png">
             </div>
 
-            <div class="d-flex pl-3 pr-3">
+            <div class="d-flex mt-5 mb-5 box-recptores">
               <div class="col-md-6">
                 <img id="receptorB1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/m3-basal.png">
               </div>
@@ -273,17 +273,17 @@
           </div>
         </div>
 
-        <div class="row vasos mt-5 m-0">
+        <div class="row vasos mt-4 m-0">
           <div class="col-md-12 vasos-section">
             <h3 class="vasos-titulo text-center mb-5">Vasos</h3>
             
             <div class="col-md-12 d-flex mt-4">
               <div class="vaso-visceral">
-                <h3 class="text-center">Visceral</h3>
+                <h3 class="text-center w700">Visceral</h3>
 
-                <img id="vscorpo" class="img-fluid d-flex p-4" src="../assets/images/simulador-cardio/images-gifs/normal.gif">
+                <img id="vscorpo" class="img-fluid d-flex" src="../assets/images/simulador-cardio/images-gifs/normal.gif">
 
-                <div class="col-md-12 d-flex px-4">
+                <div class="col-md-12 d-flex mb-5 mt-5">
                   <div class="col-md-6">
                     <img id="receptorV1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/alfa1-basal.png">
                   </div>
@@ -294,18 +294,18 @@
               </div>
 
               <div class="vaso-muscular">
-                <h3 class="text-center">Muscular</h3>
+                <h3 class="text-center w700">Muscular</h3>
 
-                <img id="vmcorpo" class="img-fluid d-flex p-4" src="../assets/images/simulador-cardio/images-gifs/normal.gif">
+                <img id="vmcorpo" class="img-fluid d-flex" src="../assets/images/simulador-cardio/images-gifs/normal.gif">
 
-                <div class="col-md-12 d-flex px-4">
-                  <div class="receptor-muscular">
+                <div class="col-md-12 d-flex mb-5 mt-5">
+                  <div class="col-md-4">
                     <img id="receptorM1" class="img-fluid" src="../assets/images/simulador-cardio/receptores/alfa1-basal.png">
                   </div>
-                  <div class="receptor-muscular">
+                  <div class="col-md-4">
                     <img id="receptorM2" class="img-fluid" src="../assets/images/simulador-cardio/receptores/beta2-basal.png">
                   </div>
-                  <div class="receptor-muscular">
+                  <div class="col-md-4">
                     <img id="receptorM3" class="img-fluid" src="../assets/images/simulador-cardio/receptores/m3-basal.png">
                   </div>
                 </div>
@@ -320,13 +320,13 @@
     <section id="receptores">
       <div class="container">
         <div class="receptores-desc">
-          <h3 class="text-center w700 gradient1 d-block">Receptores</h3>
+          <h3 class="text-center w700 gradient1 d-block mb-5">Receptores</h3>
           <p>Os receptores são macromoléculas que participam da sinalização química dentro da célula e entre diferentes células; podem estar localizados na membrana de superfície ou no citoplasma da célula. Os receptores ativados regulam direta ou indiretamente os processos bioquímicos celulares.</p>
 
           <p>As moléculas (fármacos, hormônios e neurotransmissores) que se ligam ao receptor são denominadas ligantes. A ligação pode ser específica e reversível. Um ligante pode ativar ou inativar um receptor, podendo a ativação aumentar ou diminuir uma função celular particular. Cada ligante pode interagir com múltiplos subtipos de receptores.</p>
         </div>
 
-        <div id="carousel" class="mb-4">
+        <div id="carousel" class="mb-5 mt-5">
           <div id="alfa" class="prevDir option">
             <h3><strong>Alfa</strong></h3>
             <a href="#openAlfaBasal" id="AlfaBasal" class="disabled"><button type="button" class="btn btn1 btnalfa"><h3>Basal</h3></button></a>
@@ -590,6 +590,92 @@
 
           <p>Para que ocorra a estimulação pelos neurotransmissores do SNA, eles precisam ligar-se a receptores específicos localizados nas membranas externas dos órgãos-alvo, que agem alterando a permeabilidade das membranas celulares por meio de canais iônicos (ionotrópicos) ou por ativação de enzimas intracelulares que sintetizam segundos mensageiros (metabotróbicos). Para a divisão dos metabotróbicos são classificados dois tipos de receptores.</p>
 
+          <div class="tabs mt-5">
+  
+            <input type="radio" id="tabColinergico" name="tab-control" checked>
+            <input type="radio" id="tabAdrenergico" name="tab-control">
+            <ul class="ul-tabs">
+              <li title="Colinergicos">
+                <label for="tabColinergico" role="button">
+                  <span class="w700 gradient1">Colinérgicos</span>
+                </label>
+              </li>
+
+              <li title="Adrenergicos">
+                <label for="tabAdrenergico" role="button">
+                  <span class="w700 gradient1">Adrenérgicos</span>
+                </label>
+              </li>
+            </ul>
+            
+            <div class="slider">
+              <div class="indicator"></div>
+            </div>
+
+            <div class="content mt-5">
+              <section>
+                <h2 class="w700">Colinérgicos</h2>
+                <p>
+                  O neurotransmissor acetilcolina tem a ver com o sistema colinérgico (por causa da colina). Logo, a via colinérgica é a via da acetilcolina. E como o SNP é quem a usa, podemos entender que quando falamos em transmissão colinérgica, nos referimos ao sistema nervoso parassimpático e como ele regula da sua maneira os tecidos.
+                </p>
+
+                <ul class="content-ul">
+                  <li>
+                    <strong>Receptor colinérgico:</strong> é um receptor que gera uma resposta a partir da molécula de ACh. Dividem-se em:
+                    <ul>
+                      <li>
+                        Receptor muscarínico (receptor de proteína G);
+                      </li>
+
+                      <li>
+                        Receptor nicotínico (receptor de canal iônico).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Neurônio colinérgico:</strong> é quando ele produz ACh.
+                  </li>
+
+                  <li>
+                    <strong>Fármacos colinérgicos:</strong> são aqueles que vão atuar sob os receptores colinérgicos (muscarínicos e nicotínicos)
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 class="w700">Adrenérgicos</h2>
+                <p>
+                  O neurotransmissor norepinefrina (ou noradrenalina, um sinônimo) tem a ver com o sistema adrenérgico (por causa do termo adrenalina, sinônimo de epinefrina). Assim, a via adrenérgica é a via da norepinefrina e como é o SNS quem a usa, toda transmissão adrenérgica tem a ver com o sistema nervoso simpático.
+                </p>
+
+                <ul class="content-ul">
+                  <li>
+                    <strong>Receptor adrenérgico:</strong> é um receptor alvo das catecolaminas (epinefrina e norepinefrina). É um receptor ligado à proteína G. Dividem-se nos subtipos α e β.
+                    
+                    <ul>
+                      <li>
+                        Os receptores α são divididos em α1 e α2, bem como os β são divididos em β1 e β2 e β3, onde certas substâncias agem sobre uns receptores, mas não sobre outros. A noradrenalina excita, principalmente, os receptores α, com menor intensidade os β, enquanto a adrenalina excita ambos com a mesma intensidade.
+                      </li>
+
+                      <li>
+                        Observe-se que determinadas funções β são excitatórias, enquanto outras são inibitórias. O mesmo é válido para os receptores α. Portanto, os receptores α e β não estão necessariamente ligados à excitação ou à inibição, e sim à afinidade dos neurotransmissores pelos receptores em um determinado órgão efetor.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Neurônio adrenérgico:</strong> é quando ele produz NE.
+                  </li>
+
+                  <li>
+                    <strong>Fármacos adrenérgicos:</strong> são aqueles que vão atuar sob os receptores adrenérgicos.
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
           <!-- <div class="tabs-container mt-5">
             <div class="tabs">
               <input type="radio" id="tabColinergico" name="tab-control" checked>
@@ -637,7 +723,7 @@
     </section>
 
     <!-- Inicio do Footer -->
-    <footer class="footer reveal fade-in">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
@@ -687,9 +773,8 @@
                                     </div>
                                     <ul>
                                         <li><a href="#">Home</a></li>
+                                        <!-- <li><a href="#">Exercícios</a></li> -->
                                         <li><a href="#">Sobre</a></li>
-                                        <li><a href="#">Entrar</a></li>
-                                        <li><a href="#">Cadastrar-se</a></li>
                                     </ul>
                                 </div>
 
@@ -701,7 +786,7 @@
                                         <li><a href="#">Cardiorespiratório</a></li>
                                         <li><a href="#">Gastrointestinal</a></li>
                                         <li><a href="#">Glândulas</a></li>
-                                        <li><a href="#">Metabolismo</a></li>
+                                        <!-- <li><a href="#">Metabolismo</a></li> -->
                                         <li><a href="#">Olhos</a></li>
                                         <li><a href="#">Urogenital</a></li>
                                     </ul>
@@ -730,7 +815,47 @@
 
                             <div class="footer-social-icon">
                                 <h3>Redes sociais</h3>
-                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                                <!-- <a href="#"><i class="fab fa-instagram instagram-bg"></i></a> -->
+
+                                <div class="container-footer-icon">
+                                  <a class="footer-icon instagram" href="" target="_blank">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px"
+                                      viewBox="0 0 551.034 551.034" xml:space="preserve">
+                                      <g>
+                                         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path class="insta-square" style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                                         c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                                         C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                                         c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                                         c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+                                      
+                                         <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517
+                                         S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083
+                                         s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+                                      
+                                      <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                         <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"/>
+                                      </g>
+                                   </svg>
+                                  </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -742,7 +867,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 text-center">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank">Universidade de Ribeirão Preto</a>.</p>
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank" class="w700">Universidade de Ribeirão Preto</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -774,6 +899,9 @@
     <!-- Select cadastro -->
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js'></script>
+
+    <!-- Animação Fade -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
 
     <script src="../js/main.js"></script>
     <script src="../js/simuladorcardio.js"></script>

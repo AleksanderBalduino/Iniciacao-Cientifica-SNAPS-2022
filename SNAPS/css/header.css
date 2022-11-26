@@ -47,35 +47,35 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.nav-link{
-    color: #000 !important;
-    font-weight: 500;
+.nav-item,
+.nav-item-dropdown{
+    position: relative;
     transition: all 200ms linear;
+    margin: 0 25px;
 }
 
-.nav-item:hover .nav-link{
-    color: #000 !important;
-}
-
-.nav-item.active .nav-link{
+.nav-item.active .nav-link,
+.nav-item-dropdown.active .nav-link{
     color: #000 !important;
     border-bottom: 2px solid #000;
 }
 
-.nav-item.active:hover:after .nav-link{
+.nav-item-dropdown:hover{
+    cursor: pointer;
+}
+
+.nav-item.active:hover:after .nav-link,
+.nav-item-dropdown.active:hover:after .nav-link{
     opacity: 0;
 }
 
 .nav-link{
     position: relative;
-    /*padding: 5px 0 !important;*/
     display: inline-block;
-}
-
-.nav-item{
-    position: relative;
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 600;
     transition: all 200ms linear;
-    margin-right: 20px;
 }
 
 .nav-item .dropdown-menu{
@@ -119,6 +119,7 @@
     text-align: center;
     padding: 10px 15px;
     color: #fff;
+    font-size: 16px;
     transition: all 200ms linear;
     background: unset;
 }
@@ -129,6 +130,12 @@
     transition: 0.3s ease-in;
 }
 /* Fim Dropdown Menu - Simuladores */
+
+/* Início Dropdown Menu - Usuário Logado */
+.dropdown-menu-user-email{
+    width: 100%;
+}
+/* Fim Dropdown Menu - Usuário Logado */
 
 /* Início Alterações quando scrollar a página */
 .start-header.scroll-on{
@@ -150,21 +157,27 @@
 }
 
 .start-header.scroll-on .nav-link,
-.start-header.scroll-on .nav-item:hover .nav-link{
+.start-header.scroll-on .nav-item:hover .nav-link,
+.start-header.scroll-on .nav-item-dropdown:hover .nav-link{
     color: #fff !important;
 }
 
-.start-header.scroll-on .nav-item.active .nav-link{
+.start-header.scroll-on .nav-item.active .nav-link,
+.start-header.scroll-on .nav-item-dropdown.active .nav-link{
     color: #fff !important;
     border-bottom: 2px solid #fff;
 }
 
-.start-header.scroll-on .nav-item:after{
+.start-header.scroll-on .nav-item:after,
+.start-header.scroll-on .nav-item-dropdown:after{
     background-color: #fff;
 }
 
-.start-header.scroll-on .nav-item i#iconEmail{
+.start-header.scroll-on .nav-item i#iconEmail,
+.start-header.scroll-on .nav-item-dropdown i#iconEmail,
+.start-header.scroll-on .nav-item-dropdown i#iconDownArrow{
   color: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on .dropdown-menu{
@@ -180,7 +193,8 @@
     background: linear-gradient(272.04deg, rgba(35, 69, 132, 0.8) 0%, rgba(125, 12, 14, 0.8) 100%);
 }
 
-.start-header.scroll-on .nav-item.active .nav-link{
+.start-header.scroll-on .nav-item.active .nav-link,
+.start-header.scroll-on .nav-item-dropdown.active .nav-link{
     border-bottom: none;
 }
 
@@ -205,14 +219,15 @@
     background: #fff;
 }
 
-.start-header.scroll-on .nav-item.active:hover:after{
+.start-header.scroll-on .nav-item.active:hover:after,
+.start-header.scroll-on .nav-item-dropdown:hover:after{
     opacity: 1;
 }
 /* Fim Alterações quando scrollar a página */
 
 /* Início Divisória do Nav-Bar */
 .divisoria-nav-links{
-    margin-right: 20px;
+    margin: 0 25px;
 }
 
 .divisoria-nav-links:hover{
@@ -224,6 +239,7 @@
 .text-box{
     width: 160px;
     margin: auto 0;
+    margin: 0 25px;
 }
 
 .text-box .btn{
@@ -328,7 +344,8 @@
         margin: 0 30px;
     }
 
-    .nav-item:after{
+    .nav-item:after,
+    .nav-item-dropdown:after{
         position: absolute;
         bottom: -5px;
         left: 0;
@@ -340,21 +357,27 @@
         transition: all 200ms linear;
     }
 
-    .nav-item:hover:after{
+    .nav-item:hover:after,
+    .nav-item-dropdown:hover:after{
         bottom: 0;
         opacity: 1;
     }
 
-    .nav-item-x:hover:after{
+    .nav-item-x:hover:after,
+    .nav-item-dropdown-x:hover:after{
         opacity: 0;
     }
 
-    .nav-item.active:hover:after{
+    .nav-item.active:hover:after,
+    .nav-item-dropdown.active:hover:after{
         opacity: 0;
     }
 
-    .nav-item i#iconEmail{
+    .nav-item i#iconEmail,
+    .nav-item-dropdown i#iconEmail,
+    .nav-item-dropdown i#iconDownArrow{
         color: #000;
+        transition: all 0.3s ease-out;
     }
 }
 

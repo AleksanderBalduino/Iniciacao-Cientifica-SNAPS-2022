@@ -47,14 +47,14 @@
 
   <body class="hero-anime">
 
-    <!-- Início do Header -->
+    <!-- Inicio do Header -->
     <header class="navigation-wrap start-header start-style">
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-md navbar-dark">
           
             <!-- Início Imagem Logo -->
-            <a class="navbar-brand scroll-link" href="#" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
+            <a class="navbar-brand scroll-link" href="index.html" target=""><img src="../assets/images/logo-snaps-rmbg.png" alt=""></a>
             <!-- Fim Imagem Logo -->
 
             <!-- Início Menu Hamburguer -->
@@ -63,11 +63,11 @@
             </button>
             <!-- Fim Menu Hamburguer -->
 
-            <!-- Início Navegação -->
+            <!-- Navegação -->
             <div id="navbar-target" class="collapse navbar-collapse itens-menu">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto navbar-right">
                 <li class="nav-item active">
-                  <a href="#" class="nav-link scroll-link">Home</a>
+                  <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item nav-item-x">
                   <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" href="#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
@@ -75,7 +75,7 @@
                     <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
                     <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
                     <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
-                    <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
+                    <!--<a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>-->
                     <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
                     <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
                   </div>
@@ -89,12 +89,20 @@
                 <li class="divisoria-nav-links">
                   <div class="nav-link">|</div>
                 </li>
-                <li class="nav-item" id="navItemId">
+                <li class="nav-item-dropdown" id="navItemId">
                   <i id="iconEmail" class="fa-solid fa-circle-user d-none"></i>
-                  <a id="userEmail" href="login.html" class="nav-link">Entrar</a>
+                  <a id="userEmail" href="login.html" class="nav-link" data-toggle="" aria-expanded="false">
+                    Entrar
+                    <span class="fa fa-angle-down"></span>
+                  </a>
+                  <i id="iconDownArrow" class="fa-solid fa-caret-down d-none"></i>
+                  <ul id="dropdownMenuUserEmail" class="dropdown-menu dropdown-menu-user-email d-none">
+                    <li><a class="dropdown-item" href="login.html"><i class="fa fa-user"></i> Informações</a></li>
+                    <li><a id="signoutlink" class="dropdown-item" href="" onclick="window.location.reload();"><i class="fa fa-sign-out"></i> Encerrar sessão</a></li>
+                  </ul>
                 </li>
-                <li class="text-box">
-                  <a id="signoutlink" href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3 id="textBtnCadastroSair">Cadastre-se</h3></a>
+                <li id="btnCadastroNavBar" class="text-box btn-mg-left">
+                  <a href="cadastro.html" class="btn btn-white btn-animate nav-link"><h3>Cadastre-se</h3></a>
                 </li>
               </ul>
             </div>
@@ -162,7 +170,7 @@
       <!--Início Conteúdo Visão Geral do SNAPS -->
       <div class="container box-conteudo-container">
         <div class="box-conteudo">
-          <h3>Visão geral do "SNAPS"</h3>
+          <h3 class="w700 gradient1 mb-5">Visão geral do "SNAPS"</h3>
 
           <p>
             O software “SNAPS” é um simulador que visa reproduzir os efeitos de substâncias que agem sobre o <strong>Sistema Nervoso Autônomo</strong>, dando suporte didático a alunos e professores durante as aulas de <strong>Fisiologia e Farmacologia</strong>.
@@ -173,7 +181,7 @@
           </p>
 
           <p>
-            Seguem imagens atuais do software, e de algumas ferramentas e visualizações possíveis dentro da aplicação em sua versão mais recente:
+            Seguem imagens do software, e de algumas ferramentas e visualizações possíveis dentro da aplicação em sua versão mais recente:
           </p>
         </div>
       </div>
@@ -186,34 +194,34 @@
           <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
             <li id="1" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a id="first" title="Clique para visualizar melhor a imagem" href="../assets/images/slider/placeholder.jpg" itemprop="contentUrl" data-size="1920x1080">
-                <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+              <a id="first" title="Clique para visualizar melhor a imagem" href="../assets/images/slider-snaps/print1.jpg" itemprop="contentUrl" data-size="1920x1080">
+                <img src="../assets/images/slider-snaps/print1-2.jpg" itemprop="thumbnail" alt="Image description" />
               </a>
             </li>
 
             <li id="2" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider/placeholder-1.jpg"
+              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider-snaps/print2.jpg"
                  itemprop="contentUrl" data-size="1920x1080">
-                <img src="../assets/images/slider/placeholder-1.jpg" itemprop="thumbnail" alt="Image description" />
+                <img src="../assets/images/slider-snaps/print2.jpg" itemprop="thumbnail" alt="Image description" />
               </a>
             </li>
 
             <li id="3" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider/placeholder.jpg" itemprop="contentUrl" data-size="1920x1080">
-                <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider-snaps/print3.jpg" itemprop="contentUrl" data-size="1920x1080">
+                <img src="../assets/images/slider-snaps/print3.jpg" itemprop="thumbnail" alt="Image description" />
               </a>
             </li>
 
             <li id="4" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider/placeholder-1.jpg" itemprop="contentUrl" data-size="1920x1080">
-                <img src="../assets/images/slider/placeholder-1.jpg" itemprop="thumbnail" alt="Image description" />
+              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider-snaps/print4.jpg" itemprop="contentUrl" data-size="1920x1080">
+                <img src="../assets/images/slider-snaps/print4.jpg" itemprop="thumbnail" alt="Image description" />
               </a>
             </li>
 
             <li id="5" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider/placeholder.jpg"
+              <a title="Clique para visualizar melhor a imagem" href="../assets/images/slider-snaps/print5.jpg"
                  data-size="1920x1080">
-                <img src="../assets/images/slider/placeholder.jpg" itemprop="thumbnail" alt="Image description" />
+                <img src="../assets/images/slider-snaps/print5.jpg" itemprop="thumbnail" alt="Image description" />
               </a>
             </li>
           </ul>
@@ -289,11 +297,11 @@
       <div class="box-2-conteudos">
 
         <!-- Início Sistema Nervoso Autônomo SNA -->
-        <div class="box-2-conteudos-bg">
+        <div class="box-2-conteudos-bg js-scroll-fade-in">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 box-2-conteudos-text">
-                <h3>Sistema Nervoso Autônomo SNA</h3>
+              <div class="col-md-6 box-2-conteudos-text">
+                <h3 class="w700">Sistema Nervoso Autônomo SNA</h3>
                 <p>
                   O Sistema Nervoso Autônomo (SNA) é a parte do sistema motor responsável pelo controle de músculos lisos, músculo cardíaco, e glândulas. Também chamado de sistema nervoso visceral, ele é responsável por manter a homeostasia do organismo e por gerar respostas a estímulos externos.
                   O SNA é subdividido nos ramos <strong>simpático</strong> e <strong>parassimpático</strong>, sendo o primeiro responsável por situações de <strong>“luta e fuga” (fight or flight)</strong> e, o segundo por <strong>“repouso e digestão” (rest and digest)</strong>.
@@ -308,8 +316,8 @@
                 </p>
               </div>
 
-              <div class="col-sm-6 box-2-conteudos-img">
-                <img src="https://via.placeholder.com/1920x1080.jpg" alt="Image" class="img-fluid" />
+              <div class="col-md-6 box-2-conteudos-img">
+                <img src="../assets/images/index/sistema-nervoso-autonomo.jpg" alt="Image" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -317,11 +325,11 @@
         <!-- Fim Sistema Nervoso Autônomo SNA -->
 
         <!-- Início Neurotransmissores do SNA -->
-        <div class="box-2-conteudos-no-bg">
+        <div class="box-2-conteudos-no-bg js-scroll-fade-in">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 box-2-conteudos-text box-2-conteudos-left">
-                <h3>Neurotransmissores do SNA</h3>
+              <div class="col-md-6 box-2-conteudos-text box-2-conteudos-left">
+                <h3 class="w700">Neurotransmissores do SNA</h3>
                 <p>
                   Para que ocorra a resposta eferente, o SNA utiliza sinais químicos por meio dos principais neurotransmissores a <strong>acetilcolina (ACh)</strong> e a <strong>noradrenalina (norepinefrina)</strong>. Estes são armazenados em vesículas nas terminações nervosas e liberados na fenda sináptica entre as fibras pré e pós-ganglionares ou nos órgão-alvo.
                 </p>
@@ -339,8 +347,8 @@
                 </p>
               </div>
 
-              <div class="col-sm-6 box-2-conteudos-img box-2-conteudos-right">
-                <img src="https://via.placeholder.com/1920x1080.jpg" alt="Image" class="img-fluid" />
+              <div class="col-md-6 box-2-conteudos-img box-2-conteudos-right">
+                <img src="../assets/images/index/neurotransmissores.png" alt="Image" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -348,11 +356,11 @@
         <!-- Fim Neurotrasnmissores do SNA -->
 
         <!-- Início Receptores do SNA -->
-        <div class="box-2-conteudos-bg">
+        <div class="box-2-conteudos-bg js-scroll-fade-in">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 box-2-conteudos-text">
-                <h3>Receptores do SNA</h3>
+              <div class="col-md-6 box-2-conteudos-text">
+                <h3 class="w700">Receptores do SNA</h3>
                 <p>
                   Para que ocorra a estimulação por estes neurotransmissores, eles precisam ligar-se a receptores específicos localizados nas membranas externas dos órgãos-alvo, que agem alterando a permeabilidade das membranas celulares por meio de canais iônicos (ionotrópicos) ou por ativação de enzimas intracelulares que sintetizam segundos mensageiros (metabotróbicos).
                 </p>
@@ -374,8 +382,8 @@
                 </p>
               </div>
 
-              <div class="col-sm-6 box-2-conteudos-img">
-                <img src="https://via.placeholder.com/1920x1080.jpg" alt="Image" class="img-fluid" />
+              <div class="col-md-6 box-2-conteudos-img">
+                <img src="../assets/images/index/receptores.png" alt="Image" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -383,11 +391,11 @@
         <!-- Fim Receptores do SNA -->
 
         <!-- Início Farmacologia do SNA -->
-        <div class="box-2-conteudos-no-bg">
+        <div class="box-2-conteudos-no-bg js-scroll-fade-in">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 box-2-conteudos-text box-2-conteudos-left">
-                <h3>Farmacologia do SNA</h3>
+              <div class="col-md-6 box-2-conteudos-text box-2-conteudos-left">
+                <h3 class="w700">Farmacologia do SNA</h3>
                 <p>
                   O SNA é também parte importante da farmacologia, visto que muitos fármacos agem estimulando ou inibindo os efeitos do SNA. Os <strong>agonistas e antagonistas de ação direta</strong> se ligam ao receptor-alvo mimetizando ou inibindo a ação do neurotransmissor. Os de <strong>ação indireta</strong> agem através da alteração da secreção, receptação e degradação dos neurotransmissores. Portanto, fármacos de ação <strong>simpatomimética</strong> e <strong>parassimpatomimética</strong> são os que causam efeitos semelhantes à estimulação simpática e à parassimpática, respectivamente.
                 </p>
@@ -397,67 +405,56 @@
                 </p>
               </div>
 
-              <div class="col-sm-6 box-2-conteudos-img box-2-conteudos-right">
-                <img src="https://via.placeholder.com/1920x1080.jpg" alt="Image" class="img-fluid" />
+              <div class="col-md-6 box-2-conteudos-img box-2-conteudos-right">
+                <img src="../assets/images/index/farmacologia.jpg" alt="Image" class="img-fluid" />
               </div>
             </div>
           </div>
         </div>
         <!-- Fim Farmacologia do SNA -->
 
+        <!-- Início Integração Unaerp-Medicina-Computação -->
+        <div class="box-2-conteudos-bg js-scroll-fade-in">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 box-2-conteudos-text">
+                <h3 class="w700">Uma parceria entre os cursos de Medicina e Engenharia da Computação da UNAERP</h3>
+                <p>
+                  O simulador SNAPS foi idealizado pela Profa. Dra. Marina de Toledo Durand que buscava métodos alternativos para substituir o uso de animais em suas aulas práticas do curso de Medicina da Universidade de Ribeirão Preto (UNAERP), seguindo os princípios dos <a class="w700" href="https://nc3rs.org.uk/who-we-are/3rs" target="_blank">3R</a>. Usando como base o software obsoleto “Farmacologia básica do Sistema Nervoso Autônomo por simulação computadorizada” criado por Dr. Szulim Ber Zyngier e publicado pela Universidade de São Paulo <a class="w700" href="https://www.edusp.com.br/livros/farmacologia-basica-do-sistema-nervoso-autonomo-por-simulacao-computadorizada/" target="_blank">(Edusp. 1995. 80p)</a>, a profa. Marina iniciou o desenvolvimento desse projeto com seus alunos do curso de Medicina em parceria com os alunos do curso de Engenharia da Computação da UNARP.
+                </p>
+
+                <p>
+                  Desde então, o projeto vem se sendo aprimorado para trazer mais recursos e informações ao público em geral. O intuito é permitir que os alunos e professores, assim como outros profissionais da saúde, tenham essa ferramenta disponível gratuitamente para contribuir no processo de ensino e aprendizado ou na demonstração da fisiologia e farmacologia do Sistema Nervoso Autônomo.
+                </p>
+              </div>
+
+              <div class="col-md-6 box-2-conteudos-img">
+                <img src="../assets/images/index/fisio-farmaco.png" alt="Image" class="img-fluid shadow-none" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Início Integração Unaerp-Medicina-Computação -->
+
       </div>
     </section>
     <!--Fim da Sessão do Conteúdo Principal - SNA-->
 
-    <!-- Inicio da Sessão Integra-->
-    <section id="integra" class="bg-integra">
-      <div class="container">
-        <div class="integra-titulo">
-          <h2>Lorem ipsum dolor sit amet</h2>
-        </div>
-
-        <div class="box-2-conteudos-integra">
-          <div class="row">
-            <div class="col-sm-6 box-2-conteudos-integra-text box-2-conteudos-integra-left">
-              <h3>Lorem ipsum dolor sit amet</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-              </p>
-            </div>
-
-            <div class="col-sm-6 box-2-conteudos-integra-img box-2-conteudos-integra-right">
-              <img src="../assets/images/fisio_farmaco.png" alt="Image" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fim da Sessão Integra-->
-
     <!-- Início da Sessão Simuladores -->
     <section id="simuladores">
-      <div class="container">
-        <div class="descricao-simuladores">
-          <h2>Lorem ipsum dolor sit amet</h2>
+      <div class="container js-scroll-fade-in">
+        <div class="descricao-simuladores mb-5">
+          <h2 class="gradient1 mb-5 w700">Simuladores SNAPS</h2>
 
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Para melhor a visualização dos efeitos e receptores, os simuladores online estão divididos em sistema específicos. Clique no órgão de sua escolha para acessar o simulador.
           </p>
         </div>
 
         <!-- Temporário -->
         <div id="simuladores-partes">
           <div class="human-body">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.587668 92.604164">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.587668 92.604164">
               <path
                 style="opacity:1"
                 d="m 11.671635,6.3585449 -0.0482,-2.59085 4.20648,-2.46806 4.42769,2.95361 -0.0405,1.94408 0.24197,-3.34467 -2.03129,-2.31103004 -2.84508,-0.51629 -2.20423,0.52915 -1.9363,2.63077004 z"
@@ -636,7 +633,9 @@
                 style="opacity:1"
                 d="m 49.625175,14.629325 0.063,-2.62462 -0.71441,1.15181 -4.37994,1.49796 4.97857,8.36746 1.83043,5.08188 -0.21949,-13.55362 z"
                 id="clavicule-left" />
-            </svg>
+            </svg> -->
+
+
 
             <div class="head label">
               <p class="desc">Head</p>
@@ -653,7 +652,7 @@
     <!-- Fim da Sessão Simuladores -->
 
     <!-- Inicio do Footer -->
-    <footer class="footer">
+    <footer class="footer js-scroll-fade">
         <div class="container">
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
@@ -703,7 +702,7 @@
                                     </div>
                                     <ul>
                                         <li><a href="#">Home</a></li>
-                                        <li><a href="#">Exercícios</a></li>
+                                        <!-- <li><a href="#">Exercícios</a></li> -->
                                         <li><a href="#">Sobre</a></li>
                                     </ul>
                                 </div>
@@ -716,7 +715,7 @@
                                         <li><a href="#">Cardiorespiratório</a></li>
                                         <li><a href="#">Gastrointestinal</a></li>
                                         <li><a href="#">Glândulas</a></li>
-                                        <li><a href="#">Metabolismo</a></li>
+                                        <!-- <li><a href="#">Metabolismo</a></li> -->
                                         <li><a href="#">Olhos</a></li>
                                         <li><a href="#">Urogenital</a></li>
                                     </ul>
@@ -745,7 +744,47 @@
 
                             <div class="footer-social-icon">
                                 <h3>Redes sociais</h3>
-                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                                <!-- <a href="#"><i class="fab fa-instagram instagram-bg"></i></a> -->
+
+                                <div class="container-footer-icon">
+                                  <a class="footer-icon instagram" href="" target="_blank">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px"
+                                      viewBox="0 0 551.034 551.034" xml:space="preserve">
+                                      <g>
+                                         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path class="insta-square" style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                                         c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                                         C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                                         c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                                         c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+                                      
+                                         <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                      <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517
+                                         S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083
+                                         s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+                                      
+                                      <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                                         <stop  offset="0" style="stop-color:#E09B3D"/>
+                                         <stop  offset="0.3" style="stop-color:#C74C4D"/>
+                                         <stop  offset="0.6" style="stop-color:#C21975"/>
+                                         <stop  offset="1" style="stop-color:#7024C4"/>
+                                      </linearGradient>
+                                         <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"/>
+                                      </g>
+                                   </svg>
+                                  </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -757,7 +796,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 text-center">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank">Universidade de Ribeirão Preto</a>.</p>
+                            <p>Copyright &copy; 2022, Todos os direitos reservados por <a href="https://www.unaerp.br/home-unaerp?campus=ribeirao" target="_blank" class="w700">Universidade de Ribeirão Preto</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -793,8 +832,12 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js'></script>
     <script src='https://unpkg.com/swiper@8.0.3/swiper-bundle.min.js'></script>
 
+    <!-- Animação Fade -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+
     <script src="../js/main.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/loginuserlogout.js"></script>
 
   </body>
 </html>
