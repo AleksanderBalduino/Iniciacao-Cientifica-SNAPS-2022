@@ -268,7 +268,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
       document.querySelector('#glandulasSalivares').src = '../assets/images/simulador-glandulas/images-gif/glandula-salivar-parassimpatico.png'
       document.querySelector('#receptorSA1').src = '../assets/images/simulador-glandulas/receptores/alfa2-basal.png'
       document.querySelector('#receptorSA2').src = '../assets/images/simulador-glandulas/receptores/m3-ativado.png'

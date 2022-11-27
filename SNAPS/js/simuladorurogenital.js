@@ -270,7 +270,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
       document.querySelector('#bexigaUretra').src = '../assets/images/simulador-urogenital/images-gif/bexiga-parassimpatico.gif'
       document.querySelector('#receptorML1').src = '../assets/images/simulador-urogenital/receptores/beta2-basal.png'
       document.querySelector('#receptorML2').src = '../assets/images/simulador-urogenital/receptores/m3-ativado.png'

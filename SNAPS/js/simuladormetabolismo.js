@@ -268,7 +268,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
       document.querySelector('#figado').src = '../assets/images/simulador-metabolismo/images-gif/figado-parassimpatico.png'
       document.querySelector('#receptorF1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
       document.querySelector('#receptorF2').src = '../assets/images/simulador-metabolismo/receptores/beta3-basal.png'

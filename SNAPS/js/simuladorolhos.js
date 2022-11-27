@@ -260,7 +260,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
         document.querySelector('#pupila').src = '../assets/images/simulador-olhos/images-gif/pupila-parassimpatico.gif'
         document.querySelector('#receptorO1').src = '../assets/images/simulador-olhos/receptores/alfa1-basal.png'
         document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m3-ativado.png'

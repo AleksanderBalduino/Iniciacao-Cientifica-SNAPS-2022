@@ -310,7 +310,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
         document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pmbaixa.jpg'
         document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/desacelerado.gif'
         document.querySelector('#DivpaText').classList.add('d-block')

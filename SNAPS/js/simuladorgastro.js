@@ -280,7 +280,7 @@ function Desc(){
         }
     break;
 
-    case 'Aceticolina':
+    case 'Acetilcolina':
       	document.querySelector('#pancreas').src = '../assets/images/simulador-gastro/images-gif/pancreas-parassimpatico.gif'
       	document.querySelector('#receptorP1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
       	document.querySelector('#receptorP2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
