@@ -237,6 +237,11 @@ function Desc(){
  
   switch(droga){
     case 'Nenhuma':
+      document.querySelector('#bexigaUretra').src = '../assets/images/simulador-urogenital/images-gif/bexiga-basal.png'
+      document.querySelector('#receptorML1').src = '../assets/images/simulador-urogenital/receptores/beta2-basal.png'
+      document.querySelector('#receptorML2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'
+      document.querySelector('#receptorE1').src = '../assets/images/simulador-urogenital/receptores/alfa1-basal.png'
+      document.querySelector('#receptorE2').src = '../assets/images/simulador-urogenital/receptores/m2-basal.png'
       document.querySelector('#penis').src = '../assets/images/simulador-urogenital/images-gif/urogenital-basal.png'
       document.querySelector('#receptorP1').src = '../assets/images/simulador-urogenital/receptores/alfa1-basal.png'
       document.querySelector('#receptorP2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'
@@ -249,25 +254,35 @@ function Desc(){
     break;
 
     case 'Noradrenalina':
-        document.querySelector('#penis').src = '../assets/images/simulador-urogenital/images-gif/urogenital-simpatico.gif'
-        document.querySelector('#receptorP1').src = '../assets/images/simulador-urogenital/receptores/alfa1-ativado.png'
-        document.querySelector('#receptorP2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'
+      document.querySelector('#bexigaUretra').src = '../assets/images/simulador-urogenital/images-gif/bexiga-simpatico.gif'
+      document.querySelector('#receptorML1').src = '../assets/images/simulador-urogenital/receptores/beta2-ativado.png'
+      document.querySelector('#receptorML2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'
+      document.querySelector('#receptorE1').src = '../assets/images/simulador-urogenital/receptores/alfa1-ativado.png'
+      document.querySelector('#receptorE2').src = '../assets/images/simulador-urogenital/receptores/m2-basal.png'
+      document.querySelector('#penis').src = '../assets/images/simulador-urogenital/images-gif/urogenital-simpatico.gif'
+      document.querySelector('#receptorP1').src = '../assets/images/simulador-urogenital/receptores/alfa1-ativado.png'
+      document.querySelector('#receptorP2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Ejaculação.'
+            document.getElementById('detailarea').value = 'Relaxa o corpo da bexiga, contração de esfíncter e ejaculação.'
           break;
         }
     break;
 
     case 'Aceticolina':
-        document.querySelector('#penis').src = '../assets/images/simulador-urogenital/images-gif/urogenital-parassimpatico.gif'
-        document.querySelector('#receptorP1').src = '../assets/images/simulador-urogenital/receptores/alfa1-basal.png'
-        document.querySelector('#receptorP2').src = '../assets/images/simulador-urogenital/receptores/m3-ativado.png'
+      document.querySelector('#bexigaUretra').src = '../assets/images/simulador-urogenital/images-gif/bexiga-parassimpatico.gif'
+      document.querySelector('#receptorML1').src = '../assets/images/simulador-urogenital/receptores/beta2-basal.png'
+      document.querySelector('#receptorML2').src = '../assets/images/simulador-urogenital/receptores/m3-ativado.png'
+      document.querySelector('#receptorE1').src = '../assets/images/simulador-urogenital/receptores/alfa1-basal.png'
+      document.querySelector('#receptorE2').src = '../assets/images/simulador-urogenital/receptores/m2-ativado.png'
+      document.querySelector('#penis').src = '../assets/images/simulador-urogenital/images-gif/urogenital-parassimpatico.gif'
+      document.querySelector('#receptorP1').src = '../assets/images/simulador-urogenital/receptores/alfa1-basal.png'
+      document.querySelector('#receptorP2').src = '../assets/images/simulador-urogenital/receptores/m3-ativado.png'
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Ereção.'
+            document.getElementById('detailarea').value = 'Contrai o corpo da bexiga, relaxa o esfíncter e ereção.'
           break;
         }
     break;

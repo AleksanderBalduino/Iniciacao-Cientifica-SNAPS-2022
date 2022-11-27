@@ -2,17 +2,21 @@ jQuery(document).ready(function ($) {
 
   let h2Label = document.getElementById('h2Label');
   let pDesc = document.getElementById('pDesc');
+  let pDesc2 = document.getElementById('pDesc2');
 
   function showLabel(state) {
     h2Label.innerText = 'Simulador selecionado:'
     var valorID = document.querySelector(`#${state}`).id;
     pDesc.classList.replace('d-none','d-block');
     pDesc.innerText = valorID;
+    pDesc2.classList.replace('d-none','d-block');
+    pDesc2.innerText = 'Clique no sistema selecionado para visualizar o seu simulador!';
   }
 
   function hideLabel(state) {
     h2Label.innerText = 'Nenhum simulador selecionado';
     pDesc.classList.replace('d-block','d-none');
+    pDesc2.classList.replace('d-block','d-none');
   }
 
   const orgaoDesc = document.querySelectorAll('.orgao-desc')
@@ -27,8 +31,9 @@ jQuery(document).ready(function ($) {
   }
 });
 
-let Cardiorrespiratorio = document.getElementById('Cardiorrespiratorio');
+let Cardiorrespiratorio = document.getElementById('Cardiorrespiratório');
 let Gastrointestinal = document.getElementById('Gastrointestinal');
+let Glândulas = document.getElementById('Glândulas');
 let Metabolismo = document.getElementById('Metabolismo');
 let Olhos = document.getElementById('Olhos');
 let Urogenital = document.getElementById('Urogenital');
@@ -39,6 +44,10 @@ Cardiorrespiratorio.addEventListener('click', (e) => {
 
 Gastrointestinal.addEventListener('click', (e) => {
   window.location.href = 'simulador-gastrointestinal.html';
+});
+
+Glândulas.addEventListener('click', (e) => {
+  window.location.href = 'simulador-glandulas.html';
 });
 
 Metabolismo.addEventListener('click', (e) => {

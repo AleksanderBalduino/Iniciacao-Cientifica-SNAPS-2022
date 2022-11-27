@@ -1,0 +1,82 @@
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+/* Início Section Simulador Cardiorespiratório */
+#simulador-glandulas{
+  background: linear-gradient(272.04deg, #234584 0%, #7D0C0E 100%);
+  padding: 2.5% 0;
+}
+
+#simulador-glandulas .container{
+  padding: 1.5%;
+}
+
+#simulador-glandulas .simulador-btn-detail h3{
+  color: var(--white-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+#simulador-glandulas .simulador-btn-detail #detailarea{
+  outline: 0;
+  padding: 16px;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  resize: none;
+  font-family: 'Quicksand', serif;
+}
+
+#simulador-glandulas .salivares-sudoriparas-adrenais-section .box-ssa{
+  width: 32%;
+  margin-right: 2%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#simulador-glandulas .salivares-sudoriparas-adrenais-section .box-ssa:nth-child(3){
+  margin-right: 0;
+}
+
+#simulador-glandulas .glandulas-salivares img#glandulasSalivares,
+#simulador-glandulas .glandulas-sudoriparas img#glandulasSudoriparas,
+#simulador-glandulas .adrenais img#adrenais{
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 2.5%;
+}
+
+#simulador-glandulas .glandulas-salivares h3,
+#simulador-glandulas .glandulas-sudoriparas h3,
+#simulador-glandulas .adrenais h3{
+  color: var(--black-color);
+  font-size: 24px;
+  text-align: center;
+  margin: 7.5% 15%;
+  border-radius: 50px;
+  padding: 1.5%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#simulador-glandulas .glandulas-salivares .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-glandulas .glandulas-sudoriparas .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-glandulas .adrenais .box-recptores .col-md-6:nth-child(2n+1){
+  padding: 0 5% 0 10%;
+}
+
+#simulador-glandulas .glandulas-sudoriparas .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-glandulas .adrenais .box-recptores .col-md-6:nth-child(2n+1)
+{
+  margin: 0 auto;
+  padding: 0 7.5% 0 7.5%;
+}
+
+#simulador-glandulas .glandulas-salivares .box-recptores .col-md-6:nth-child(2n),
+#simulador-glandulas .glandulas-sudoriparas .box-recptores .col-md-6:nth-child(2n),
+#simulador-glandulas .adrenais .box-recptores .col-md-6:nth-child(2n){
+  padding: 0 10% 0 5%;
+}

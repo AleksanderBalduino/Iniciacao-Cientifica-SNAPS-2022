@@ -39,7 +39,7 @@
 /*================================================================================================================*/
 
 /* Preloader */
-/*var random = Math.floor((Math.random() * 2000)) + 2000; 
+var random = Math.floor((Math.random() * 1500)); 
 $(document).ready(function() {
   
   setTimeout(function(){
@@ -58,7 +58,7 @@ function unloadScrollBars() {
 function reloadScrollBars() {
     document.documentElement.style.overflow = 'auto';
     document.body.scroll = "yes"; // IE
-}*/
+}
 
 /*================================================================================================================*/
 

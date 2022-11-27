@@ -673,13 +673,13 @@ code{
   transition: all 0.6s;
 }
 
-.human-body svg g.body-select:hover path,
+/*.human-body svg g.body-select:hover path,
 .human-body svg g path.body-select:hover{
   fill: red;
   transition: all 0.3s;
-}
+}*/
 
-/*.human-body svg g.body-no-select,
+.human-body svg g.body-no-select,
 .human-body svg g.body-select{
   opacity: 1;
   transition: all 0.3s ease-in-out;
@@ -687,14 +687,14 @@ code{
 
 .human-body svg:hover g.body-no-select,
 .human-body svg:hover g.body-select{
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 
 .human-body svg g.body-select:hover{
-  opacity: 1;
+  opacity: 0.5;
   transition: all 0.3s ease-in-out;
-}*/
+}
 
 .human-body svg g.body-select:hover g path.st15{
   fill: #4F301A;
@@ -723,6 +723,14 @@ code{
     text-align: center;
     font-size: 20px;
     color: #000;
+    text-shadow: 1px 0px #000;
+}
+
+#simuladores-partes .desc2{
+    background: #fff;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 1px 0px #000;
 }
 /* Fim Descrição Simulador Body */
 

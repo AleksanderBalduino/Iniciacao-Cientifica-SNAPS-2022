@@ -237,13 +237,9 @@ function Desc(){
  
   switch(droga){
     case 'Nenhuma':
-      document.querySelector('#pancreas').src = '../assets/images/simulador-metabolismo/images-gif/pancreas-basal.gif'
-      document.querySelector('#receptorP1').src = '../assets/images/simulador-metabolismo/receptores/alfa2-basal.png'
-      document.querySelector('#receptorP2').src = '../assets/images/simulador-metabolismo/receptores/m3-basal.png'
-      document.querySelector('#sudoriparas').src = '../assets/images/simulador-metabolismo/images-gif/glandula-sudoripara-basal.png'
-      document.querySelector('#receptorS1').src = '../assets/images/simulador-metabolismo/receptores/m3-basal.png'
-      document.querySelector('#adrenais').src = '../assets/images/simulador-metabolismo/images-gif/rim-basal.gif'
-      //document.querySelector('#receptorA1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      document.querySelector('#figado').src = '../assets/images/simulador-metabolismo/images-gif/figado-basal.png'
+      document.querySelector('#receptorF1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
+      document.querySelector('#receptorF2').src = '../assets/images/simulador-metabolismo/receptores/beta3-basal.png'
       document.querySelector('#musculoEsqueletico').src = '../assets/images/simulador-metabolismo/images-gif/musculo-esqueletico-basal.png'
       document.querySelector('#receptorME1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
       document.querySelector('#tecidoAdiposo').src = '../assets/images/simulador-metabolismo/images-gif/tecido-adiposo-basal.gif'
@@ -257,13 +253,9 @@ function Desc(){
     break;
 
     case 'Noradrenalina':
-      document.querySelector('#pancreas').src = '../assets/images/simulador-metabolismo/images-gif/pacreas-simpatico.gif'
-      document.querySelector('#receptorP1').src = '../assets/images/simulador-metabolismo/receptores/alfa2-ativado.png'
-      document.querySelector('#receptorP2').src = '../assets/images/simulador-metabolismo/receptores/m3-basal.png'
-      document.querySelector('#sudoriparas').src = '../assets/images/simulador-metabolismo/images-gif/glandula-sudoripara-simpatico.gif'
-      document.querySelector('#receptorS1').src = '../assets/images/simulador-metabolismo/receptores/m3-ativado.png'
-      document.querySelector('#adrenais').src = '../assets/images/simulador-metabolismo/images-gif/rim-simpatico.gif'
-      //document.querySelector('#receptorA1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      document.querySelector('#figado').src = '../assets/images/simulador-metabolismo/images-gif/figado-simpatico.png'
+      document.querySelector('#receptorF1').src = '../assets/images/simulador-metabolismo/receptores/beta2-ativado.png'
+      document.querySelector('#receptorF2').src = '../assets/images/simulador-metabolismo/receptores/beta3-ativado.png'
       document.querySelector('#musculoEsqueletico').src = '../assets/images/simulador-metabolismo/images-gif/musculo-esqueletico-simpatico.gif'
       document.querySelector('#receptorME1').src = '../assets/images/simulador-metabolismo/receptores/beta2-ativado.png'
       document.querySelector('#tecidoAdiposo').src = '../assets/images/simulador-metabolismo/images-gif/tecido-adiposo-simpatico.gif'
@@ -271,19 +263,15 @@ function Desc(){
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Diminuição da secreção de insulina, secreção das glândulas sudoríparas, secreta catecolaminas via estímulo hormonal (ACTH), secreção de epinefrina e norepinefrina por receptores Nicotínicos, ativação da via glicogenolítica e Lipólise.'
+            document.getElementById('detailarea').value = 'Aumento da glicemia, ativação da via glicogenolítica e Lipólise.'
           break;
         }
     break;
 
     case 'Aceticolina':
-      document.querySelector('#pancreas').src = '../assets/images/simulador-metabolismo/images-gif/pancreas-parassimpatico.gif'
-      document.querySelector('#receptorP1').src = '../assets/images/simulador-metabolismo/receptores/alfa2-basal.png'
-      document.querySelector('#receptorP2').src = '../assets/images/simulador-metabolismo/receptores/m3-ativado.png'
-      document.querySelector('#sudoriparas').src = '../assets/images/simulador-metabolismo/images-gif/glandula-sudoripara-parassimpatico.png'
-      document.querySelector('#receptorS1').src = '../assets/images/simulador-metabolismo/receptores/m3-basal.png'
-      document.querySelector('#adrenais').src = '../assets/images/simulador-metabolismo/images-gif/rim-parassimpatico.gif'
-      //document.querySelector('#receptorA1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      document.querySelector('#figado').src = '../assets/images/simulador-metabolismo/images-gif/figado-parassimpatico.png'
+      document.querySelector('#receptorF1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
+      document.querySelector('#receptorF2').src = '../assets/images/simulador-metabolismo/receptores/beta3-basal.png'
       document.querySelector('#musculoEsqueletico').src = '../assets/images/simulador-metabolismo/images-gif/musculo-esqueletico-parassimpatico.png'
       document.querySelector('#receptorME1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
       document.querySelector('#tecidoAdiposo').src = '../assets/images/simulador-metabolismo/images-gif/tecido-adiposo-parassimpatico.gif'
@@ -291,7 +279,7 @@ function Desc(){
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Aumento da secreção de amilase pelas células acinares, aumento da secreção de insulina pelas células β pancreáticas das ilhotas e aumento da secreção de bicabornato.'
+            document.getElementById('detailarea').value = 'Nenhum efeito conhecido.'
           break;
         }
     break;

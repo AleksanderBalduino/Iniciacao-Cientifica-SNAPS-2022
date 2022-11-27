@@ -31,28 +31,48 @@
   font-family: 'Quicksand', serif;
 }
 
-#simulador-gastrointestinal .estomago-intestino-vesicula-section .box-eiv{
-  width: 32%;
+#simulador-gastrointestinal .pancreas-vesicula-estomago-intestino-section .box-pvb{
+  width: 49%;
   margin-right: 2%;
   background-color: #fff;
   border-radius: 20px;
 }
 
-#simulador-gastrointestinal .estomago-intestino-vesicula-section .box-eiv:nth-child(3){
+#simulador-gastrointestinal .pancreas-vesicula-estomago-intestino-section .box-pvb:nth-child(2){
   margin-right: 0;
 }
 
+#simulador-gastrointestinal .pancreas-vesicula-estomago-intestino-section .estomago-intestino-section{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#simulador-gastrointestinal .pancreas-vesicula-estomago-intestino-section .box-ei{
+  width: 49%;
+  margin-right: 2%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#simulador-gastrointestinal .pancreas-vesicula-estomago-intestino-section .box-ei:nth-child(2){
+  margin-right: 0;
+}
+
+#simulador-gastrointestinal .pancreas img#pancreas,
+#simulador-gastrointestinal .vesicula-biliar img#vesiculaBiliar,
 #simulador-gastrointestinal .estomago img#estomago,
-#simulador-gastrointestinal .intestino img#intestino,
-#simulador-gastrointestinal .vesicula-biliar img#vesiculaBiliar{
-  border-radius: 100%;
+#simulador-gastrointestinal .intestino img#intestino{
+  border-radius: 20px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   margin-top: 2.5%;
 }
 
+#simulador-gastrointestinal .pancreas h3,
+#simulador-gastrointestinal .vesicula-biliar h3,
 #simulador-gastrointestinal .estomago h3,
 #simulador-gastrointestinal .intestino h3,
-#simulador-gastrointestinal .vesicula-biliar h3{
+#simulador-gastrointestinal .row-receptores h3{
   color: var(--black-color);
   font-size: 24px;
   text-align: center;
@@ -62,14 +82,38 @@
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
-#simulador-gastrointestinal .estomago .box-recptores .col-md-6:nth-child(2n+1),
-#simulador-gastrointestinal .intestino .box-recptores .col-md-6:nth-child(2n+1),
-#simulador-gastrointestinal .vesicula-biliar .box-recptores .col-md-6:nth-child(2n+1){
-  padding: 0 5% 0 10%;
+#simulador-gastrointestinal .row-receptores h3{
+  margin: 5% 35%;
+  border-radius: 50px;
+  padding: 1%;
 }
 
-#simulador-gastrointestinal .estomago .box-recptores .col-md-6:nth-child(2n),
-#simulador-gastrointestinal .intestino .box-recptores .col-md-6:nth-child(2n),
+#simulador-gastrointestinal .pancreas .box-recptores .col-md-6:nth-child(2n+1),
+#simulador-gastrointestinal .vesicula-biliar .box-recptores .col-md-6:nth-child(2n+1){
+  padding: 0 5% 0 20%;
+}
+
+#simulador-gastrointestinal .pancreas .box-recptores .col-md-6:nth-child(2n),
 #simulador-gastrointestinal .vesicula-biliar .box-recptores .col-md-6:nth-child(2n){
-  padding: 0 10% 0 5%;
+  padding: 0 20% 0 5%;
+}
+
+#simulador-gastrointestinal .row-receptores .box-recptores-liso .col-md-4:nth-child(1){
+  padding: 0 4% 0 12%;
+}
+
+#simulador-gastrointestinal .row-receptores .box-recptores-liso .col-md-4:nth-child(2){
+  padding: 0 8% 0 8%;
+}
+
+#simulador-gastrointestinal .row-receptores .box-recptores-liso .col-md-4:nth-child(3){
+  padding: 0 12% 0 4%;
+}
+
+#simulador-gastrointestinal .row-receptores .box-recptores-esfincter .col-md-6:nth-child(1){
+  padding: 0 5% 0 28%;
+}
+
+#simulador-gastrointestinal .row-receptores .box-recptores-esfincter .col-md-6:nth-child(2){
+  padding: 0 28% 0 5%;
 }

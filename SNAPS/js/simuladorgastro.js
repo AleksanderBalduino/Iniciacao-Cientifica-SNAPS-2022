@@ -237,55 +237,67 @@ function Desc(){
  
   switch(droga){
     case 'Nenhuma':
-      document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-basal.gif'
-      document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
-      document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
-      document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-basal.gif'
-      document.querySelector('#receptorI1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
-      document.querySelector('#receptorI2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
-      document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-basal.gif'
-      document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
-      document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#pancreas').src = '../assets/images/simulador-gastro/images-gif/pancreas-basal.gif'
+      	document.querySelector('#receptorP1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
+      	document.querySelector('#receptorP2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-basal.gif'
+      	document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+     	document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-basal.gif'
+      	document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-basal.gif'
+      	document.querySelector('#receptorML1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
+      	document.querySelector('#receptorML2').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      	document.querySelector('#receptorML3').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa1-basal.png'
+      	document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m2-basal.png'
 
-      switch(detail){
-        case 'Efeitos':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
-        break;
-      }
+      	switch(detail){
+        	case 'Efeitos':
+          		document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+        	break;
+      	}
     break;
 
     case 'Noradrenalina':
-        document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-simpatico.gif'
-        document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa2-ativado.png'
-        document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
-        document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-simpatico.gif'
-        document.querySelector('#receptorI1').src = '../assets/images/simulador-gastro/receptores/alfa2-ativado.png'
-        document.querySelector('#receptorI2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
-        document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-simpatico.gif'
-        document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-ativado.png'
-        document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#pancreas').src = '../assets/images/simulador-gastro/images-gif/pacreas-simpatico.gif'
+      	document.querySelector('#receptorP1').src = '../assets/images/simulador-gastro/receptores/alfa2-ativado.png'
+      	document.querySelector('#receptorP2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-simpatico.gif'
+      	document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-ativado.png'
+      	document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-simpatico.gif'
+      	document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-simpatico.gif'
+      	document.querySelector('#receptorML1').src = '../assets/images/simulador-gastro/receptores/alfa2-ativado.png'
+      	document.querySelector('#receptorML2').src = '../assets/images/simulador-gastro/receptores/beta2-ativado.png'
+      	document.querySelector('#receptorML3').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'
+      	document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa1-ativado.png'
+      	document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m2-basal.png'
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Diminuição das secreções e relaxamento da vesícula.'
+            document.getElementById('detailarea').value = 'Diminuição da secreção de insulina no pâncreas, relaxamento da vesícula, diminuição da motilidade (via β2) e das secreções (via α2), contração de esfíncter.'
           break;
         }
     break;
 
     case 'Aceticolina':
-        document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-parassimpatico.gif'
-        document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
-        document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
-        document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-parassimpatico.gif'
-        document.querySelector('#receptorI1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
-        document.querySelector('#receptorI2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
-        document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-parassimpatico.gif'
-        document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
-        document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
+      	document.querySelector('#pancreas').src = '../assets/images/simulador-gastro/images-gif/pancreas-parassimpatico.gif'
+      	document.querySelector('#receptorP1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
+      	document.querySelector('#receptorP2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
+      	document.querySelector('#vesiculaBiliar').src = '../assets/images/simulador-gastro/images-gif/figado-parassimpatico.gif'
+      	document.querySelector('#receptorVB1').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      	document.querySelector('#receptorVB2').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
+      	document.querySelector('#estomago').src = '../assets/images/simulador-gastro/images-gif/estomago-parassimpatico.gif'
+      	document.querySelector('#intestino').src = '../assets/images/simulador-gastro/images-gif/intestino-parassimpatico.gif'
+      	document.querySelector('#receptorML1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
+      	document.querySelector('#receptorML2').src = '../assets/images/simulador-gastro/receptores/beta2-basal.png'
+      	document.querySelector('#receptorML3').src = '../assets/images/simulador-gastro/receptores/m3-ativado.png'
+      	document.querySelector('#receptorE1').src = '../assets/images/simulador-gastro/receptores/alfa1-basal.png'
+      	document.querySelector('#receptorE2').src = '../assets/images/simulador-gastro/receptores/m2-ativado.png'
 
         switch(detail){
           case 'Efeitos':
-            document.getElementById('detailarea').value = 'Aumento das secreções e contração da vesícula resultando em maior liberação de bile para o intestino delgado.'
+            document.getElementById('detailarea').value = 'Aumento de secreção de enzimas digestivas pelas células acinares, aumento da secreção de insulina pelas células Beta pancreáticas das ilhotas e aumento da secreção de bicarbonato.\nContração da vesícula resultando em maior liberação de bile para o intestino delgado, aumenta as secreções e motilidade e relaxa esfíncter.'
           break;
         }
     break;

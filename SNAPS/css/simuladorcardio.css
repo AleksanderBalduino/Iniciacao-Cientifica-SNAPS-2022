@@ -45,7 +45,7 @@
 #simulador-cardiorespiratorio .pressao-arterial img#pressao,
 #simulador-cardiorespiratorio .coracao-pulmao img#coracaoPulmao,
 #simulador-cardiorespiratorio .bronquios img#bronq{
-  border-radius: 100%;
+  border-radius: 20px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   margin-top: 2.5%;
 }

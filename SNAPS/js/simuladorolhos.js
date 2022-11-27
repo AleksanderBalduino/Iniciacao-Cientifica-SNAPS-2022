@@ -239,7 +239,7 @@ function Desc(){
     case 'Nenhuma':
       document.querySelector('#pupila').src = '../assets/images/simulador-olhos/images-gif/pupila-basal.png'
       document.querySelector('#receptorO1').src = '../assets/images/simulador-olhos/receptores/alfa1-basal.png'
-      document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m2-basal.png'
+      document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m3-basal.png'
 
       switch(detail){
         case 'Efeitos':
@@ -251,7 +251,7 @@ function Desc(){
     case 'Noradrenalina':
         document.querySelector('#pupila').src = '../assets/images/simulador-olhos/images-gif/pupila-simpatico.gif'
         document.querySelector('#receptorO1').src = '../assets/images/simulador-olhos/receptores/alfa1-ativado.png'
-        document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m2-basal.png'
+        document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m3-basal.png'
 
         switch(detail){
           case 'Efeitos':
@@ -263,7 +263,7 @@ function Desc(){
     case 'Aceticolina':
         document.querySelector('#pupila').src = '../assets/images/simulador-olhos/images-gif/pupila-parassimpatico.gif'
         document.querySelector('#receptorO1').src = '../assets/images/simulador-olhos/receptores/alfa1-basal.png'
-        document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m2-ativado.png'
+        document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m3-ativado.png'
 
         switch(detail){
           case 'Efeitos':

@@ -78,8 +78,9 @@
                 <li class="nav-item nav-item-x active">
                   <a class="nav-link dropdown-toggle simulador-link" data-toggle="dropdown" onclick="location.href='index.html#simuladores';" href="index.html#simuladores" role="button" aria-haspopup="true" aria-expanded="false">Simulador</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="simulador-cardiorespiratorio.html"><span>Cardiorespiratório</span></a>
+                    <a class="dropdown-item" href="simulador-cardiorrespiratorio.html"><span>Cardiorrespiratório</span></a>
                     <a class="dropdown-item" href="simulador-gastrointestinal.html"><span>Gastrointestinal</span></a>
+                    <a class="dropdown-item" href="simulador-glandulas.html"><span>Glândulas</span></a>
                     <a class="dropdown-item" href="simulador-metabolismo.html"><span>Metabolismo</span></a>
                     <a class="dropdown-item" href="simulador-olhos.html"><span>Olhos</span></a>
                     <a class="dropdown-item" href="simulador-urogenital.html" style="border-bottom: none;"><span>Urogenital</span></a>
@@ -120,14 +121,14 @@
     <!-- Fim do Header -->
 
     <!-- Início Page preloader -->
-    <!--<div id="pre-loader">
+    <div id="pre-loader">
       <div id="loader-circle"></div>
       <div class="loader-section"></div>
-    </div>-->
+    </div>
     <!-- Fim Page preloader -->
 
     <!-- Início Banner -->
-    <section id="banner-simulador-conteudo"></section>
+    <section id="banner-simulador-conteudo" class="banner-metabolismo"></section>
     <!-- Fim Banner -->
 
     <!--Introdução Simulador Metabolismo-->
@@ -139,7 +140,7 @@
 
         <div class="row m-0">
           <div class="col-md-4 d-flex justify-content-center">
-            <img class="img-fluid" src="../assets/images/simulador-cardio/heart.png">
+            <img class="img-fluid" src="../assets/images/simulador-metabolismo/liver.png">
           </div>
 
           <div class="col-md-4 d-flex justify-content-center">
@@ -147,14 +148,8 @@
           </div>
 
           <div class="col-md-4 d-flex justify-content-center">
-            <img class="img-fluid" src="../assets/images/simulador-cardio/lung.png">
+            <img class="img-fluid" src="../assets/images/simulador-metabolismo/skeletal-muscle.png">
           </div>
-        </div>
-
-        <div class="simulador-text mt-5">
-          <p>O simulador tem por objetivo simular o comportamento de organismo de um humano de 70kg.</p>
-          
-          <p>Ele funciona através de testes com diferentes drogas, e como elas reagem ao organismo de um corpo humano, introduzindo a droga por via endovenosa, possibilitanto o monitoramento da Lorem Ipsum dolor sit amet.</p>
         </div>
       </div>
     </section>
@@ -203,56 +198,28 @@
         </div>
 
         <div class="row metabolismo-section mt-4 m-0">
-          <div class="box-psa pancreas">
-            <h3 class="h3-titulo w700">Pâncreas</h3>
+          <div class="box-fmt figado">
+            <h3 class="h3-titulo w700">Fígado</h3>
 
             <div class="d-flex justify-content-center mb-5">
-              <img id="pancreas" class="img-fluid" style="max-width: 250px; padding: 2.5%;" src="../assets/images/simulador-metabolismo/images-gif/pancreas-basal.gif">
+              <img id="figado" class="img-fluid" style="max-width: 250px;" src="../assets/images/simulador-metabolismo/images-gif/figado-basal.png">
             </div>
 
             <div class="d-flex mt-5 mb-5 box-recptores">
               <div class="col-md-6">
-                <img id="receptorP1" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/alfa2-basal.png">
+                <img id="receptorF1" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/beta2-basal.png">
               </div>
               <div class="col-md-6">
-                <img id="receptorP2" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/m3-basal.png">
+                <img id="receptorF2" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/beta3-basal.png">
               </div>
             </div>
           </div>
 
-          <div class="box-psa sudoriparas">
-            <h3 class="h3-titulo w700">Glândulas sudoríparas</h3>
-
-            <div class="d-flex justify-content-center">
-              <img id="sudoriparas" class="img-fluid" style="max-width: 250px;" src="../assets/images/simulador-metabolismo/images-gif/glandula-sudoripara-basal.png">
-            </div>
-
-            <div class="d-flex mt-5 mb-5 box-recptores">
-              <div class="col-md-6">
-                <img id="receptorS1" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/m3-basal.png">
-              </div>
-            </div>
-          </div>
-
-          <div class="box-psa adrenais">
-            <h3 class="h3-titulo w700">Adrenais</h3>
-
-            <div class="d-flex justify-content-center">
-              <img id='adrenais' class="img-fluid" style="max-width: 250px;" src="../assets/images/simulador-metabolismo/images-gif/rim-basal.gif">
-            </div>
-
-            <!-- <div class="d-flex mt-5 mb-5 box-recptores">
-              <div class="col-md-6">
-                <img id="receptorA1" class="img-fluid" src="../assets/images/simulador-metabolismo/receptores/">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="box-mt musculo-esqueletico mt-4">
+          <div class="box-fmt musculo-esqueletico">
             <h3 class="h3-titulo w700">Músculo esquelético</h3>
 
-            <div class="d-flex justify-content-center mb-5">
-              <img id="musculoEsqueletico" class="img-fluid" style="max-width: 300px;" src="../assets/images/simulador-metabolismo/images-gif/musculo-esqueletico-basal.png">
+            <div class="d-flex justify-content-center">
+              <img id="musculoEsqueletico" class="img-fluid" style="max-width: 250px;" src="../assets/images/simulador-metabolismo/images-gif/musculo-esqueletico-basal.png">
             </div>
 
             <div class="d-flex mt-5 mb-5 box-recptores">
@@ -262,11 +229,11 @@
             </div>
           </div>
 
-          <div class="box-mt tecido-adiposo mt-4">
+          <div class="box-fmt tecido-adiposo">
             <h3 class="h3-titulo w700">Tecido adiposo</h3>
 
-            <div class="d-flex justify-content-center mb-5">
-              <img id="tecidoAdiposo" class="img-fluid" style="max-width: 300px; padding: 2.5%;" src="../assets/images/simulador-metabolismo/images-gif/tecido-adiposo-basal.gif">
+            <div class="d-flex justify-content-center">
+              <img id='tecidoAdiposo' class="img-fluid" style="max-width: 250px;" src="../assets/images/simulador-metabolismo/images-gif/tecido-adiposo-basal.gif">
             </div>
 
             <div class="d-flex mt-5 mb-5 box-recptores">
@@ -320,7 +287,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h3>Beta Basal</h3>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -339,7 +305,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Beta Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -358,7 +323,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Beta Parcialmente Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -378,7 +342,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Beta Bloqueado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -397,7 +360,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Alfa Basal</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -416,7 +378,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Alfa Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -435,7 +396,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Alfa Parcialmente Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -454,7 +414,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Alfa Bloqueado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -473,7 +432,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Muscarínico Basal</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -492,7 +450,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Muscarínico Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -511,7 +468,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Muscarínico Parcialmente Ativado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -530,7 +486,6 @@
             <div class="h25 text-center align-text-receptor">
               <div class="text-receptor">
                 <h2>Muscarínico Bloqueado</h2>
-                <h4>Lorem ipsum dolor sit amet</h4>
               </div>
             </div>
             <div class="h50">
@@ -703,8 +658,9 @@
                                         <h3>Simuladores</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="simulador-cardiorespiratorio.html">Cardiorespiratório</a></li>
+                                        <li><a href="simulador-cardiorrespiratorio.html">Cardiorrespiratório</a></li>
                                         <li><a href="simulador-gastrointestinal.html">Gastrointestinal</a></li>
+                                        <li><a href="simulador-glandulas.html">Glândulas</a></li>
                                         <li><a href="simulador-metabolismo.html">Metabolismo</a></li>
                                         <li><a href="simulador-olhos.html">Olhos</a></li>
                                         <li><a href="simulador-urogenital.html">Urogenital</a></li>

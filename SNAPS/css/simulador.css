@@ -5,7 +5,6 @@
 
 /* Início Banner Simulador Cardiorespiratório */
 #banner-simulador-conteudo{
-  background-image: url(../assets/images/simulador-cardio/placeholder-1360x400.png);
   padding: 0;
   background-position: center center;
   position: relative;
@@ -13,6 +12,31 @@
   background-size: cover;
   text-align: center;
   height: 400px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+#banner-simulador-conteudo.banner-cardio{
+  background-image: url(../assets/images/banner-cardio.jpg);
+}
+
+#banner-simulador-conteudo.banner-gastro{
+  background-image: url(../assets/images/banner-gastro.jpg);
+}
+
+#banner-simulador-conteudo.banner-glandulas{
+  background-image: url(../assets/images/banner-glandulas.jpg);
+}
+
+#banner-simulador-conteudo.banner-metabolismo{
+  background-image: url(../assets/images/banner-metabolismo.jpg);
+}
+
+#banner-simulador-conteudo.banner-olhos{
+  background-image: url(../assets/images/banner-olhos.jpg);
+}
+
+#banner-simulador-conteudo.banner-urogenital{
+  background-image: url(../assets/images/banner-urogenital.jpg);
 }
 /* Fim Banner Simulador Cardiorespiratório */
 
