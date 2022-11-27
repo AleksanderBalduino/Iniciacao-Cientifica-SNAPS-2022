@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       document.querySelector('#pressao').src = '../assets/images/simulador-cardio/pressao/pnormal.jpg'
       document.querySelector('#coracaoPulmao').src = '../assets/images/simulador-cardio/images-gifs/basal.gif'
       document.querySelector('#DivpaText').classList.remove('d-block')

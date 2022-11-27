@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       document.querySelector('#glandulasSalivares').src = '../assets/images/simulador-glandulas/images-gif/glandula-salivar-basal.png'
       document.querySelector('#receptorSA1').src = '../assets/images/simulador-glandulas/receptores/alfa2-basal.png'
       document.querySelector('#receptorSA2').src = '../assets/images/simulador-glandulas/receptores/m3-basal.png'

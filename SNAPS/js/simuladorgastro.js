@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       	document.querySelector('#pancreas').src = '../assets/images/simulador-gastro/images-gif/pancreas-basal.gif'
       	document.querySelector('#receptorP1').src = '../assets/images/simulador-gastro/receptores/alfa2-basal.png'
       	document.querySelector('#receptorP2').src = '../assets/images/simulador-gastro/receptores/m3-basal.png'

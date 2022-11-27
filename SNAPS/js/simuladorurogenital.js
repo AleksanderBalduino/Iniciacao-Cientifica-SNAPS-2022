@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       document.querySelector('#bexigaUretra').src = '../assets/images/simulador-urogenital/images-gif/bexiga-basal.png'
       document.querySelector('#receptorML1').src = '../assets/images/simulador-urogenital/receptores/beta2-basal.png'
       document.querySelector('#receptorML2').src = '../assets/images/simulador-urogenital/receptores/m3-basal.png'

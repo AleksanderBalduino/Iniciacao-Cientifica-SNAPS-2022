@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       document.querySelector('#pupila').src = '../assets/images/simulador-olhos/images-gif/pupila-basal.png'
       document.querySelector('#receptorO1').src = '../assets/images/simulador-olhos/receptores/alfa1-basal.png'
       document.querySelector('#receptorO2').src = '../assets/images/simulador-olhos/receptores/m3-basal.png'

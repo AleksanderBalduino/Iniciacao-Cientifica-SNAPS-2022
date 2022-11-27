@@ -236,7 +236,7 @@ function Desc(){
   detail = document.getElementById('detail').value
  
   switch(droga){
-    case 'Nenhuma':
+    case 'Nenhum':
       document.querySelector('#figado').src = '../assets/images/simulador-metabolismo/images-gif/figado-basal.png'
       document.querySelector('#receptorF1').src = '../assets/images/simulador-metabolismo/receptores/beta2-basal.png'
       document.querySelector('#receptorF2').src = '../assets/images/simulador-metabolismo/receptores/beta3-basal.png'
