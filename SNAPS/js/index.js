@@ -39,7 +39,7 @@ let Olhos = document.getElementById('Olhos');
 let Urogenital = document.getElementById('Urogenital');
 
 Cardiorrespiratorio.addEventListener('click', (e) => {
-  window.location.href = 'simulador-cardiorespiratorio.html';
+  window.location.href = 'simulador-cardiorrespiratorio.html';
 });
 
 Gastrointestinal.addEventListener('click', (e) => {
