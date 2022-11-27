@@ -256,19 +256,19 @@ function Desc(){
 
       switch(detail){
         case 'Descrição':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+          document.getElementById('detailarea').value = 'Nenhum fármaco selecionado'
         break;
 
         case 'Efeitos':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+          document.getElementById('detailarea').value = 'Nenhum fármaco selecionado'
         break;
 
         case 'Uso Clínico':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+          document.getElementById('detailarea').value = 'Nenhum fármaco selecionado'
         break;
 
         case 'Efeitos Adversos':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+          document.getElementById('detailarea').value = 'Nenhum fármaco selecionado'
         break;
       }
     break;

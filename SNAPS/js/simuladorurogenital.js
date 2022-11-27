@@ -248,7 +248,7 @@ function Desc(){
 
       switch(detail){
         case 'Efeitos':
-          document.getElementById('detailarea').value = 'Nenhuma droga selecionada'
+          document.getElementById('detailarea').value = 'Nenhum fármaco selecionado'
         break;
       }
     break;
